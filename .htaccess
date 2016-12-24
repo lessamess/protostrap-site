@@ -1,0 +1,30 @@
+RewriteEngine on
+
+#set password for staging-environment (e.g. on a server reachable by clients)
+
+SetEnvIf Host staging.domain.com passreq
+AuthType Basic
+AuthName "Password Required"
+AuthUserFile /full/path/to/.htpasswd
+Require valid-user
+Order allow,deny
+Allow from all
+Deny from env=passreq
+Satisfy any
+
+# This redirects any links that do not work to the file fileNotFound.php
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.*)$ fileNotFound.php/$1
+
+
+# this compresses the filesize
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript

@@ -1,0 +1,12 @@
+<snippet>
+    <content><![CDATA[<div class="btn-group">
+    <button type="button" class="btn btn-default">${1:Left}</button>
+    <button type="button" class="btn btn-default">${2:Middle}</button>
+    <button type="button" class="btn btn-default">${3:Right}</button>
+</div>]]></content>
+    <!-- Optional: Tab trigger to activate the snippet -->
+    <tabTrigger>btngr</tabTrigger>
+    <!-- Optional: Description to show in the menu -->
+    <description>Button Group Protostrap PS</description>
+</snippet>
+

@@ -1,0 +1,163 @@
+applicationKey: ProtostrapSite
+application: My Site
+brand: Protostrap
+
+
+
+# The following is dummy data
+
+gettingStarted:
+  1:
+    id: "Requirements"
+    title: "Requirements"
+  2:
+    id: "install"
+    title: "Download and Install"
+  3:
+    id: "components"
+    title: "Components"
+  4:
+    id: "sublime"
+    title: "Using Sublime"
+  5:
+    id: "installScript"
+    title: "Install Script"
+  6:
+    id: "update"
+    title: "Updating Protostrap"
+
+
+
+
+
+basics:
+  1:
+    id: "elements"
+    title: "Protostrap's Elements"
+  2:
+    id: "snippets"
+    title: "Snippets"
+  3:
+    id: "interactivity"
+    title: "Interactivity"
+  4:
+    id: "multilinguality"
+    title: "Multilinguality"
+  5:
+    id: "uniqueIds"
+    title: "Dynamic Unique IDs"
+  6:
+    id: "typeahead"
+    title: "Typeahead"
+  7:
+    id: "Fake Authentication Layer"
+    title: "Components"
+  8:
+    id: "php"
+    title: "How much coding will I need?"
+
+
+dataLayer:
+  1:
+    id: "session"
+    title: "Session"
+  2:
+    id: "simpleDataLayer"
+    title: "Simple Data-Layer with variables & arrays"
+  3:
+    id: "changing"
+    title: "Changing Data"
+  4:
+    id: "usingGoogleSpreadsheets"
+    title: "Using Google Spreadsheets"
+  5:
+    id: "components"
+    title: "Components"
+
+functionalReference:
+  1:
+    id: "uniqueIds"
+    title: "Dynamic Unique IDs"
+  2:
+    id: "snippet"
+    title: "Including Snippets"
+  3:
+    id: "components"
+    title: "Components"
+
+
+cssReference:
+  1:
+    id: "components"
+    title: "Components"
+  2:
+    id: "components"
+    title: "Components"
+  3:
+    id: "components"
+    title: "Components"
+
+features:
+  1:
+    title: "Package Contents"
+    text: ""
+  2:
+    title: "Install Script"
+    text: ""
+  3:
+    title: "Font Awesome Icons"
+    text: ""
+  4:
+    title: "Sublime Snippets"
+    text: ""
+  5:
+    title: "Templating"
+    text: ""
+  6:
+    title: "Typeahead"
+    text: ""
+  7:
+    title: "Bootstrap Extentions"
+    text: "Boostrap Datepicker, Switch, Select, Fileupload, Draggables"
+  8:
+    title: "Google Search Simulation"
+    text: ""
+  9:
+    title: "Multilinguality"
+    text: ""
+  10:
+    title: "Dynamic parsed data"
+    text: ""
+  11:
+    title: "Dynamic Unique IDs"
+    text: ""
+
+featureTeaser:
+  1:
+    title: "Bootstrap 3 & Font Awesome 4.3"
+    text: ""
+  2:
+    title: "A Quick Install Script"
+    text: ""
+  3:
+    title: "Sublime Snippets"
+    text: ""
+  4:
+    title: "Templating"
+    text: ""
+  5:
+    title: "Simple Data-Layer with variables & arrays"
+    text: ""
+  6:
+    title: "Fake Authorisation Layer"
+    text: ""
+  7:
+    title: "Bootstrap Extentions"
+    text: "Boostrap Datepicker, Switch, Select, Fileupload, Sortables"
+  8:
+    title: "Google Search Simulation"
+    text: ""
+  9:
+    title: "Multilinguality"
+    text: ""
+
