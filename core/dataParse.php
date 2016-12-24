@@ -132,19 +132,22 @@ foreach ($parsed as $key => $item){
     }
 }
 
+$language = key($languages);
 
-// For v 3.1
-// make language persistent
-// if(!empty($_COOKIE[$applicationKey."_language"])){
-//     $language = $_COOKIE[$applicationKey."_language"];
-// }
+
+if(!empty($_COOKIE[$applicationKey."_language"])){
+    $language = $_COOKIE[$applicationKey."_language"];
+} else {
+    setcookie($applicationKey."_language", $language, time()+3600*24*180);
+}
+
 
 
 // Handle Language Switch
 if(!empty($_GET['switchLanguage'])){
     $language = $_GET['switchLanguage'];
     //persist into cookie
-    setcookie($applicationKey."_language",$_GET['switchLanguage']);
+    setcookie($applicationKey."_language", $_GET['switchLanguage'], time()+3600*24*180);
 }
 
 function setSessionVar($key, $item){
@@ -211,6 +214,18 @@ function setSessionVar($key, $item){
     }
 }
 
+function parseVar($var){
+    $pattern ="|'parse', ?'([a-zA-Z0-9]*)', ?'?([a-zA-Z0-9]*)'?|";
+    $matches = preg_match($pattern, $var, $mymatches);
+
+    if(empty($matches)){
+        return $var;
+    } else {
+
+        return $mymatches[1]($mymatches[2]);
+    }
+}
+
 function get_translations($url){
 
     if(!ini_set('default_socket_timeout',    15)) echo "unable to change socket timeout";
@@ -250,20 +265,29 @@ function normalize ($string) {
         'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a', 'æ'=>'a', 'ç'=>'c', 'è'=>'e', 'é'=>'e',
         'ê'=>'e', 'ë'=>'e', 'ì'=>'i', 'í'=>'i', 'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o',
         'ô'=>'o', 'õ'=>'o', 'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y', 'ý'=>'y', 'þ'=>'b',
-        'ÿ'=>'y', 'R'=>'R', 'r'=>'r', ' '=>'_', '-'=>'_',
+        'ÿ'=>'y', 'R'=>'R', 'r'=>'r', ' '=>'_', '-'=>'_', ','=>'','/'=>'',
     );
 
     return strtr($string, $table);
 }
 
-function get_spreadsheetData($url, $var){
+function get_spreadsheetData($url, $var, $sheet = false){
 
     if(empty($_GET['session_renew']) AND !empty($_SESSION[$var])){
-        return $_SESSION[$var];
+        // return $_SESSION[$var];
     }
 
     $val = Array();
-    $url = preg_replace("|edit\?usp=sharing|", "export?format=csv", $url);
+
+
+    $exportParams = "export?format=csv";
+    $sheetparam = "";
+    if($sheet){
+        $sheetparam .= "&sheet=".$sheet;
+    }
+
+    $url = preg_replace("|edit\?usp=sharing|", $exportParams, $url);
+    //$url = "https://docs.google.com/spreadsheets/d/" . $url . "/gviz/tq?tqx=out:csv" . $sheetparam;
 
     if(!ini_set('default_socket_timeout',    15)) echo "unable to change socket timeout";
 
