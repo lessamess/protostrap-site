@@ -5,3 +5,55 @@
 .header-fixed {
     margin-top: 60px;
 }
+
+h1.superlarge{
+    font-size: 64px;
+    font-weight: 100;
+}
+
+p.sub{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 200;
+}
+
+body {
+    padding-top:50px;
+}
+
+.navbar-bright {
+    background-color:#226622;
+    color:#fff;
+}
+
+.navbar-bright a, #masthead a, #masthead .lead {
+    color:#aaccaa;
+}
+
+.navbar-bright li > a:hover {
+    background-color:#003300;
+}
+
+@media (min-width: 979px) {
+  #mynav.affix-top {
+    position: static;
+    margin-top:30px;
+    width:228px;
+  }
+
+  #mynav.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+}
+
+#mynav li.active a {background-color:red;}
+
+.navbar-brand{
+    padding-top: 10px
+}
+.brandnav {
+    margin: 0 40px 0 0 ;
+    font-weight: 200;
+}
