@@ -345,6 +345,16 @@ function box($text, $class="info",$icon="inherit", $id="", $dismiss = true ){
 }
 
 
+function navId(){
+    if(empty($GLOBALS["navId"])){
+        $GLOBALS["navId"] = 0;
+        //return $GLOBALS["navId"] ;
+    } else {
+        $GLOBALS["navId"]++;
+    }
+    return $GLOBALS["navId"];
+}
+
 function checkAuth($config){
 
     if(!empty($_COOKIE["prototypeauth"]) and $_COOKIE["prototypeauth"] == $config['prototypeauth']){

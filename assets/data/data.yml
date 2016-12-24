@@ -1,10 +1,7 @@
 applicationKey: ProtostrapSite
-application: My Site
+application: "Protostrap Docs"
 brand: Protostrap
 
-
-
-# The following is dummy data
 
 gettingStarted:
   1:
@@ -26,8 +23,23 @@ gettingStarted:
     id: "update"
     title: "Updating Protostrap"
 
-
-
+phpFunctions:
+  getUniqueId:
+    description: ""
+  navId:
+    description: ""
+  box:
+    description: ""
+  label:
+    description: ""
+  snippet:
+    description: ""
+  showIf:
+    description: ""
+  hideIf:
+    description: ""
+  includeIf:
+    description: ""
 
 
 basics:
