@@ -2,7 +2,7 @@
 // Define Navigation keys
 // You can use these to specify which item should be active
 
-$navKeys = ["start","basics","data","functions","css"];
+$navKeys = ["one","two","three","four","five"];
 
 // LEAVE ALONE
 $navbarClasses = array_fill(0, 10, '');
@@ -24,27 +24,56 @@ foreach ($navKeys as $key => $item){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php"><h3 class="brandnav"><?= $brand;?></h3></a>
+      <a class="navbar-brand" href="index.php"><?php echo  $brand;?></a>
     </div>
     <nav role="navigation" class="collapse navbar-collapse " id="headernav" >
       <ul class="nav navbar-nav">
-        <li  class="<?php echo $navbarClasses[navId()];?>">
-          <a href="start.php">Getting Started</a>
+        <li  class="<?php echo $navbarClasses[0];?>">
+          <a href="javascript:void(0);">One</a>
         </li>
-        <li  class="<?php echo $navbarClasses[navId()];?>">
-          <a href="basics.php">Basics</a>
+        <li  class="<?php echo $navbarClasses[1];?>">
+          <a href="javascript:void(0);">Two</a>
         </li>
-        <li  class="<?php echo $navbarClasses[navId()];?>">
-          <a href="data.php">Using Data</a>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0)">Action</a></li>
+            <li><a href="javascript:void(0)">Another action</a></li>
+            <li><a href="javascript:void(0)">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="javascript:void(0)">Separated link</a></li>
+          </ul>
         </li>
-        <li  class="hide <?php echo $navbarClasses[navId()];?>">
-          <a href="javascript:void(0);">Functions-Reference</a>
+        <li  class="<?php echo $navbarClasses[4];?>">
+            <span class="form">
+                <!-- Typeahead
+                     Change Data in assets/js/main.js
+                     Documentation: https://github.com/bassjobsen/Bootstrap-3-Typeahead -->
+                <input type="text" class="form-control typeahead" name="mytypeahead" placeholder="Typeahead (Try: foo)">
+            </span>
         </li>
-        <li  class="hide <?php echo $navbarClasses[navId()];?>">
-          <a href="javascript:void(0);">CSS-Reference</a>
+        <li  class="">
+            <span>
+                Unlinked Text
+            </span>
         </li>
-
       </ul>
+      <?php if(!empty($loggedIn)) { ?>
+          <ul class="nav navbar-nav navbar-right">
+              <li class="" ><a href="" class="" ><i class="icon-user"></i> <?php echo  $activeUser['fullName']; ?></a></li>
+              <li>
+
+                <a href="index.php?logout=true">Logout</a>
+              </li>
+          </ul>
+        <?php } else { ?>
+
+          <ul class="nav navbar-nav navbar-right">
+              <li>
+                 <a href="testpage.php#login"><?php echo __("signIn") ;?></a>
+              </li>
+          </ul>
+          <?php }?>
 
     </nav>
   </div>
