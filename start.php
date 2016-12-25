@@ -26,61 +26,42 @@ $activeNavigation = "start";
         <div class="container">
 
             <div class="row">
-                <div class="col-md-6">
-                    <br>
+                <!--Nav Bar -->
+                <nav class="col-md-3 ps-docs-sidebar hidden-xs">
+                    <ul id="sidebar" class="nav nav-stacked fixed">
+
+                        <?php foreach ($gettingStarted as $key => $navItem): ?>
+                            <li>
+                                <a href="#<?php echo $key ;?>"><?php echo $navItem['title'] ;?></a>
+
+                                <ul class="nav nav-stacked">
+                                    <li><a href="#<?php echo $key ;?>1">Sub-Group 1</a></li>
+                                    <li><a href="#<?php echo $key ;?>2">Sub-Group 2</a></li>
+                                </ul>
+                            </li>
+                        <?php endforeach ?>
+                    </ul>
+                </nav>
+                <!--Main Content -->
+                <div class="col-md-9" id="mainContent">
                     <h1>Getting Started</h1>
-                    <br>
-                    <h3>A word of caution</h3>
-                    <?php box("<b>Do NOT use this in a production environment</b><br>Protostrap is prototyping software and therefore lacks all security features needed for production.", "info", "inherit" , "boxid" , "" ); ?>
 
-                    Getting started is the hardest part of getting into Protostrap. Once you are up and running you have overcome the biggest obstacles. <br> <br>
-                    <?php include(snippet("divider"));?>
-
-                    <h3 id="requirements">Requirements</h3>
-
-                    <div class="row">
-                        <div class="col-md-8">
-                            You need a local webserver with any recent version of PHP. <br><br>
-                            If you see something else than an error message in the window on the right, you have a running webserver and it can be called via <a href="http://localhost">http://localhost</a>
-
-                        </div>
-                        <div class="col-md-4">
-                            <iframe src="http://localhost" frameborder="1"></iframe>
-                        </div>
-                    </div>
-
-                    <strong>MAMP</strong><br>
-                    The easiest way to have a running webserver both on OS X and Windows is by using <a href="">MAMP</a>.
-                    <br><br>
-                    Download, install and start MAMP. <br><br>
-
-                    To finish the installation:<br>
-                    <ul>
-                        <li>Open the MAMP preferences</li>
-                        <li>Open to the <b>Ports</b> tab</li>
-                        <li>Click on the <b>Set Web & MySQL port to 80 and 3306</b> Button.</li>
-                        <li>Restart the server. It will not work without restart!</li>
-                        <li>You now have a local webserver running under <a href="http://localhost">http://localhost</a></li>
-                    </ul>
-                    <img class="img-responsive" src="assets/img/mampPrefs.gif" alt="Mamp Preferences">
+                    Getting started is the hardest part of getting into Protostrap. <br>Once you are up and running you have overcome the biggest obstacles.
 
 
-                    <?php include(snippet("divider"));?>
+                    <?php foreach ($gettingStarted as $key => $section): ?>
 
-                    <h3 id="Installation">Installing Protostrap</h3>
-                    <ul>
-                        <li>Download Protostrap and unzip it. <br>This will give you a folder called <b>Protostrap-master</b></li>
-                        <li>You can rename it something that makes more sense for you.</li>
-                        <li>
-                            Move the folder inside the MAMP "htdocs" folder which is located in the MAMP Application directory /Applications/MAMP. This folder is called "Document Root". (You can change the path for the Document Root in the MAMP application's Preferences Panel)
-                        </li>
-                        <li>
-                            You're done! You can access Protostrap in the browser via: <a href="http://localhost/protostrap">http://localhost/protostrap</a><br>(assuming you have named the folder protostrap.)
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="col-md-3">
+                        <section  class="">
+                            <a id="<?php echo $key ;?>"></a>
+                            <h2 style="margin-top: 0;padding-top: 60px;"><?php echo $section['title'] ;?></h2>
+                            <?php if(file_exists("snippets/gettingStarted_".$key.".php")){
+                                include("snippets/gettingStarted_".$key.".php");
+                                } ?>
+                            <div id="<?php echo $key ;?>1" class="hide">
+                                <h4><?php echo $section['title'] ;?> Sub 1</h4>
+                            </div>
+                        </section>
+                    <?php endforeach ?>
 
                 </div>
             </div>

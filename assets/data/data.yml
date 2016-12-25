@@ -4,23 +4,17 @@ brand: Protostrap
 
 
 gettingStarted:
-  1:
-    id: "Requirements"
+  requirements:
     title: "Requirements"
-  2:
-    id: "install"
-    title: "Download and Install"
-  3:
-    id: "components"
+  install:
+    title: "Installing Protostrap"
+  components:
     title: "Components"
-  4:
-    id: "sublime"
+  sublime:
     title: "Using Sublime"
-  5:
-    id: "installScript"
+  installScript:
     title: "Install Script"
-  6:
-    id: "update"
+  update:
     title: "Updating Protostrap"
 
 phpFunctions:

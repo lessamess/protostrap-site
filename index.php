@@ -34,7 +34,7 @@ $activeNavigation = "one";
                 <br>
                 <p class="sub">Build clickable prototypes faster than ever with the most advanced prototyping tool.</p>
                     <span class="hidden-xs"><br>
-                        <a class=" btn btn-success btn-lg" href="https://github.com/liip/Protostrap/archive/master.zip">
+                        <a class=" btn btn-success btn-lg" href="https://github.com/lessamess/Protostrap/archive/master.zip">
                             <i class="fa fa-download"></i> Download Protostrap
                         </a><br>
                         <small>Currently v3.0</small>
