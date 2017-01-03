@@ -74,6 +74,48 @@ body {
     background-color:#003300;
 }
 
+/*CARD*/
+
+.card {
+    position: relative;
+    display: block;
+    margin-bottom: .75rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.card-img-top {
+    border-top-right-radius: calc(.25rem - 1px);
+    border-top-left-radius: calc(.25rem - 1px);
+    width:100%;
+}
+
+.card-block {
+    padding: 1.25rem;
+}
+.card-title {
+    margin-bottom: .75rem;
+}
+.alsFavoritMarkieren{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 20px;
+    right: -23vw;
+    border-radius: 20px;
+    border: 1px solid $border-color;
+    background-color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.alsFavoritMarkieren .icon{
+    position:relative;
+    top: -2px;
+}
+
+/*CARD*/
+
+
 @media (min-width: 979px) {
   #mynav.affix-top {
     position: static;

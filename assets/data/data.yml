@@ -38,24 +38,325 @@ basics:
     title: "The Admin Panel"
 
 components:
-  filterTable:
-    title: "Table filtering"
-  sortTable:
-    title: "Table sorting"
   stepper:
     title: "Stepper"
+    description: "Show the status of a process with a stepper."
+    markup: | 
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Stepper</h4>
+          <div class="stepper">
+            <div class="mysteps">
+              <ul class="steps">
+                <li id="step-tab-1" data-target="#step1" class="active"><span id="badge1" class="label label-as-badge label-info">1</span> Step 1<span class="chevron"></span></li>
+                <li id="step-tab-2" data-target="#step2"><span id="badge2" class="label label-default label-as-badge">2</span> Step 2<span class="chevron"></span></li>
+                <li id="step-tab-3" data-target="#step3"><span id="badge3" class="label label-default label-as-badge">3</span> Step 3<span class="chevron"></span></li>
+                <li id="step-tab-4" data-target="#step4"><span id="badge4" class="label label-default label-as-badge">4</span> Step 4<span class="chevron"></span></li>
+              </ul>
+            </div>
+            <div class="step-content">
+              <div class="step-pane step-pane-1 active" id="step1">
+                <a class="btn btn-primary btn-next" data-nextid="2" type="button" href="javascript:void(0);">Next</a>
+              </div>
+              <div class="step-pane step-pane-2 " id="step2">
+                <a class="btn btn-default btn-prev " data-previd="1" type="button" href="javascript:void(0);">Previous</a>
+                <a class="btn btn-primary btn-next" data-nextid="3" type="button" href="javascript:void(0);">Next</a>
+              </div>
+              <div class="step-pane step-pane-3 " id="step3">
+                <a class="btn btn-default btn-prev " data-previd="2" type="button" href="javascript:void(0);">Previous</a>
+                <a class="btn btn-primary btn-next" data-nextid="4" type="button" href="javascript:void(0);">Next</a>
+              </div>
+              <div class="step-pane step-pane-4 " id="step4">
+                <a class="btn btn-default btn-prev " data-previd="3" type="button" href="javascript:void(0);">Previous</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    effect: | 
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Stepper</h4>
+          <div class="stepper">
+            <div class="mysteps">
+              <ul class="steps">
+                <li id="step-tab-1" data-target="#step1" class="active"><span id="badge1" class="label label-as-badge label-info">1</span> Step 1<span class="chevron"></span></li>
+                <li id="step-tab-2" data-target="#step2"><span id="badge2" class="label label-default label-as-badge">2</span> Step 2<span class="chevron"></span></li>
+                <li id="step-tab-3" data-target="#step3"><span id="badge3" class="label label-default label-as-badge">3</span> Step 3<span class="chevron"></span></li>
+                <li id="step-tab-4" data-target="#step4"><span id="badge4" class="label label-default label-as-badge">4</span> Step 4<span class="chevron"></span></li>
+              </ul>
+            </div>
+            <div class="step-content">
+              <div class="step-pane step-pane-1 active" id="step1">
+                <a class="btn btn-primary btn-next" data-nextid="2" type="button" href="javascript:void(0);">Next</a>
+              </div>
+              <div class="step-pane step-pane-2 " id="step2">
+                <a class="btn btn-default btn-prev " data-previd="1" type="button" href="javascript:void(0);">Previous</a>
+                <a class="btn btn-primary btn-next" data-nextid="3" type="button" href="javascript:void(0);">Next</a>
+              </div>
+              <div class="step-pane step-pane-3 " id="step3">
+                <a class="btn btn-default btn-prev " data-previd="2" type="button" href="javascript:void(0);">Previous</a>
+                <a class="btn btn-primary btn-next" data-nextid="4" type="button" href="javascript:void(0);">Next</a>
+              </div>
+              <div class="step-pane step-pane-4 " id="step4">
+                <a class="btn btn-default btn-prev " data-previd="3" type="button" href="javascript:void(0);">Previous</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  sortTable:
+    title: "Table sorting"
+    description: "Sort elements in a list or grid with drag and drop."
+    markup: | 
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Sortable List</h4>
+          <ul class="list-group sortable list">
+            <li class="list-group-item">1</li>
+            <li class="list-group-item">2</li>
+            <li class="list-group-item">3</li>
+            <li class="list-group-item">4</li>
+            <li class="list-group-item">5</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Sortable Grid</h4>
+          <ul class="list-group sortable grid">
+            <li class="">1</li>
+            <li class="">2</li>
+            <li class="">3</li>
+            <li class="">4</li>
+            <li class="">5</li>
+          </ul>
+        </div>
+      </div>
+    effect: | 
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Sortable List</h4>
+          <ul class="list-group sortable list">
+            <li class="list-group-item">1</li>
+            <li class="list-group-item">2</li>
+            <li class="list-group-item">3</li>
+            <li class="list-group-item">4</li>
+            <li class="list-group-item">5</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h4>Sortable Grid</h4>
+          <ul class="list-group sortable grid">
+            <li class="">1</li>
+            <li class="">2</li>
+            <li class="">3</li>
+            <li class="">4</li>
+            <li class="">5</li>
+          </ul>
+        </div>
+      </div>
+  filterTable:
+    title: "Table filtering"
+    description: ""
+    markup: | 
+      <div class="row">
+          <div class="col-md-12">
+              <h4>Filtertable</h4>
+              <div class="table-responsive table-responsive-maxheight">
+                  <?php
+                  $tabledata = $firmen;
+                  $noField = array("einheit","pakete");
+                  include(snippet("makeTableFromData"));?>
+              </div>
+          </div>
+      </div>
+    effect: |
+      <div class="row">
+          <div class="col-md-12">
+              <h4>Filtertable</h4>
+              <div class="table-responsive table-responsive-maxheight">
+                  <?php
+                  $tabledata = $firmen;
+                  $noField = array("einheit","pakete");
+                  include(snippet("makeTableFromData"));?>
+              </div>
+          </div>
+      </div>
   spinner:
     title: "Spinner"
+    description: "Display a spinner to indicate loading content."
+    markup: |
+      <div class="align-center">
+        <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
+      </div>
+    effect: |
+      <div class="row">
+        <div class="col-md-6 align-center">
+          <div class="card">
+            <br>
+            <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
+            <br><br>
+          </div>
+        </div>
+        <div class="col-md-6">
+        </div>
+      </div>
   cards:
     title: "Cards"
+    description: "Cards are a useful design pattern for listing objects in a grid view."
+    markup: |
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">Card title</h4>
+          <p class="card-text">A description of your card's content.</p>
+        </div>
+      </div>
+    effect: |
+      <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="card">
+              <img class="card-img-top" src="assets/img/platzhalterbild.jpg" class="img-responsive" alt="Card image cap">
+              <div class="card-block">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">A description of your card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+          </div>
+      </div>
+  cardbuttons:
+    title: "Buttons on Cards"
+    description: "Place a button on your card image."
+    markup: |
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="card">
+            <img class="card-img-top" src="assets/img/platzhalterbild.jpg" class="img-responsive" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">A description of your card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+        </div>
+      </div>
+    effect: |
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="card">
+            <div class="btn btn-primary btn-circle alsFavoritMarkieren"><i class="fa fa-heart"></i></div>
+            <img class="card-img-top" src="assets/img/platzhalterbild.jpg" class="img-responsive" alt="Card image cap">
+            <div class="card-block">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">A description of your card's content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+        </div>
+      </div>
   passwordToggle:
     title: "Toggle Password Visibility"
+    description: "Display the entered password with a toggle."
+    markup: | 
+      <div class="input-group">
+        <input type="password" class="form-control" name="" placeholder="Password">
+        <span class="input-group-addon passwordToggle"><i class="fa fa-square-o"></i> Show</span>
+      </div>
+    effect: | 
+      <div class="row">
+          <div class="col-md-6">
+            <div class="input-group">
+              <input type="password" class="form-control" name="" placeholder="Password">
+              <span class="input-group-addon passwordToggle"><i class="fa fa-square-o"></i> Show</span>
+            </div>
+      
+          </div>
+          <div class="col-md-6">
+      
+          </div>
+      </div>
   fakeAuth:
     title: "Fake Authentication Layer"
+    description: ""
+    markup:
+    effect: |
+      <div class="row">
+          <div class="col-md-12">
+              <a name="login"></a>
+              <?php include(snippet("loginForm"));?>
+
+          </div>
+      </div> 
   multilinguality:
     title: "Multilinguality"
+    description: "Easily show translated content."
+    markup: |  
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Translations</h4>
+          Key: thisIsAtest <br>
+          En: <?php echo __("thisIsAtest","en"); ?> <br>
+          De: <?php echo __("thisIsAtest","de"); ?> <br>
+          Fr: <?php echo __("thisIsAtest","fr"); ?> (Not available) <br>
+        </div>
+      </div>
+    effect: |  
+      <div class="row">
+        <div class="col-md-12">
+          <h4>Translations</h4>
+          Key: thisIsAtest <br>
+          En: <?php echo __("thisIsAtest","en"); ?> <br>
+          De: <?php echo __("thisIsAtest","de"); ?> <br>
+          Fr: <?php echo __("thisIsAtest","fr"); ?> (Not available) <br>
+        </div>
+      </div>
   fakeGoogle:
     title: "Fake Google: Simulate Google Searches"
+    description: ""
+    markup: 
+    effect: 
+  footer:
+    title: "Default Footer"
+    description: "Some functions come in handy at all times."
+    markup: |
+      <div class="container">
+        <div class="flexbox">
+          <div class="flex-1" >
+            © <?php echo date("Y") ;?> - Project Brand &nbsp;&nbsp;&nbsp;
+            <a href="?session_renew=true"><i class="fa fa-refresh"></i></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="javascript:void(0);" class="" data-toggle="collapse" data-target="#collapse<?php echo getUniqueId();?>">Deeplink</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <div id="collapse<?php echo $lastUniqueId;?>" class="collapse">
+              <input type="text" class="form-control selectOnClick" name="" placeholder="" value="<?php echo getDeeplink(); ;?>">
+            </div>
+          </div>
+          <div class="flex-1 align-right" >
+            <a href="cheatsheet.php">Cheatsheet</a> &nbsp;&nbsp;
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    effect: |
+      <div class="container">
+        <div class="flexbox">
+          <div class="flex-1" >
+            © <?php echo date("Y") ;?> - Project Brand &nbsp;&nbsp;&nbsp;
+            <a href="?session_renew=true"><i class="fa fa-refresh"></i></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="javascript:void(0);" class="" data-toggle="collapse" data-target="#collapse<?php echo getUniqueId();?>">Deeplink</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <div id="collapse<?php echo $lastUniqueId;?>" class="collapse">
+              <input type="text" class="form-control selectOnClick" name="" placeholder="" value="<?php echo getDeeplink(); ;?>">
+            </div>
+          </div>
+          <div class="flex-1 align-right" >
+            <a href="cheatsheet.php">Cheatsheet</a> &nbsp;&nbsp;
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
 
 css:
   helperClasses:

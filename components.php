@@ -41,7 +41,7 @@ $activeNavigation = "components";
                     <div class="row">
                         <div class="col-md-8">
 
-                                   This is an overview of Protostrap's parts. <br>This should give you some orientation of what is where.
+                            This is an overview of useful Protostrap components. <br>Components help you speed up your prototyping. Simply copy the code snippets below and paste them in your code.
 
                         </div>
                     </div>
@@ -50,7 +50,29 @@ $activeNavigation = "components";
                     <?php
                     $sections = $components;
                     $pageName = "components";
-                    include("./snippets/contentSections.php");?>
+                    
+                    foreach ($components as $key => $component) {
+                    $effect = $component['markup'];
+                    if(isset($component['effect'])){
+                    $effect = $component['effect'];
+                    }
+                    ?>
+
+
+                    <h2 id="<?php echo $key ;?>" style="margin-top: 0;padding-top: 60px;"><?php echo $component['title'] ;?></h2>
+
+                    <tr>
+                        <td style="max-width:600px">
+                            <?php echo $component['description'] ;?><br>
+                            <div class="micropadding"></div>
+                            Markup:
+                        <br><pre><code class="html"><?php echo htmlentities($component['markup']) ;?></code></pre>
+                        <br>
+                        Effect: <br>
+                        <?php echo $effect ;?>
+                    </td>
+                    </tr>
+                    <?php } ?>
 
                 </div>
             </div>
