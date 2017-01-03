@@ -517,7 +517,7 @@ hr.plain{
     background-color: #fff;
     padding-top: 8px;
     padding-bottom: 8px;
-    border: 1px solid #DDDDDD;
+    /*border: 1px solid #DDDDDD;*/
     border-left: none;
 }
 .tabs-inWell.tabs-left  {
