@@ -19,9 +19,12 @@
                     <?php echo $class['title'] ;?>: <?php echo $class['description'] ;?><br>
                     <div class="micropadding"></div>
                     Markup:
-                        <br><pre><code class="html"><?php echo htmlentities($class['markup']) ;?></code></pre>
+                        <br>
+                        <div class="micropadding"></div>
+                        <pre><code class="html"><?php echo htmlentities($class['markup']) ;?></code></pre>
                     <br>
                     Effect: <br>
+                    <div class="micropadding"></div>
                     <?php echo $effect ;?>
                 </td>
             </tr>

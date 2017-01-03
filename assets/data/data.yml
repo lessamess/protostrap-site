@@ -455,6 +455,29 @@ cssClasses:
     description: ""
     markup: |
       <div class="btn btn-primary btn-circle"><i class="fa fa-search"></i></div>
+  btn-pile:
+    title: "Button Pile "
+    description: "Used to display a group of single toggle buttons as a pile instead of a row"
+    markup: |
+      <div class="btn-group toggleSinglePrimary btn-pile">
+          <button class="btn btn-default">Left</button>
+          <button class="btn btn-default">Middle</button>
+          <button class="btn btn-default">Right</button>
+          <button class="btn btn-default">Above</button>
+          <button class="btn btn-default">Below</button>
+          <button class="btn btn-default">Behind</button>
+      </div>
+    effect: |
+      <div class="fix160">
+        <div class="btn-group toggleSinglePrimary btn-pile">
+            <button class="btn btn-default">Left</button>
+            <button class="btn btn-default">Middle</button>
+            <button class="btn btn-default">Right</button>
+            <button class="btn btn-default">Above</button>
+            <button class="btn btn-default">Below</button>
+            <button class="btn btn-default">Behind</button>
+        </div>
+      </div>
   nomargin:
     title: ""
     description: ""
