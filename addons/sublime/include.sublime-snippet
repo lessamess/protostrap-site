@@ -3,5 +3,6 @@
     <!-- Optional: Tab trigger to activate the snippet -->
     <tabTrigger>include</tabTrigger>
     <!-- Optional: Description to show in the menu -->
-    <description>Include Protostrap PS</description>
+    <description>Include - Protostrap</description>
+    <type>PHP</type>
 </snippet>

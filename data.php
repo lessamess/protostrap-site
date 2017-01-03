@@ -19,39 +19,38 @@ $activeNavigation = "data";
         // if you have to add more css, that's the place to do it.
         // DO NOT REMOVE
         include('./snippets/meta_headTag.php');?>
-
+        <link href="<?php echo $pathToAssets ;?>core/assets/css/ionicons.min.css" rel="stylesheet">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body class="header-fixed">
     <?php include("snippets/navBarTop.php");?>
         <div class="container">
 
             <div class="row">
-                <div class="col-md-6">
+                <!--Nav Bar -->
+                <nav class="col-md-3 ps-docs-sidebar hidden-xs">
+                    <?php
+                    $navItems = $dataLayer;
+                    include("./snippets/navigation.php");?>
+                </nav>
+                <!--Main Content -->
+                <div class="col-md-9" id="mainContent">
+                    <h1>Using Data</h1>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-8">
 
-                    <h1>Protostrap's Data Layer</h1>
-                    Protostrap makes it easy to have reusable data instead of hardcoded content inside pages.
+                                   Protostrap makes it easy to have reusable data instead of hardcoded content inside pages. It has a robust Data Layer that can get its data from different easy to use sources.
 
-                    <?php foreach ($dataLayer as $key => $value):
-                        if(file_exists("./snippets/".$value['id'].".php")){?>
-                            <h3><?php echo $value['title'] ;?></h3>
-
-                            <?php include(snippet($value['id'])); ?>
-                            <?php include(snippet("divider"));?>
-                        <?php }
-
-
-                    endforeach ?>
-
-
-
-
+                        </div>
+                    </div>
 
 
-
-
-
-                </div>
-                <div class="col-md-3">
+                    <?php
+                    $sections = $dataLayer;
+                    $pageName = "dataLayer";
+                    include("./snippets/contentSections.php");?>
 
                 </div>
             </div>
@@ -71,3 +70,4 @@ $activeNavigation = "data";
         include ('./snippets/meta_javascripts.php');?>
   </body>
 </html>
+

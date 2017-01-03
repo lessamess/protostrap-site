@@ -407,15 +407,19 @@ body {
 
 /* Iconicon Icons */
 
-.icon.icon-sm{
-    font-size: 30px;
+
+.icon {
+    font-size: 24px;
     margin-top: 3px;
     margin-bottom: 4px
 }
 
-.icon.icon-lg{
-    font-size: 48px;
+.icon.icon-sm{
+    font-size: 24px;
+}
 
+.icon.icon-lg{
+    font-size: 36px;
 }
 
 

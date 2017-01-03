@@ -1,0 +1,87 @@
+#!/bin/sh
+
+# variables
+localhost="--localhost--"
+gitUser="--gituser--"
+gitPass="--yourGitPass--"
+sublimeFolder="--yourSublimeFolder--" # do NOT escape spaces!
+
+#remember the installation folder
+installFolder="$PWD"
+
+# clear Screen
+clear
+
+# Get Protostrap
+name=""
+i=0
+
+while [ "x$name" == "x" ] ; do
+    echo "\n\n"
+    if test $i -gt 0   ; then
+        clear
+        echo "\n\n"
+        echo "      PROJECT NAME MUST NOT BE EMPTY!"
+    fi
+    read -p "      Project Name: " name
+    i=$((i+1))
+done
+
+
+curl -LOk  https://github.com/lessamess/Protostrap/archive/master.zip && unzip master.zip
+mv Protostrap-master $name
+
+chmod 775 $name/assets
+chmod -R 775 $name/assets/data
+
+clear
+
+# Setup git?
+echo "\n\n"
+read -p "      Setup Git Repo? y/n: " setupgit
+if [ "$setupgit" == "y" ]  ; then
+
+    # Copy password to clipboard
+    echo "$gitPass" | pbcopy
+    clear
+     cd $name
+     git init
+     git add .
+     git commit -m "Initial commit"
+
+    curl -u $gitUser https://api.github.com/user/repos -d '{"name": "'$name'"}'
+    # Remember replace USER with your username and REPO with your repository/application name!
+    git remote add origin git@github.com:$gitUser/$name.git
+    git push origin master
+fi
+
+clear
+
+#setup sublime?
+echo "\n\n"
+read -p "      Setup Sublime Project? y/n: " sublime
+if [ "$sublime" == "y" ]  ; then
+
+    # write project settings file
+    touch "$sublimeFolder$name.sublime-project"
+    cat <<EOF >"$sublimeFolder$name.sublime-project"
+  {
+        "folders":
+        [
+                {
+                     "path": "$installFolder/$name"
+                }
+        ]
+}
+EOF
+
+# open project in sublime
+/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl --project "$sublimeFolder$name.sublime-project"
+fi
+
+# open project in Browser
+open $localhost/$name
+
+echo "\n\n"
+echo "      Done."
+echo "\n\n"

@@ -6,79 +6,148 @@ brand: Protostrap
 gettingStarted:
   requirements:
     title: "Requirements"
+  webserver:
+    title: "Installing a local webserver: MAMP"
   install:
     title: "Installing Protostrap"
-  components:
-    title: "Components"
   sublime:
     title: "Using Sublime"
-  installScript:
-    title: "Install Script"
-  update:
-    title: "Updating Protostrap"
+    sub:
+      packages:
+        title: "Recommended Sublime Packages"
+      pssnippets:
+        title: "Protostrap snippets"
+      keybindings:
+        title: "Key bindings"
+  # installScript:
+  #   title: "Install Script"
+  # update:
+  #   title: "Updating Protostrap"
+
+
+basics:
+  elements:
+    title: "Protostrap's Elements"
+  filesAndFolders:
+    title: "Files and Folders"
+  fileStructure:
+    title: "Default Filestructure"
+  snippets:
+    title: "Snippets"
+  adminPanel:
+    title: "The Admin Panel"
+
+components:
+  filterTable:
+    title: "Table filtering"
+  stepper:
+    title: "Stepper"
+  fakeAuth:
+    title: "Fake Authentication Layer"
+  multilinguality:
+    title: "Multilinguality"
+  fakeGoogle:
+    title: "Fake Google: Simulate Google Searches"
+
+css:
+  helperClasses:
+    title: "Helper Classes"
+  fixingBootstrap:
+    title: "Fixing Bootstrap"
+
+javascript:
+  helperClasses:
+    title: "Helper Classes"
+  functions:
+    title: "Function Reference"
+
+php:
+  functions:
+    title: "Function Reference"
+
+
+jsHelperClasses:
+  selectOnFocus:
+    title: "Select on Focus"
+  selectOnLoad:
+    title: "Select on Load"
+  toggleSinglePrimary:
+    title: "Toggle Single Primary"
+  toggleMultiPrimary:
+    title: "Toggle Multi Primary"
+
 
 phpFunctions:
   getUniqueId:
     description: ""
+    parameters:
+      1:
+        name: ""
+        function: ""
   navId:
     description: ""
+    parameters:
+      1:
+        name: ""
+        function: ""
   box:
     description: ""
+    parameters:
+      1:
+        name: ""
+        function: ""
   label:
     description: ""
+    parameters:
+      1:
+        name: ""
+        function: ""
   snippet:
     description: ""
+    parameters:
+      1:
+        name: ""
+        function: ""
   showIf:
     description: ""
+    parameters:
+      1:
+        name: ""
+        function: ""
   hideIf:
     description: ""
+    parameters:
+      1:
+        name: ""
+        function: ""
   includeIf:
     description: ""
+    parameters:
+      1:
+        name: ""
+        function: ""
+  getDeeplink:
+    description: ""
 
-
-basics:
-  1:
-    id: "elements"
-    title: "Protostrap's Elements"
-  2:
-    id: "snippets"
-    title: "Snippets"
-  3:
-    id: "interactivity"
-    title: "Interactivity"
-  4:
-    id: "multilinguality"
-    title: "Multilinguality"
-  5:
-    id: "uniqueIds"
-    title: "Dynamic Unique IDs"
-  6:
-    id: "typeahead"
-    title: "Typeahead"
-  7:
-    id: "Fake Authentication Layer"
-    title: "Components"
-  8:
-    id: "php"
-    title: "How much coding will I need?"
 
 
 dataLayer:
-  1:
-    id: "session"
-    title: "Session"
-  2:
-    id: "simpleDataLayer"
-    title: "Simple Data-Layer with variables & arrays"
-  3:
-    id: "changing"
-    title: "Changing Data"
-  4:
-    id: "usingGoogleSpreadsheets"
+  concept:
+    title: "The Concept of Data in Protostrap"
+    sub:
+      types:
+        title: "Types of data sources"
+      session:
+        title: "The Prototype Session"
+      dataDirectory:
+        title: "The data directory"
+
+  simpleDataLayer:
+    title: "Simple Data-Layer in Text Files"
+  usingGoogleSpreadsheets:
     title: "Using Google Spreadsheets"
-  5:
-    id: "components"
-    title: "Components"
+  changing:
+    title: "Changing Data"
 
 functionalReference:
   1:
@@ -140,7 +209,7 @@ features:
 
 featureTeaser:
   1:
-    title: "Bootstrap 3 & Font Awesome 4.3"
+    title: "Bootstrap 3 & Font Awesome 4.7"
     text: ""
   2:
     title: "A Quick Install Script"
@@ -155,7 +224,7 @@ featureTeaser:
     title: "Simple Data-Layer with variables & arrays"
     text: ""
   6:
-    title: "Fake Authorisation Layer"
+    title: "Fake Authentication Layer"
     text: ""
   7:
     title: "Bootstrap Extentions"
@@ -166,4 +235,17 @@ featureTeaser:
   9:
     title: "Multilinguality"
     text: ""
+
+keyBindings:
+  psbtn: "ctrl+b"
+  icon: "ctrl+i"
+  tabs: "ctrl+shift+t"
+  pstable: "ctrl+t"
+  row: "ctrl+r"
+  coll: "ctrl+shift+c"
+  php: "ctrl+shift+<"
+  echo: "ctrl+e"
+  foreach: "ctrl+f"
+  vd: "ctrl+v"
+  click: "ctrl+c"
 

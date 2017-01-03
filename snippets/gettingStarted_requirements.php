@@ -10,6 +10,9 @@
                 A decent text editor - we recommend <a href="https://www.sublimetext.com/">Sublime Text</a>
             </li>
             <li>
+                A modern, up-to-date Web-Browser like Chrome or Firefox. There's no Internet Explorer support for Protostrap
+            </li>
+            <li>
                 Some basic knowledge of how websites work under the hood: <br>HTML, CSS, JavaScript
             </li>
             <li>
@@ -31,24 +34,6 @@
         If you see something that looks like a working website: <br>Congratulations, you have a running webserver!  It can be called via <a href="http://localhost">http://localhost</a><br><br>
         If you see an error message you need to install a webserver. <br>
         <br><br>
-        <h4>Installing a webserver: MAMP</h4>
-                    We recommend <a href="https://www.mamp.info">MAMP</a> which is available for free for macOS and Windows. It is the easiest way to have a running webserver.
-                    <br><br>
-                    Download, install and start MAMP. <br><br>
-
-                    To finish the installation:<br>
-                    <ul class="simpleList">
-                        <li>Open the MAMP preferences</li>
-                        <li>Open to the <b>Ports</b> tab</li>
-                        <li>Click on the <b>Set Web & MySQL port to 80 and 3306</b> Button.</li>
-                        <li>Restart the server. It will not work without restart!</li>
-                        <li>You now have a local webserver running under <a href="http://localhost">http://localhost</a></li>
-                    </ul>
-                    <br>
-                    <img class="img-responsive" src="assets/img/mampPrefs.gif" alt="Mamp Preferences">
-
-
-
     </div>
     <div class="col-md-4 align-center hidden-xs">
         <br>

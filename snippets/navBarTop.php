@@ -2,7 +2,7 @@
 // Define Navigation keys
 // You can use these to specify which item should be active
 
-$navKeys = ["start","basics","css","javascript", "php", "admin", "data","3rdparty","cheatsheet"];
+$navKeys = ["start","basics","css","javascript", "php", "components", "data","3rdparty","cheatsheet"];
 
 // LEAVE ALONE
 $navbarClasses = array_fill(0, 10, '');
@@ -35,25 +35,25 @@ foreach ($navKeys as $key => $item){
           <a href="basics.php">Basics</a>
         </li>
         <li  class="<?php echo $navbarClasses[2];?>">
-          <a href="javascript:void(0);">CSS</a>
+          <a href="css.php">CSS</a>
         </li>
         <li  class="<?php echo $navbarClasses[3];?>">
-          <a href="javascript:void(0);">JavaScript</a>
+          <a href="javascript.php">JavaScript</a>
         </li>
         <li  class="<?php echo $navbarClasses[4];?>">
-          <a href="javascript:void(0);">PHP</a>
+          <a href="php.php">PHP</a>
         </li>
         <li  class="<?php echo $navbarClasses[5];?>">
-          <a href="data.php">Admin Page</a>
+          <a href="components.php">Components</a>
         </li>
         <li  class="<?php echo $navbarClasses[6];?>">
           <a href="data.php">Using Data</a>
         </li>
-        <li  class="<?php echo $navbarClasses[7];?>">
+        <li  class="<?php echo $navbarClasses[7];?> hide">
           <a href="3rdparty.php">3rd Party Plugins</a>
         </li>
         <li  class="<?php echo $navbarClasses[8];?>">
-          <a href="sublime.php">Index</a>
+          <a href="cheatsheet.php">Cheat Sheet</a>
         </li>
       </ul>
 

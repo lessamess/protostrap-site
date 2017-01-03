@@ -28,40 +28,31 @@ $activeNavigation = "start";
             <div class="row">
                 <!--Nav Bar -->
                 <nav class="col-md-3 ps-docs-sidebar hidden-xs">
-                    <ul id="sidebar" class="nav nav-stacked fixed">
+                    <?php
+                    $navItems = $gettingStarted;
+                    include("./snippets/navigation.php");?>
 
-                        <?php foreach ($gettingStarted as $key => $navItem): ?>
-                            <li>
-                                <a href="#<?php echo $key ;?>"><?php echo $navItem['title'] ;?></a>
-
-                                <ul class="nav nav-stacked">
-                                    <li><a href="#<?php echo $key ;?>1">Sub-Group 1</a></li>
-                                    <li><a href="#<?php echo $key ;?>2">Sub-Group 2</a></li>
-                                </ul>
-                            </li>
-                        <?php endforeach ?>
-                    </ul>
                 </nav>
                 <!--Main Content -->
                 <div class="col-md-9" id="mainContent">
                     <h1>Getting Started</h1>
 
-                    Getting started is the hardest part of getting into Protostrap. <br>Once you are up and running you have overcome the biggest obstacles.
+                    <div class="row">
+                        <div class="col-md-8">
+                            <br>
+                            Setting up is the hardest part of getting into Protostrap. It is not a single tool that comes in a nicely wrapped box. It is more like a DIY instrument that needs to be assembled.
+                            <br><br>Once you are up and running you will have overcome the biggest obstacles.
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+                    </div>
 
 
-                    <?php foreach ($gettingStarted as $key => $section): ?>
-
-                        <section  class="">
-                            <a id="<?php echo $key ;?>"></a>
-                            <h2 style="margin-top: 0;padding-top: 60px;"><?php echo $section['title'] ;?></h2>
-                            <?php if(file_exists("snippets/gettingStarted_".$key.".php")){
-                                include("snippets/gettingStarted_".$key.".php");
-                                } ?>
-                            <div id="<?php echo $key ;?>1" class="hide">
-                                <h4><?php echo $section['title'] ;?> Sub 1</h4>
-                            </div>
-                        </section>
-                    <?php endforeach ?>
+                    <?php
+                    $sections = $gettingStarted;
+                    $pageName = "gettingStarted";
+                    include("./snippets/contentSections.php");?>
 
                 </div>
             </div>

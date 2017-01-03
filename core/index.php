@@ -1,7 +1,9 @@
 <?php
 
-
-
+if(!isset($_GET['adminkey'])){
+    header('location:/index.php');
+    die();
+}
 /** --- B A S E F U N C T I O N S ---
     This file sets up project-wide things like authentication -
     DO NOT REMOVE

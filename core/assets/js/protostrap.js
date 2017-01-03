@@ -214,6 +214,8 @@
             $(this).select();
         });
 
+        $(".selectOnLoad").first().select();
+
         $(".stepper .btn-next").click(function() {
             var nextId = $(this).attr("data-nextid");
             var thisId = parseInt(nextId) - 1;

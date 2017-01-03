@@ -95,10 +95,13 @@
         });
 
         var mainContentOffset = $("#mainContent").offset();
-        console.log(mainContentOffset.top);
         $('body').scrollspy({
             target: '.ps-docs-sidebar',
             offset: mainContentOffset.top+20
+        });
+
+        $(".selectOnFocus").focus(function() {
+            $(this).select();
         });
 
 

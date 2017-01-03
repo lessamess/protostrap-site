@@ -64,9 +64,9 @@ if(!empty($_GET['q'])){
                                 <img src="assets/img/google.png"><br><br>
                                 <form action="google.php" method="get">
                                     <input type="text" class="form-control googleSearchfield"  name="q" value=""> <br>
-                                    <input type="submit"  name="submit" class="btn googleBtn" value="Google-Suche">
+                                    <input type="submit"  name="submit" class="btn googleBtn" value="Google Search">
                                     &nbsp;&nbsp;&nbsp;
-                                    <input type="submit"  name="submit" class="btn googleBtn" value="Auf gut Glück!">
+                                    <input type="submit"  name="submit" class="btn googleBtn" value="I'm Feeling Lucky!">
                                 </form>
                                 </div>
                             </span>
@@ -94,7 +94,7 @@ if(!empty($_GET['q'])){
                         </div>
                         <div class="col-md-8 col-md-offset-1 col-lg-5">
                             <br>
-                            <div class="googleResultStats">Ungefähr <?php echo figureFormat($data['searchInformation']['totalResults'],0) ;?> Ergebnisse<nobr> (<?php echo figureFormat($data['searchInformation']['searchTime'],2) ;?> Sekunden)&nbsp;</nobr></div>
+                            <div class="googleResultStats">About <?php echo figureFormat($data['searchInformation']['totalResults'],0) ;?> results<nobr> (<?php echo figureFormat($data['searchInformation']['searchTime'],2) ;?> seconds)&nbsp;</nobr></div>
                             <?php foreach ($data['items'] as $key => $res) { ?>
                                 <div class="googleResult">
                                     <a href="<?php echo $res['link'] ;?>" class="googleTitle"><?php echo $res['htmlTitle'] ;?></a><br>
@@ -123,7 +123,7 @@ if(!empty($_GET['q'])){
                                                     <td class="b navend">
                                                         <a id="pnprev" href="/google.php?q=<?php echo $_GET['q'] ;?>&amp;start=<?php echo $start-10 ;?>&amp;sa=N" class="pn">
                                                             <span style="background:url(./assets/img/google_nav_logo195.png) no-repeat;background-position:0 0;width:53px;float:right" class="csb gbil ch"></span>
-                                                            <span style="display:block;margin-right:35px;clear:right;color: #1a0dab;font-size:small">Zurück</span>
+                                                            <span style="display:block;margin-right:35px;clear:right;color: #1a0dab;font-size:small">Back</span>
                                                         </a>
                                                     </td>
                                                     <td>

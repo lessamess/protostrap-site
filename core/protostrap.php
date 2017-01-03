@@ -276,7 +276,7 @@ function snippet($snippet){
 }
 
 function showIf($string) {
-    $class = "hidden";
+    $class = "hide";
     if(!empty($GLOBALS['userrole']) && strpos($string, $GLOBALS['userrole']) !== false){
         $class = "";
     }
@@ -286,7 +286,7 @@ function showIf($string) {
 function hideIf($string) {
     $class = "";
     if(!empty($GLOBALS['userrole']) && strpos($string, $GLOBALS['userrole']) !== false){
-        $class = "hidden";
+        $class = "hide";
     }
     echo $class;
 }

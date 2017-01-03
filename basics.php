@@ -19,34 +19,42 @@ $activeNavigation = "basics";
         // if you have to add more css, that's the place to do it.
         // DO NOT REMOVE
         include('./snippets/meta_headTag.php');?>
-
+        <link href="<?php echo $pathToAssets ;?>core/assets/css/ionicons.min.css" rel="stylesheet">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body class="header-fixed">
     <?php include("snippets/navBarTop.php");?>
         <div class="container">
 
             <div class="row">
-                <div class="col-md-6">
-
+                <!--Nav Bar -->
+                <nav class="col-md-3 ps-docs-sidebar hidden-xs">
+                    <?php
+                    $navItems = $basics;
+                    include("./snippets/navigation.php");?>
+                </nav>
+                <!--Main Content -->
+                <div class="col-md-9" id="mainContent">
                     <h1>Basics</h1>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-8">
+
+                                   This is an overview of Protostrap's parts. <br>This should give you some orientation of what is where.
+
+                        </div>
+                    </div>
 
 
-                    <?php foreach ($basics as $key => $value):
-                        if(file_exists("./snippets/".$value['id'].".php")){?>
-                            <h3><?php echo $value['title'] ;?></h3>
-
-                            <?php include(snippet($value['id'])); ?>
-                            <?php include(snippet("divider"));?>
-                        <?php }
-
-
-                    endforeach ?>
-                    <?php box("The documentation is still incomplete but on its way ", "info", "inherit" , "boxid" , "" ); ?>
-                </div>
-                <div class="col-md-3">
+                    <?php
+                    $sections = $basics;
+                    $pageName = "basics";
+                    include("./snippets/contentSections.php");?>
 
                 </div>
             </div>
+
 
 
 
