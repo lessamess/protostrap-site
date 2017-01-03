@@ -154,6 +154,10 @@ body {
     vertical-align: middle;
 }
 
+table.table.table-plain tr th:first-child,
+table.table.table-plain tr td:first-child{
+    padding-left: 0;
+}
 
 /* all links */
 .ps-docs-sidebar .nav>li>a {

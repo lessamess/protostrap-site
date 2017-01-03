@@ -112,6 +112,12 @@ body {
 .fixed-size-160, .fix160{
     width: 160px;
 }
+.fixed-size-180, .fix180{
+    width: 180px;
+}
+.fixed-size-200, .fix200{
+    width: 200px;
+}
 
 .p25{
     width: 25%;

@@ -8,14 +8,12 @@ table.tablesorter {
 	font-family:arial;
 	background-color: #CDCDCD;
 	margin:10px 0pt 15px;
-	font-size: 8pt;
 	width: 100%;
 	text-align: left;
 }
 table.tablesorter thead tr th, table.tablesorter tfoot tr th {
 	background-color: #e6EEEE;
 	border: 1px solid #FFF;
-	font-size: 8pt;
 	padding: 4px;
 }
 table.tablesorter thead tr .header {
@@ -530,6 +528,12 @@ td.error {
 .table.table-plain > tfoot > tr > th, .table.table-plain > thead > tr > td,
 .table.table-plain > tbody > tr > td, .table.table-plain > tfoot > tr > td {
     border-top: none;
+}
+
+
+table.table.table-plain tr th:first-child,
+table.table.table-plain tr td:first-child{
+    padding-left: 0;
 }
 
 .panel-body .table.table-plain {
@@ -1226,6 +1230,42 @@ a.fl:link, a.fl:visited,.fl a, .flt, a.flt, .gl a:link, a.mblink, .mblink b {
     margin-bottom: 12px;
 }
 
+.oneliner {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nopadding{
+    padding: 0;
+}
+
+.nomargin{
+    margin: 0;
+}
+
+.noborder{
+    border: none;
+}
+
+
+.btn.btn-circle {
+    width: 50px;
+    height:50px;
+    border-radius: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn.btn-circle i {
+    height: 50px;
+    line-height: 48px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+
 
 /* Twitter Typeahead */
 
@@ -1260,4 +1300,3 @@ a.fl:link, a.fl:visited,.fl a, .flt, a.flt, .gl a:link, a.mblink, .mblink b {
 .tt-menu{
     min-width:400px;
 }
-
