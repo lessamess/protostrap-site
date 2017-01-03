@@ -40,8 +40,16 @@ basics:
 components:
   filterTable:
     title: "Table filtering"
+  sortTable:
+    title: "Table sorting"
   stepper:
     title: "Stepper"
+  spinner:
+    title: "Spinner"
+  cards:
+    title: "Cards"
+  passwordToggle:
+    title: "Toggle Password Visibility"
   fakeAuth:
     title: "Fake Authentication Layer"
   multilinguality:
@@ -82,13 +90,67 @@ cssClasses:
   micropadding:
     title: "Micropadding"
     description: "Sometimes you need a little more space between things. This inserts an 8px high space"
-    markup: "<div class=\"micropadding\"></div>"
+    markup: |
+      <div class="micropadding"></div>
     effect: |
       <div class="flexbox padded">
           <div class="flex-1" >With a regular break:<br>Continue here</div>
           <div class="flex-1" >With Micropadding <div class="micropadding"></div>Continue here</div>
           <div class="flex-1" >With two breaks:<br><br>Continue here</div>
       </div>
+  table-plain:
+      title: "table-plain"
+      description: "make plain table"
+      markup: |
+        <table class="table table-condensed table-plain">
+            <tr>
+                <th>123</th>
+                <th>123</th>
+                <th>123</th>
+            </tr>
+            <tr>
+                <td>456</td>
+                <td>456</td>
+                <td>456</td>
+            </tr>
+            <tr>
+                <td>456</td>
+                <td>456</td>
+                <td>456</td>
+            </tr>
+        </table>
+  nopadding:
+    title: ""
+    description: ""
+    markup: |
+      <div class="nopadding"></div>
+  nomargin:
+    title: ""
+    description: ""
+    markup: |
+      <div class="nomargin"></div>
+  noborder:
+    title: ""
+    description: ""
+    markup: |
+      <div class="noborder"></div>
+  oneliner:
+    title: ""
+    description: ""
+    markup: |
+      <div class="oneliner">A line of text that will be cut off when the end of the line is reached, you will see some ellipses instead of the line breaking. This is ideal for titles in cards or on mobile views</div>
+  btn-circle:
+    title: ""
+    description: ""
+    markup: |
+      <div class="btn btn-primary btn-circle"><i class="fa fa-search"></i></div>
+  nomargin:
+    title: ""
+    description: ""
+    markup: |
+      <div class="nomargin"></div>
+
+
 
 jsHelperClasses:
   selectOnFocus:

@@ -8,7 +8,7 @@ include('core/protostrap.php');
 
 /** Define VALUES  valid for this file **/
 $activeNavigation = "one";
-$firmen = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1pYV5OwCy4YW-a0e1bOS9cU4sZpjcGHzSu_F08xgFHzg/edit?usp=sharing", "firmen");
+$names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZLZoKAaSvGv5UBKPBzuxtJwmZWgyL0JF-wU/edit?usp=sharing", "names");
 
 
 ?><!DOCTYPE html>
@@ -153,7 +153,7 @@ $firmen = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1pYV5OwCy4
                     <h4>Filtertable</h4>
                     <div class="table-responsive table-responsive-maxheight">
                         <?php
-                        $tabledata = $firmen;
+                        $tabledata = $names;
                         include("./snippets/makeTableFromData.php");?>
                     </div>
                 </div>

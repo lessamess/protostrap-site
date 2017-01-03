@@ -56,8 +56,6 @@ $activeNavigation = "css";
             </div>
 
 
-
-
             <?php // this includes the footer
             include('./snippets/footer.php');?>
 
