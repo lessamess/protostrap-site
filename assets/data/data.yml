@@ -41,7 +41,7 @@ components:
   stepper:
     title: "Stepper"
     description: "Show the status of a process with a stepper."
-    markup: | 
+    markup: |
       <div class="row">
         <div class="col-md-12">
           <h4>Stepper</h4>
@@ -73,7 +73,7 @@ components:
           </div>
         </div>
       </div>
-    effect: | 
+    effect: |
       <div class="row">
         <div class="col-md-12">
           <h4>Stepper</h4>
@@ -108,30 +108,25 @@ components:
   sortTable:
     title: "Table sorting"
     description: "Sort elements in a list or grid with drag and drop."
-    markup: | 
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Sortable List</h4>
-          <ul class="list-group sortable list">
-            <li class="list-group-item">1</li>
-            <li class="list-group-item">2</li>
-            <li class="list-group-item">3</li>
-            <li class="list-group-item">4</li>
-            <li class="list-group-item">5</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h4>Sortable Grid</h4>
-          <ul class="list-group sortable grid">
-            <li class="">1</li>
-            <li class="">2</li>
-            <li class="">3</li>
-            <li class="">4</li>
-            <li class="">5</li>
-          </ul>
-        </div>
-      </div>
-    effect: | 
+    markup: |
+      <!-- Sortable List -->
+      <ul class="list-group sortable list">
+        <li class="list-group-item">1</li>
+        <li class="list-group-item">2</li>
+        <li class="list-group-item">3</li>
+        <li class="list-group-item">4</li>
+        <li class="list-group-item">5</li>
+      </ul>
+
+      <!-- Sortable Grid-->
+      <ul class="list-group sortable grid">
+        <li class="">1</li>
+        <li class="">2</li>
+        <li class="">3</li>
+        <li class="">4</li>
+        <li class="">5</li>
+      </ul>
+    effect: |
       <div class="row">
         <div class="col-md-6">
           <h4>Sortable List</h4>
@@ -157,7 +152,7 @@ components:
   filterTable:
     title: "Table filtering"
     description: ""
-    markup: | 
+    markup: |
       <div class="row">
           <div class="col-md-12">
               <h4>Filtertable</h4>
@@ -260,22 +255,22 @@ components:
   passwordToggle:
     title: "Toggle Password Visibility"
     description: "Display the entered password with a toggle."
-    markup: | 
+    markup: |
       <div class="input-group">
         <input type="password" class="form-control" name="" placeholder="Password">
         <span class="input-group-addon passwordToggle"><i class="fa fa-square-o"></i> Show</span>
       </div>
-    effect: | 
+    effect: |
       <div class="row">
           <div class="col-md-6">
             <div class="input-group">
               <input type="password" class="form-control" name="" placeholder="Password">
               <span class="input-group-addon passwordToggle"><i class="fa fa-square-o"></i> Show</span>
             </div>
-      
+
           </div>
           <div class="col-md-6">
-      
+
           </div>
       </div>
   fakeAuth:
@@ -289,35 +284,35 @@ components:
               <?php include(snippet("loginForm"));?>
 
           </div>
-      </div> 
+      </div>
   multilinguality:
     title: "Multilinguality"
-    description: "Easily show translated content."
-    markup: |  
-      <div class="row">
-        <div class="col-md-12">
-          <h4>Translations</h4>
+    description: |
+      Easily show translated content. Translations are handled in the file translations.yml located in the folder assets/data.
+      The structure of the translations is:
+      <pre><code class="html">translations:
+        thisIsAtest:             //  key
+          en: This is a test     //  English Translation
+          de: Das ist ein Test   //  German Translation</code></pre>
+    markup: |
           Key: thisIsAtest <br>
           En: <?php echo __("thisIsAtest","en"); ?> <br>
           De: <?php echo __("thisIsAtest","de"); ?> <br>
           Fr: <?php echo __("thisIsAtest","fr"); ?> (Not available) <br>
-        </div>
-      </div>
-    effect: |  
+    effect: |
       <div class="row">
         <div class="col-md-12">
-          <h4>Translations</h4>
           Key: thisIsAtest <br>
-          En: <?php echo __("thisIsAtest","en"); ?> <br>
-          De: <?php echo __("thisIsAtest","de"); ?> <br>
-          Fr: <?php echo __("thisIsAtest","fr"); ?> (Not available) <br>
+          En: This is a test <br>
+          De: Das ist ein Test <br>
+          Fr: thisIsAtest (Not available) <br>
         </div>
       </div>
   fakeGoogle:
     title: "Fake Google: Simulate Google Searches"
     description: ""
-    markup: 
-    effect: 
+    markup:
+    effect:
   footer:
     title: "Default Footer"
     description: "Some functions come in handy at all times."
