@@ -98,8 +98,9 @@ foreach($files as $file) {
                                     <div class="row">
                                         <div class="col-md-6">
                                             <h4>Snippets</h4>
-                                            We have a series of snippets we use and this cheatsheet helps us keep track of whick shortcut triggers which snippet.
-                                        </div>
+                                            We have a series of snippets we use and this cheatsheet helps us keep track of which shortcut triggers which snippet.
+<!--                                             This cheatsheet gives you an overview of the most used snippets including the corresponding shortcuts.
+ -->                                        </div>
                                     </div>
                                     <!-- TAB 1 CONTENT -->
 

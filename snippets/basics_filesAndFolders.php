@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-8">
-                        This is the default structure of of Protostrap:
+                        This is the default structure of Protostrap:
                         <div class="micropadding"></div>
                         <pre>
 - assets
@@ -80,10 +80,10 @@ testpage.php
                             This file let's you add your own PHP functions. Adding them into functions_controller makes sure that you have the functions at you disposal in every page or snippet.
                             <br><br>
                             <strong>google.php</strong><br>
-                            This is the file that contains the fake google search page that allows you to simulate google search scenarios.
+                            This is the file that contains a fake google search page that allows you to simulate google search scenarios.
                             <br><br>
                             <strong>testpage.php</strong><br>
-                            This file contains examples of uses .
+                            This file contains examples of uses.
                             <br><br>
     </div>
     <div class="col-md-4">

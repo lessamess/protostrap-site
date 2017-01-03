@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-8">
-        Protostrap is not a single tool but more a collection of tools that Ptotostrap ties together and extends.
+        Protostrap is not a single tool but more a collection of tools that Protostrap ties together and extends.
         <br><br>
         It's composed of:
         <ul class="simpleList">
