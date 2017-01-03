@@ -13,7 +13,7 @@ foreach ($navKeys as $key => $item){
  }
 ?>
 
-<div id="dowloadButton" class="btn btn-success btn-lg">Download Protostrap</div>
+<a href="https://github.com/lessamess/Protostrap/archive/master.zip" id="dowloadButton" class="btn btn-success btn-lg">Download Protostrap</a>
 
 <header role="banner" class="navbar navbar-default navbar-fixed-top ">
   <div class="container">
