@@ -13,7 +13,7 @@ foreach ($navKeys as $key => $item){
  }
 ?>
 
-
+<div id="dowloadButton" class="btn btn-success btn-lg">Download Protostrap</div>
 
 <header role="banner" class="navbar navbar-default navbar-fixed-top ">
   <div class="container">
