@@ -66,6 +66,30 @@ php:
     title: "Function Reference"
 
 
+cssClasses:
+  simpleList:
+    title: "Simple List"
+    description: "A bullet point list with some margin between the entries"
+    markup: |
+      <ul class="simpleList">
+          <li>one</li>
+          <li>
+              two with this. <br>
+              And that
+          </li>
+          <li>three</li>
+      </ul>
+  micropadding:
+    title: "Micropadding"
+    description: "Sometimes you need a little more space between things. This inserts an 8px high space"
+    markup: "<div class=\"micropadding\"></div>"
+    effect: |
+      <div class="flexbox padded">
+          <div class="flex-1" >With a regular break:<br>Continue here</div>
+          <div class="flex-1" >With Micropadding <div class="micropadding"></div>Continue here</div>
+          <div class="flex-1" >With two breaks:<br><br>Continue here</div>
+      </div>
+
 jsHelperClasses:
   selectOnFocus:
     title: "Select on Focus"
@@ -141,7 +165,6 @@ dataLayer:
         title: "The Prototype Session"
       dataDirectory:
         title: "The data directory"
-
   simpleDataLayer:
     title: "Simple Data-Layer in Text Files"
   usingGoogleSpreadsheets:
@@ -209,9 +232,9 @@ features:
 
 featureTeaser:
   1:
-    title: "Bootstrap 3 & Font Awesome 4.7"
+    title: "Bootstrap 3 & Font Awesome 4"
     text: ""
-  2:
+  3:
     title: "A Quick Install Script"
     text: ""
   3:
@@ -228,7 +251,7 @@ featureTeaser:
     text: ""
   7:
     title: "Bootstrap Extentions"
-    text: "Boostrap Datepicker, Switch, Select, Fileupload, Sortables"
+    text: "Boostrap Datepicker, Switch Buttons, Select, Fileupload, Sortables"
   8:
     title: "Google Search Simulation"
     text: ""
