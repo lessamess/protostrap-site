@@ -38,7 +38,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
 
                     <h4>Icons</h4>
                     Fontawesome 4.3:
-                    <div><i class="fa fa-user-plus"></i> Add User &nbsp;&nbsp;<i class="fa fa-bed"></i> Bed</div>
+                    <div><i class="fa fa-user-o"></i> Add User &nbsp;&nbsp;<i class="fa fa-bed"></i> Bed</div>
                     <br>
                     <h4>Typeahead</h4>
                     <span class="form">

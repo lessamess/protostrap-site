@@ -95,14 +95,18 @@
         });
 
         var mainContentOffset = $("#mainContent").offset();
-        $('body').scrollspy({
-            target: '.ps-docs-sidebar',
-            offset: mainContentOffset.top+20
-        });
+        if(mainContentOffset != undefined){
+            $('body').scrollspy({
+                target: '.ps-docs-sidebar',
+                offset: mainContentOffset.top+20
+            });
+        }
 
         $(".selectOnFocus").focus(function() {
             $(this).select();
         });
+
+
 
 
     })

@@ -14,9 +14,10 @@ table.tablesorter thead tr th, table.tablesorter tfoot tr th {
 	padding: 4px;
 }
 table.tablesorter thead tr .header {
-	background-image: url(../../../assets/img/bg.gif);
+	background-image: url(../../../assets/img/sort.svg);
 	background-repeat: no-repeat;
 	background-position: center right;
+    background-size: contain;
 	cursor: pointer;
 }
 table.tablesorter tbody td {

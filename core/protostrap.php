@@ -137,6 +137,8 @@ function makeDateFromString($str){
     return date("d.m.Y", strtotime($str));
 }
 
+$currentYear = date("Y");
+
 function setUserVars($user){
         $GLOBALS['activeUser'] = $user;
         $GLOBALS['username'] = $user['username'];

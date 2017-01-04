@@ -50,6 +50,7 @@ footer a, #mainContent a {
     background-color: #00796B;
 }
 
+
 .simpleList {
     margin: 12px 0;
 }
@@ -73,47 +74,6 @@ body {
 .navbar-bright li > a:hover {
     background-color:#003300;
 }
-
-/*CARD*/
-
-.card {
-    position: relative;
-    display: block;
-    margin-bottom: .75rem;
-    background-color: #fff;
-    border-radius: .25rem;
-    border: 1px solid rgba(0,0,0,.125);
-}
-.card-img-top {
-    border-top-right-radius: calc(.25rem - 1px);
-    border-top-left-radius: calc(.25rem - 1px);
-    width:100%;
-}
-
-.card-block {
-    padding: 1.25rem;
-}
-.card-title {
-    margin-bottom: .75rem;
-}
-.alsFavoritMarkieren{
-    height: 30px;
-    width: 30px;
-    position: relative;
-    top: 20px;
-    right: -23vw;
-    border-radius: 20px;
-    border: 1px solid $border-color;
-    background-color: white;
-    font-size: 24px;
-    text-align: center;
-}
-.alsFavoritMarkieren .icon{
-    position:relative;
-    top: -2px;
-}
-
-/*CARD*/
 
 
 @media (min-width: 979px) {
@@ -179,21 +139,6 @@ body {
 
 .noborder{
     border: none;
-}
-
-.btn.btn-circle {
-    width: 50px;
-    height:50px;
-    border-radius: 25px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.btn.btn-circle i {
-    height: 50px;
-    line-height: 48px;
-    font-size: 18px;
-    vertical-align: middle;
 }
 
 
@@ -266,6 +211,9 @@ table.table.table-plain tr td:first-child{
 .ps-docs-sidebar .nav>.active>ul.nav {
     display: block;
 }
+
+
+
 
 /*
 
