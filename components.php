@@ -50,7 +50,7 @@ $activeNavigation = "components";
                     <?php
                     $sections = $components;
                     $pageName = "components";
-                    
+
                     foreach ($components as $key => $component) {
                     $effect = $component['markup'];
                     if(isset($component['effect'])){
@@ -65,12 +65,11 @@ $activeNavigation = "components";
                         <td style="max-width:600px">
                             <?php echo $component['description'] ;?><br>
                             <div class="micropadding"></div>
+                            <?php echo $effect ;?>
+                            <br>
                             Markup:
-                        <br><pre><code class="html"><?php echo htmlentities($component['markup']) ;?></code></pre>
-                        <br>
-                        Effect: <br>
-                        <?php echo $effect ;?>
-                    </td>
+                            <br><pre><code class="html"><?php echo htmlentities($component['markup']) ;?></code></pre>
+                        </td>
                     </tr>
                     <?php } ?>
 
