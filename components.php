@@ -26,7 +26,6 @@ $activeNavigation = "components";
     <body class="header-fixed">
     <?php include("snippets/navBarTop.php");?>
         <div class="container">
-
             <div class="row">
                 <!--Nav Bar -->
                 <nav class="col-md-3 ps-docs-sidebar hidden-xs">
@@ -65,7 +64,13 @@ $activeNavigation = "components";
                         <td style="max-width:600px">
                             <?php echo $component['description'] ;?><br>
                             <div class="micropadding"></div>
-                            <?php echo $effect ;?>
+                            <?php
+                                if(isset($component['include'])){
+                                    include("./snippets/components_".$component['include'].".php");
+                                } else {
+                                    echo $effect ;
+                                }
+                            ?>
                             <br>
                             Markup:
                             <br><pre><code class="html"><?php echo htmlentities($component['markup']) ;?></code></pre>

@@ -12,6 +12,7 @@
     <link href="<?php echo $pathToAssets ;?>assets/css/extendBootstrapGrid.min.css?time=<?php echo time();?>" rel="stylesheet">
     -->
 
+    <!-- <link href="<?php echo $pathToAssets ;?>assets/css/flex.css?time=<?php echo time();?>" rel="stylesheet"> -->
     <link href="<?php echo $pathToAssets ;?>assets/css/main.css?time=<?php echo time();?>" rel="stylesheet">
 
     <!-- Le fav and touch icons -->

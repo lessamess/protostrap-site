@@ -199,46 +199,34 @@ components:
           <p class="card-text">A description of your card's content.</p>
         </div>
       </div>
-    effect: |
-      <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="card">
-              <img class="card-img-top" src="assets/img/platzhalterbild.jpg" class="img-responsive" alt="Card image cap">
-              <div class="card-block">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">A description of your card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8">
-          </div>
-      </div>
+    include: "card"
+
   cardbuttons:
-    title: "Buttons on Cards"
-    description: "Place a button on your card image."
+    title: "Buttons on Card Images"
+    description: |
+      Place a button on your card image. addingButtons can contain any Font Awesome icons.
+      <ul class="simpleList">
+          <li>
+              Adding the class <b>btn-togglePrimary</b> will toggle the button between Primary and Default style <br>
+              The heart, star and user icons will also toggle between
+              <i class="fa fa-heart-o"></i> outline and <i class="fa fa-heart"></i> filled versions. Other icons will stay the same.
+          </li>
+          <li>Adding the class <b>btn-circle-sm</b> will add a round button in a touchfriendly size</li>
+          <li>Adding the class <b>btn-circle</b> will add a fairly big round button</li>
+      </ul>
     markup: |
       <div class="card">
-        <img class="card-img-top" src="..." class="img-responsive" alt="Card image cap">
-        <div class="card-block">
-          <h4 class="card-title">Card title</h4>
-          <p class="card-text">A description of your card's content.</p>
-        </div>
-      </div>
-    effect: |
-      <div class="row">
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="card">
-            <div class="btn btn-primary btn-circle alsFavoritMarkieren"><i class="fa fa-heart"></i></div>
-            <img class="card-img-top" src="assets/img/platzhalterbild.jpg" class="img-responsive" alt="Card image cap">
-            <div class="card-block">
+          <div class="btn btn-default btn-togglePrimary btn-circle-sm btn-onCard">
+              <i class="fa fa-heart-o"></i>
+          </div>
+          <img class="card-img-top" src="..." class="img-responsive" alt="Image cap">
+          <div class="card-block">
               <h4 class="card-title">Card title</h4>
               <p class="card-text">A description of your card's content.</p>
-            </div>
           </div>
-        </div>
-        <div class="col-md-8">
-        </div>
       </div>
+    include: "cardbuttons"
+
   passwordToggle:
     title: "Toggle Password Visibility"
     description: "Display the entered password with a toggle."
@@ -317,25 +305,7 @@ components:
             <a href="http://protostrap.ch/start.php">Protostrap Documentation</a> &nbsp;&nbsp;
           </div>
         </div>
-    effect: |
-      <div class="">
-        <div class="card cardfooter">
-          <div class="flexbox">
-            <div class="flex-1" >
-              © <?php echo date("Y") ;?> - Project Brand &nbsp;&nbsp;&nbsp;
-              <a href="?session_renew=true"><i class="fa fa-refresh"></i></a>&nbsp;&nbsp;|&nbsp;&nbsp;
-              <a href="javascript:void(0);" class="" data-toggle="collapse" data-target="#collapse<?php echo getUniqueId();?>">Deeplink</a>
-              <div id="collapse<?php echo $lastUniqueId;?>" class="collapse">
-                  <input type="text" class="form-control selectOnClick" name="" placeholder="" value="<?php echo getDeeplink(); ;?>">
-              </div>
-            </div>
-            <div class="flex-1 align-right" >
-              <a href="protostrap.ch/start.php">Protostrap Documentation</a>
-              <br>
-            </div>
-          </div>
-        </div>
-      </div>
+    include: "footer"
 
 css:
   helperClasses:
