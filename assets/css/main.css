@@ -12,8 +12,8 @@ h1.superlarge{
 }
 
 p.sub{
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 36px;
+    line-height: 39px;
     font-weight: 200;
 }
 
@@ -115,6 +115,9 @@ body {
 
 /*CARD*/
 
+.cardfooter{
+    padding:10px;
+}
 
 @media (min-width: 979px) {
   #mynav.affix-top {
@@ -208,7 +211,7 @@ table.table.table-plain tr td:first-child{
 
 #dowloadButton {
     position: fixed;
-    right: 5vw;
+    right: 0.2vw;
     top: 2px;
     z-index: 9999;
 }
@@ -356,3 +359,19 @@ table.table.table-plain tr td:first-child{
             .hljs-meta {
               color: #fff;
             }
+
+
+
+.nopadding{
+    padding-top: 10px !important;
+}
+
+.whyimg{
+    height: 110px;
+}
+
+.background-green{
+    background-color: #CCEAE7;
+    padding:40px;
+    border-bottom: 1px solid #ccc;
+}

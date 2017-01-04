@@ -88,6 +88,7 @@ $activeNavigation = "one";
 
         </div>
         <div class="container">
+            <a href="index_v1.php">V1</a> &nbsp;&nbsp;<a href="index_v2.php">V2</a>
 
             <?php // this includes the footer
             include('./snippets/footer.php');?>
