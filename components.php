@@ -73,7 +73,7 @@ $activeNavigation = "components";
                             ?>
                             <br>
                             Markup:
-                            <br><pre><code class="html"><?php echo htmlentities($component['markup']) ;?></code></pre>
+                            <br><pre class="pre-scrollable"><code class="html"><?php echo htmlentities($component['markup']) ;?></code></pre>
                         </td>
                     </tr>
                     <?php } ?>

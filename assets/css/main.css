@@ -136,6 +136,13 @@ body {
   }
 }
 
+
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+
+
 #mynav li.active a {background-color:red;}
 
 .navbar-brand{
