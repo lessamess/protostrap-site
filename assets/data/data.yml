@@ -190,46 +190,54 @@ components:
     title: "Table filtering"
     description: ""
     markup: |
-      <div class="table-responsive table-responsive-maxheight">
-          <?php
-          $tabledata = $firmen;
-          $noField = array("einheit","pakete");
-          include(snippet("makeTableFromData"));?>
-      </div>
-    effect: |
-      <div class="row">
-          <div class="col-md-12">
-              <h4>Filtertable</h4>
-              <div class="table-responsive table-responsive-maxheight">
-                  <?php
-                  $tabledata = $firmen;
-                  $noField = array("einheit","pakete");
-                  include(snippet("makeTableFromData"));?>
-              </div>
-          </div>
-      </div>
-  spinner:
-    title: "Spinner"
-    description: "Display a spinner to indicate loading content."
-    markup: |
-      <div class="align-center">
-        <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
-      </div>
-    effect: |
-      <div class="row">
-        <div class="col-md-6 align-center">
-          <div class="card">
-            <br>
-            <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
-            <br><br>
-          </div>
-        </div>
-        <div class="col-md-6">
-        </div>
-      </div>
+      <table id="filtertable" class="table table-condensed simpleFilterTable tablesorter">
+          <thead>
+              <tr>
+                  <th class="noWrap header">First Name</th>
+                  <th class="noWrap header">Family Name</th>
+                  <th class="noWrap header">Age</th>
+              </tr>
+              <tr>
+                   <td><input type="text" class="simpleFilterSearch form-control" ></td>
+                   <td><input type="text" class="simpleFilterSearch form-control" ></td>
+                   <td><input type="text" class="simpleFilterSearch form-control" ></td>
+              </tr>
+          </thead>
+
+          <tbody>
+              <tr class=" searchresults filterme ">
+                  <td class="">Anna</td>
+                  <td class="">Alpha</td>
+                  <td class="">55</td>
+              </tr>
+              <tr class=" searchresults filterme ">
+                  ...
+              </tr>
+          </tbody>
+      </table>
+    include: "filtertable"
+  # spinner:
+  #   title: "Spinner"
+  #   description: "Display a spinner to indicate loading content."
+  #   markup: |
+  #     <div class="align-center">
+  #       <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
+  #     </div>
+  #   effect: |
+  #     <div class="row">
+  #       <div class="col-md-6 align-center">
+  #         <div class="card">
+  #           <br>
+  #           <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
+  #           <br><br>
+  #         </div>
+  #       </div>
+  #       <div class="col-md-6">
+  #       </div>
+  #     </div>
   cards:
     title: "Cards"
-    description: "Cards are a useful design pattern for listing objects in a grid view."
+    description: "Cards are a useful design pattern for listing objects in a grid view. These are taken from the Bootstrap 4 alpha."
     markup: |
       <div class="card">
         <img class="card-img-top" src="..." alt="Card image cap">
@@ -252,6 +260,7 @@ components:
           </li>
           <li>Adding the class <b>btn-circle-sm</b> will add a round button in a touchfriendly size</li>
           <li>Adding the class <b>btn-circle</b> will add a fairly big round button</li>
+          <li>The buttons default position is in the top right corner. Adding one of the classes <b>topLeft</b>, <b>bottomLeft</b> or <b>bottomRight</b>, will move it to the respective corner</li>
       </ul>
     markup: |
       <div class="card">
@@ -271,8 +280,10 @@ components:
     description: "Display the entered password with a toggle."
     markup: |
       <div class="input-group">
-        <input type="password" class="form-control" name="password" placeholder="Password">
-        <span class="input-group-addon passwordToggle"><i class="fa fa-square-o"></i> Show</span>
+          <input type="password" class="form-control" name="pw" placeholder="Password">
+          <span class="input-group-addon passwordToggle">
+               <i class="fa fa-square-o"></i> Show
+          </span>
       </div>
     effect: |
       <div class="row">
@@ -289,62 +300,53 @@ components:
       </div>
   fakeAuth:
     title: "Fake Authentication Layer"
-    description: ""
-    markup:
-    effect: |
-      <div class="row">
-          <div class="col-md-12">
-              <a name="login"></a>
-              <?php include(snippet("loginForm"));?>
+    include: "fakeAuth"
+    sub:
+      loginsection:
+        title: "Login"
+      userVariables:
+        title: "User Variables"
+      logoutsection:
+        title: "Logout"
 
-          </div>
-      </div>
   multilinguality:
     title: "Multilinguality"
     description: |
       Easily show translated content. Translations are handled in the file translations.yml located in the folder assets/data.
-      The structure of the translations is:
+      The structure of the translations file is:
+      <div class="micropadding"></div>
       <pre><code class="html">translations:
         thisIsAtest:             //  key
           en: This is a test     //  English Translation
           de: Das ist ein Test   //  German Translation</code></pre>
     markup: |
-          Key: thisIsAtest <br>
-          En: <?php echo __("thisIsAtest","en"); ?> <br>
-          De: <?php echo __("thisIsAtest","de"); ?> <br>
-          Fr: <?php echo __("thisIsAtest","fr"); ?> (Not available) <br>
-    effect: |
-      <div class="row">
-        <div class="col-md-12">
-          Key: thisIsAtest <br>
-          En: This is a test <br>
-          De: Das ist ein Test <br>
-          Fr: thisIsAtest (Not available) <br>
-        </div>
-      </div>
+          Active Language: <?php echo __("thisIsAtest"); ?>
+          English: <?php echo __("thisIsAtest","en"); ?>
+          German: <?php echo __("thisIsAtest","de"); ?>
+          French: <?php echo __("thisIsAtest","fr"); ?> (Not available, returns the key)
+    include: "multilinguality"
+
   fakeGoogle:
-    title: "Fake Google: Simulate Google Searches"
-    description: ""
-    markup:
-    effect:
-  footer:
-    title: "Default Footer"
-    description: "Some functions come in handy at all times."
-    markup: |
-        <div class="flexbox">
-          <div class="flex-1" >
-            ©<?php echo date("Y") ;?> - Project Brand
-            <a href="?session_renew=true"><i class="fa fa-refresh"></i></a>|
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#collapse<?php echo getUniqueId();?>">Deeplink</a>|
-            <div id="collapse<?php echo $lastUniqueId;?>" class="collapse">
-              <input type="text" class="form-control selectOnClick" name="" placeholder="" value="<?php echo getDeeplink(); ;?>">
-            </div>
-          </div>
-          <div class="flex-1 align-right" >
-            <a href="http://protostrap.ch/start.php">Protostrap Documentation</a> &nbsp;&nbsp;
-          </div>
-        </div>
-    include: "footer"
+    title: "Fake Google"
+    include: "fakeGoogle"
+  # footer:
+  #   title: "Default Footer"
+  #   description: "Some functions come in handy at all times."
+  #   markup: |
+  #       <div class="flexbox">
+  #         <div class="flex-1" >
+  #           ©<?php echo date("Y") ;?> - Project Brand
+  #           <a href="?session_renew=true"><i class="fa fa-refresh"></i></a>|
+  #           <a href="javascript:void(0);" data-toggle="collapse" data-target="#collapse<?php echo getUniqueId();?>">Deeplink</a>|
+  #           <div id="collapse<?php echo $lastUniqueId;?>" class="collapse">
+  #             <input type="text" class="form-control selectOnClick" name="" placeholder="" value="<?php echo getDeeplink(); ;?>">
+  #           </div>
+  #         </div>
+  #         <div class="flex-1 align-right" >
+  #           <a href="http://protostrap.ch/start.php">Protostrap Documentation</a> &nbsp;&nbsp;
+  #         </div>
+  #       </div>
+  #   include: "footer"
 
 css:
   helperClasses:
@@ -386,38 +388,48 @@ cssClasses:
           <div class="flex-1" >With two breaks:<br><br>Continue here</div>
       </div>
   table-plain:
-      title: "table-plain"
-      description: "make plain table"
-      markup: |
-        <table class="table table-plain">
-            <tr>
-                <th>Name</th>
-                <th>Price / Kg</th>
-            </tr>
-            <tr>
-                <td>Apples</td>
-                <td>3.10</td>
-            </tr>
-            <tr>
-                <td>Bananas</td>
-                <td>2.90</td>
-            </tr>
-        </table>
-      effect: |
-        <table class="table table-plain p50" >
-            <tr>
-                <th>Name</th>
-                <th>Price / Kg</th>
-            </tr>
-            <tr>
-                <td>Apples</td>
-                <td>3.10</td>
-            </tr>
-            <tr>
-                <td>Bananas</td>
-                <td>2.90</td>
-            </tr>
-        </table>
+    title: "table-plain"
+    description: "make plain table"
+    markup: |
+      <table class="table table-plain">
+          <tr>
+              <th>Name</th>
+              <th>Price / Kg</th>
+          </tr>
+          <tr>
+              <td>Apples</td>
+              <td>3.10</td>
+          </tr>
+          <tr>
+              <td>Bananas</td>
+              <td>2.90</td>
+          </tr>
+      </table>
+    effect: |
+      <table class="table table-plain p50" >
+          <tr>
+              <th>Name</th>
+              <th>Price / Kg</th>
+          </tr>
+          <tr>
+              <td>Apples</td>
+              <td>3.10</td>
+          </tr>
+          <tr>
+              <td>Bananas</td>
+              <td>2.90</td>
+          </tr>
+      </table>
+  table-responsive:
+    title: "Responsive Table"
+    description: "This class can be added to a container for tables that are too wide for the viewport"
+    markup: |
+      <div class="table-responsive">
+          <table>
+            ... A table with many columns
+          </table>
+      </div>
+
   nopadding:
     title: ""
     description: ""
@@ -442,7 +454,21 @@ cssClasses:
     title: ""
     description: ""
     markup: |
-      <div class="btn btn-primary btn-circle"><i class="fa fa-search"></i></div>
+      <div class="btn btn-primary btn-circle">
+          <i class="fa fa-search"></i>
+      </div>
+    effect: |
+      <div class="row">
+          <div class="col-md-2 align-center">
+              <div class="btn btn-primary btn-circle"><i class="fa fa-search"></i></div><br>
+              btn-circle
+          </div>
+          <div class="col-md-3 align-center">
+              <div class="btn btn-primary btn-circle-sm"><i class="fa fa-search"></i></div><br>
+              <div class="micropadding"></div>
+              btn-circle-sm
+          </div>
+      </div>
   btn-pile:
     title: "Button Pile "
     description: "Used to display a group of single toggle buttons as a pile instead of a row"

@@ -4,6 +4,9 @@ include('core/protostrap.php');
 
 $template = "searchfield";
 if(!empty($_GET['q'])){
+
+    header("Location: googleResults.html" );
+        die;
     // Project variables from file assets/data/fakeGoogle.yml
     $urls = $google['urlsToReplace'];
     $replacements = $google['replacements'];
@@ -53,22 +56,21 @@ if(!empty($_GET['q'])){
 // uncomment the following function to force user to be logged in
 // forceLogin(); ?>
 
-    <body style="background-color:#fff;">
+    <body style="background-color:#fff; padding-top: 0">
             <?php switch($template){
                 case 'searchfield'; ?>
                     <div class="container">
                         <div class="row">
-                            <span class="col-md-3">&nbsp;</span>
-                            <span class="col-md-6 align-center">
+                            <span class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 align-center">
                                 <br><br><br><br>
                                 <img src="assets/img/google.png"><br><br>
-                                <form action="google.php" method="get">
+                                <form action="googleResults.html" method="get">
                                     <input type="text" class="form-control googleSearchfield"  name="q" value=""> <br>
                                     <input type="submit"  name="submit" class="btn googleBtn" value="Google Search">
                                     &nbsp;&nbsp;&nbsp;
                                     <input type="submit"  name="submit" class="btn googleBtn" value="I'm Feeling Lucky!">
                                 </form>
-                                </div>
+
                             </span>
                             <span class="col-md-3">&nbsp;</span>
                         </div>

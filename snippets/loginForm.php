@@ -12,9 +12,6 @@ $loginFirstUser = $users[1][$config['loginWith']];
 </div>
 <div class="row">
     <span class="col-xs-12 col-md-3">
-
-
-
         <form action='<?php echo $loginaction ;?>' method='post' id="loginform">
             <div class="form-group">
                 <label for="login">Username</label>
@@ -29,7 +26,7 @@ $loginFirstUser = $users[1][$config['loginWith']];
                 </div>
             </div>
 
-            <button type='button' class="btn-block btn btn-primary loginFirstUser" data-key="<?php echo $loginFirstUser ;?>">Sign in</button>
+            <button type='button' class="btn-block btn btn-primary loginFirstUser" data-key="<?php getFirstUserLogin() ;?>">Sign in</button>
         </form>
     </span>
     <span class="col-xs-12 col-md-offset-1 col-md-6">

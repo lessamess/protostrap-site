@@ -18,14 +18,13 @@
                 <td style="max-width:600px">
                     <?php echo $class['title'] ;?>: <?php echo $class['description'] ;?><br>
                     <div class="micropadding"></div>
+                    <?php echo $effect ;?><br>
+                    <div class="micropadding"></div>
                     Markup:
                         <br>
                         <div class="micropadding"></div>
                         <pre><code class="html"><?php echo htmlentities($class['markup']) ;?></code></pre>
-                    <br>
-                    Effect: <br>
-                    <div class="micropadding"></div>
-                    <?php echo $effect ;?>
+
                 </td>
             </tr>
 

@@ -52,6 +52,10 @@ $GLOBALS["lastUniqueId"] = 1;
 $loggedIn = false ;
 $justLoggedIn = false;
 $showLoginError = false;
+if(!isset($activeUser)){
+    $activeUser = false;
+}
+
 
 if (!empty($_POST['login'])){
     if(strtolower($_POST['login']) == "fail") {
@@ -107,11 +111,12 @@ if(!empty($_GET['deeplink']) && !empty($_GET['user'])){
 }
 
 
-if (!empty($_POST['logout']) || !empty($_GET['logout'])){
+if ((!empty($_POST['logout']) || !empty($_GET['logout'])) AND empty($_POST['login'])){
     setcookie ("loggedIn", "", time() - 3600);
     $loggedIn = false;
     $justLoggedIn = false;
     session_destroy();
+    $activeUser = false;
     if(empty($_POST['noredirect']) AND empty($_GET['noredirect'])){
         header("Location: index.php" );
         die;
@@ -154,6 +159,16 @@ function forceLogin(){
         $users = $GLOBALS['users'];
         include('snippets/forceLogin.php');
     }
+}
+
+function getFirstUserLogin(){
+    if(!isset($GLOBALS['users'])){
+        return "";
+    }
+    $loginWith = $GLOBALS['config']['loginWith'];
+    $users = $GLOBALS['users'];
+    $firstUser = reset($users);
+    echo $firstUser[$loginWith];
 }
 
 function setFromGet($var, $default = false){

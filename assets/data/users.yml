@@ -1,5 +1,4 @@
 users:
-  addId: true
   1:
     fullName: Sara Default
     email: one@company.com
@@ -10,16 +9,8 @@ users:
     email: two@company.com
     username: mara
     role: admin
-  3:
-    fullName: Lara Superadmin
-    email: three@company.com
-    username: lara
-    role: superadmin
 
 roles:
-  superadmin:
-    name: Superadmin
-    permissions: ['createData', 'editData', 'deleteData','addUser']
   admin:
     name: Admin
     permissions: ['createData', 'editData', 'deleteData']

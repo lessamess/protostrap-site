@@ -37,6 +37,10 @@ footer a, #mainContent a {
     margin-top: 0;
 }
 
+h4.sub {
+    font-size: 20px;
+}
+
 .btn-group-lg>.btn, .btn-lg {
     border-radius: 3px;
 }
@@ -372,4 +376,10 @@ table.table.table-plain tr td:first-child{
     background-color: #CCEAE7;
     padding:40px;
     border-bottom: 1px solid #ccc;
+}
+
+pre code pre {
+    border: none;
+    margin: 0;
+    padding: 0
 }

@@ -51,10 +51,13 @@ $activeNavigation = "components";
                     $pageName = "components";
 
                     foreach ($components as $key => $component) {
-                    $effect = $component['markup'];
-                    if(isset($component['effect'])){
-                    $effect = $component['effect'];
-                    }
+                        $effect = "";
+                        if(isset($component['markup'])){
+                            $effect = $component['markup'];
+                        }
+                        if(isset($component['effect'])){
+                        $effect = $component['effect'];
+                        }
                     ?>
 
 
@@ -62,18 +65,21 @@ $activeNavigation = "components";
 
                     <tr>
                         <td style="max-width:600px">
-                            <?php echo $component['description'] ;?><br>
+                            <?php if(isset($component['description'])){
+
+                                echo $component['description'] ;?><br>
                             <div class="micropadding"></div>
                             <?php
+                                }
                                 if(isset($component['include'])){
                                     include("./snippets/components_".$component['include'].".php");
                                 } else {
                                     echo $effect ;
                                 }
-                            ?>
+                                if(isset($component['markup'])){ ?>
                             <br>
-                            Markup:
-                            <br><pre class="pre-scrollable"><code class="html"><?php echo htmlentities($component['markup']) ;?></code></pre>
+                            <pre class="pre-scrollable"><code class="html"><?php echo htmlentities($component['markup']) ;?></code></pre>
+                            <?php } ?>
                         </td>
                     </tr>
                     <?php } ?>
