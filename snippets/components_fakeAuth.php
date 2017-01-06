@@ -127,7 +127,7 @@ Once a user is logged in Protostrap gives exposes a few variables you can work w
                 <br>(You're currently not logged in. <a href="javascript:void(0);" class="loginUser" data-key="one@company.com">Log in</a> to see the array)
             <?php } ?>
             <div class="micropadding"></div>
-            <pre><code><?php var_dump($activeUser) ;?></code></pre>
+            <pre><code><?php var_export($activeUser) ;?></code></pre>
         </td>
     </tr>
     <tr>
@@ -149,7 +149,9 @@ Once a user is logged in Protostrap gives exposes a few variables you can work w
                 <br>(You're currently not logged in. <a href="javascript:void(0);" class="loginUser" data-key="two@company.com">Log in</a> to see the array)
             <?php } ?>
             <div class="micropadding"></div>
-            <pre><code><?php var_dump($userpermissions) ;?></code></pre>
+            <pre><code class=""><?php if(isset($userpermissions)){
+                var_export($userpermissions) ;
+                } else { echo "# Not logged in";}?></code></pre>
 
         </td>
     </tr>

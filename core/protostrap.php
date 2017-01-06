@@ -117,6 +117,12 @@ if ((!empty($_POST['logout']) || !empty($_GET['logout'])) AND empty($_POST['logi
     $justLoggedIn = false;
     session_destroy();
     $activeUser = false;
+    $userpermissions = false;
+    $username = false;
+    $usermail = false;
+    $userrole = false;
+
+
     if(empty($_POST['noredirect']) AND empty($_GET['noredirect'])){
         header("Location: index.php" );
         die;

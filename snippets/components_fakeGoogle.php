@@ -13,7 +13,8 @@
         Protostrap let's you define URLs that it will change to point to the prototype instead. <br><br>
         All the data needed is in the file <b>fakeGoogle.yml</b> in the folder assets/data.
         The file must contain your credentials to Google's custom search. If you haven't already you need to <a href="https://cse.google.com">sign up for Google Custom Search</a> to get the credentials.
-
+        <br><br>
+        Apart from the call parameters you can define the URLs that you want to replace and what they should be replaced with.
         <pre><code>google:
   callParameters:
     cx: "YOUR-CS-IDENTIFICATION"
