@@ -369,7 +369,8 @@ table.table.table-plain tr td:first-child{
 }
 
 .whyimg{
-    height: 110px;
+    height: 140px;
+    padding-top: 30px;
 }
 
 .background-green{
