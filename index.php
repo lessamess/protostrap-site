@@ -42,7 +42,7 @@ $activeNavigation = "one";
                             </a>
                             <br>
                             <div class="micropadding"></div>
-                            <small>Current Version: v3.0</small>
+                            <small>Current Version: v<?php echo $protostrapVersion ;?></small>
                         </span>
                     <br>
                 </div>
@@ -53,11 +53,11 @@ $activeNavigation = "one";
             <div class="row background-green">
                 <div class="col-md-8">
                     <h2 class="nopadding">Protostrap in a nutshell</h2>
-                    <p class="lead">Protostrap is an easy to learn, simple but effective prototyping tool, that lets you build highly interactive prototypes for desktop or mobile quickly. The beauty of it? You're not just linking static screens - you are able to show entire processes including dependencies, real data and microinteractions. You're protoype will be like the real deal, only more flexible and without visual design.</p>
-                    <p class="lead">Prototyping is an open source framework and <b>free</b>! </p>
+                    <p class="lead">Protostrap is an easy to learn, simple yet effective prototyping tool. It let's you build highly interactive prototypes for desktop or mobile in no time. With Protostrap you can show entire processes with real data and microinteractions. Your prototype will be like the real deal - before the real deal.</p>
+                    <p class="lead">Protostrap is an open source framework and <b>free</b>! </p>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive" src="assets/img/mobiledemo.gif" alt="" style="min-height:200px; border: 1px solid lightgrey;">                
+                    <img class="img-responsive" src="assets/img/mobiledemo.gif" alt="" style="min-height:200px; border: 1px solid lightgrey;">
                 </div>
             </div>
             <div class="micropadding"></div>
@@ -66,7 +66,7 @@ $activeNavigation = "one";
             <div class="row">
                 <div class="col-md-8">
                     <h2 class="nopadding">Why Protostrap?</h2>
-                    <p class="lead">There are tons of prototyping tools out there – each one of them covers a different need. Protostrap's strength lays in it's flexibility and it's data drivenness. It's aimed at designers who want to design complex processes and know the basics of PHP, Javascript, HTML & CSS.</p>
+                    <p class="lead">There are tons of prototyping tools out there – each one of them covers a different need. Protostrap's strength lays in its flexibility and its data drivenness. It is aimed at designers who want to design complex processes and know the basics of PHP, Javascript, HTML & CSS.</p>
                 </div>
                 <div class="col-md-4">
                 </div>
@@ -180,7 +180,7 @@ $activeNavigation = "one";
                         </a>
                         <br>
                         <div class="micropadding"></div>
-                        <small>Current Version: v3.0</small>
+                        <small>Current Version: <?php echo $protostrapVersion ;?></small>
                     </span>
                     <br>
                     <br>

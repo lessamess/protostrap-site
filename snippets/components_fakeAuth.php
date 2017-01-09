@@ -43,7 +43,7 @@ The essential part of the form is the Email field. Protostrap will log the user 
                 <form action='' method='post' id="loginform">
                     <div class="form-group">
                         <label for="login">Email</label>
-                        <input id="login" name='login' class='form-control' type='text' placeholder='Email' autofocus>
+                        <input id="login" name='login' class='form-control' type='text' placeholder='Email' >
                     </div>
 
                     <div class="form-group">

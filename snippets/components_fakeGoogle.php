@@ -14,7 +14,7 @@
         All the data needed is in the file <b>fakeGoogle.yml</b> in the folder assets/data.
         The file must contain your credentials to Google's custom search. If you haven't already you need to <a href="https://cse.google.com">sign up for Google Custom Search</a> to get the credentials.
         <br><br>
-        Apart from the call parameters you can define the URLs that you want to replace and what they should be replaced with.
+        Besides the call parameters you have to define the URLs that you want to replace and what they should be replaced with. <br><br>
         <pre><code>google:
   callParameters:
     cx: "YOUR-CS-IDENTIFICATION"
@@ -22,9 +22,12 @@
     gl: "uk" #country code
 
   urlsToReplace:
-    1: "http://www.example.com?ID=1234"
+    1: "http://www.example.com"
   replacements:
     1: "index.php"</code></pre>
+
+    Protstrap will match any links that contain the urls specified, even if the links themselves are longer. <br>
+    In the example above Protostrap would also replace the link http://www.example.com/category/ since the url to replace is contained in the link.
 
     </div>
 </div>

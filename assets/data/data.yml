@@ -2,6 +2,7 @@ applicationKey: ProtostrapSite
 application: "Protostrap Docs"
 brand: Protostrap
 
+protostrapVersion: "3.1"
 
 gettingStarted:
   requirements:
@@ -44,31 +45,67 @@ components:
     markup: |
       <div class="stepper">
         <!-- Stepper: Steps -->
-        <div class="mysteps">
-          <ul class="steps">
-            <li id="step-tab-1" data-target="#step1" class="active"><span id="badge1" class="label label-as-badge label-info">1</span> Step 1<span class="chevron"></span></li>
-            <li id="step-tab-2" data-target="#step2"><span id="badge2" class="label label-default label-as-badge">2</span> Step 2<span class="chevron"></span></li>
-            <li id="step-tab-3" data-target="#step3"><span id="badge3" class="label label-default label-as-badge">3</span> Step 3<span class="chevron"></span></li>
-            <li id="step-tab-4" data-target="#step4"><span id="badge4" class="label label-default label-as-badge">4</span> Step 4<span class="chevron"></span></li>
-          </ul>
-        </div>
+        <ul class="steps">
+          <li id="step-tab-1" data-target="#step1" class="active">
+            <span id="badge1" class="label label-as-badge label-info">1</span>
+            Step 1
+            <span class="chevron"></span>
+          </li>
+          <li id="step-tab-2" data-target="#step2">
+            <span id="badge2" class="label label-default label-as-badge">2</span>
+            Step 2
+            <span class="chevron"></span>
+          </li>
+          <li id="step-tab-3" data-target="#step3">
+            <span id="badge3" class="label label-default label-as-badge">3</span>
+            Step 3
+            <span class="chevron"></span>
+          </li>
+          <li id="step-tab-4" data-target="#step4">
+            <span id="badge4" class="label label-default label-as-badge">4</span>
+            Step 4
+            <span class="chevron"></span>
+          </li>
+        </ul>
         <!-- Stepper Content -->
         <div class="step-content">
+          <!-- Step 1 -->
           <div class="step-pane step-pane-1 active" id="step1">
-            <a class="btn btn-primary btn-next" data-nextid="2" type="button" href="javascript:void(0);">Next</a>
+            <a class="btn btn-primary btn-next"
+               data-nextid="2" type="button" href="javascript:void(0);">
+               Next
+            </a>
           </div>
+          <!-- Step 2 -->
           <div class="step-pane step-pane-2 " id="step2">
-            <a class="btn btn-default btn-prev " data-previd="1" type="button" href="javascript:void(0);">Previous</a>
-            <a class="btn btn-primary btn-next" data-nextid="3" type="button" href="javascript:void(0);">Next</a>
+            <a class="btn btn-default btn-prev "
+               data-previd="1" type="button" href="javascript:void(0);">
+               Previous
+            </a>
+            <a class="btn btn-primary btn-next"
+               data-nextid="3" type="button" href="javascript:void(0);">
+               Next
+            </a>
           </div>
+          <!-- Step 3 -->
           <div class="step-pane step-pane-3 " id="step3">
-            <a class="btn btn-default btn-prev " data-previd="2" type="button" href="javascript:void(0);">Previous</a>
-            <a class="btn btn-primary btn-next" data-nextid="4" type="button" href="javascript:void(0);">Next</a>
+            <a class="btn btn-default btn-prev "
+               data-previd="2" type="button" href="javascript:void(0);">
+               Previous
+            </a>
+            <a class="btn btn-primary btn-next"
+               data-nextid="4" type="button" href="javascript:void(0);">
+               Next
+            </a>
           </div>
+          <!-- Step 4 -->
           <div class="step-pane step-pane-4 " id="step4">
-            <a class="btn btn-default btn-prev " data-previd="3" type="button" href="javascript:void(0);">Previous</a>
+            <a class="btn btn-default btn-prev "
+               data-previd="3" type="button" href="javascript:void(0);">
+               Previous
+            </a>
           </div>
-          
+
         </div>
 
     effect: |
@@ -76,17 +113,20 @@ components:
         <div class="col-md-12">
           <h4>Stepper</h4>
           <div class="stepper">
-            <div class="mysteps">
-              <ul class="steps">
-                <li id="step-tab-1" data-target="#step1" class="active"><span id="badge1" class="label label-as-badge label-info">1</span> Step 1<span class="chevron"></span></li>
-                <li id="step-tab-2" data-target="#step2"><span id="badge2" class="label label-default label-as-badge">2</span> Step 2<span class="chevron"></span></li>
-                <li id="step-tab-3" data-target="#step3"><span id="badge3" class="label label-default label-as-badge">3</span> Step 3<span class="chevron"></span></li>
-                <li id="step-tab-4" data-target="#step4"><span id="badge4" class="label label-default label-as-badge">4</span> Step 4<span class="chevron"></span></li>
-              </ul>
-            </div>
+            <ul class="steps">
+              <li id="step-tab-1" data-target="#step1" class="active">
+                <span id="badge1" class="label label-as-badge label-info">1</span> Step 1<span class="chevron"></span>
+              </li>
+              <li id="step-tab-2" data-target="#step2"><span id="badge2" class="label label-default label-as-badge">2</span> Step 2<span class="chevron"></span></li>
+              <li id="step-tab-3" data-target="#step3"><span id="badge3" class="label label-default label-as-badge">3</span> Step 3<span class="chevron"></span></li>
+              <li id="step-tab-4" data-target="#step4"><span id="badge4" class="label label-default label-as-badge">4</span> Step 4<span class="chevron"></span></li>
+            </ul>
             <div class="step-content">
               <div class="step-pane step-pane-1 active" id="step1">
-                <a class="btn btn-primary btn-next" data-nextid="2" type="button" href="javascript:void(0);">Next</a>
+                <a class="btn btn-primary btn-next"
+                   data-nextid="2" type="button" href="javascript:void(0);">
+                   Next
+                </a>
               </div>
               <div class="step-pane step-pane-2 " id="step2">
                 <a class="btn btn-default btn-prev " data-previd="1" type="button" href="javascript:void(0);">Previous</a>
@@ -103,8 +143,8 @@ components:
           </div>
         </div>
       </div>
-  sortTable:
-    title: "Table sorting"
+  draggables:
+    title: "Draggables"
     description: "Sort elements in a list or grid with drag and drop."
     markup: |
       <!-- Sortable List -->
@@ -148,49 +188,33 @@ components:
         </div>
       </div>
   filterTable:
-    title: "Table filtering"
-    description: ""
-    markup: |
-      <div class="table-responsive table-responsive-maxheight">
-          <?php
-          $tabledata = $firmen;
-          $noField = array("einheit","pakete");
-          include(snippet("makeTableFromData"));?>
-      </div>
-    effect: |
-      <div class="row">
-          <div class="col-md-12">
-              <h4>Filtertable</h4>
-              <div class="table-responsive table-responsive-maxheight">
-                  <?php
-                  $tabledata = $firmen;
-                  $noField = array("einheit","pakete");
-                  include(snippet("makeTableFromData"));?>
-              </div>
-          </div>
-      </div>
-  spinner:
-    title: "Spinner"
-    description: "Display a spinner to indicate loading content."
-    markup: |
-      <div class="align-center">
-        <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
-      </div>
-    effect: |
-      <div class="row">
-        <div class="col-md-6 align-center">
-          <div class="card">
-            <br>
-            <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
-            <br><br>
-          </div>
-        </div>
-        <div class="col-md-6">
-        </div>
-      </div>
+    title: "Table filtering & sorting"
+    description: |
+      Filtering tables is one of the most powerful patterns when dealing with large amounts of data. Protostrap lets you define input fields to filter the rows in a table. <br><br>
+      In addition you can add sorting functionality.
+    include: "filtertable"
+  # spinner:
+  #   title: "Spinner"
+  #   description: "Display a spinner to indicate loading content."
+  #   markup: |
+  #     <div class="align-center">
+  #       <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
+  #     </div>
+  #   effect: |
+  #     <div class="row">
+  #       <div class="col-md-6 align-center">
+  #         <div class="card">
+  #           <br>
+  #           <i class="fa fa-spinner fa-pulse fa-spin fa-3x"></i>
+  #           <br><br>
+  #         </div>
+  #       </div>
+  #       <div class="col-md-6">
+  #       </div>
+  #     </div>
   cards:
     title: "Cards"
-    description: "Cards are a useful design pattern for listing objects in a grid view."
+    description: "Cards are a useful design pattern for listing objects in a grid view. These are taken from the Bootstrap 4 alpha."
     markup: |
       <div class="card">
         <img class="card-img-top" src="..." alt="Card image cap">
@@ -213,6 +237,7 @@ components:
           </li>
           <li>Adding the class <b>btn-circle-sm</b> will add a round button in a touchfriendly size</li>
           <li>Adding the class <b>btn-circle</b> will add a fairly big round button</li>
+          <li>The buttons default position is in the top right corner. Adding one of the classes <b>topLeft</b>, <b>bottomLeft</b> or <b>bottomRight</b>, will move it to the respective corner</li>
       </ul>
     markup: |
       <div class="card">
@@ -232,8 +257,10 @@ components:
     description: "Display the entered password with a toggle."
     markup: |
       <div class="input-group">
-        <input type="password" class="form-control" name="password" placeholder="Password">
-        <span class="input-group-addon passwordToggle"><i class="fa fa-square-o"></i> Show</span>
+          <input type="password" class="form-control" name="pw" placeholder="Password">
+          <span class="input-group-addon passwordToggle">
+               <i class="fa fa-square-o"></i> Show
+          </span>
       </div>
     effect: |
       <div class="row">
@@ -250,62 +277,53 @@ components:
       </div>
   fakeAuth:
     title: "Fake Authentication Layer"
-    description: ""
-    markup:
-    effect: |
-      <div class="row">
-          <div class="col-md-12">
-              <a name="login"></a>
-              <?php include(snippet("loginForm"));?>
+    include: "fakeAuth"
+    sub:
+      loginsection:
+        title: "Login"
+      userVariables:
+        title: "User Variables"
+      logoutsection:
+        title: "Logout"
 
-          </div>
-      </div>
   multilinguality:
     title: "Multilinguality"
     description: |
       Easily show translated content. Translations are handled in the file translations.yml located in the folder assets/data.
-      The structure of the translations is:
+      The structure of the translations file is:
+      <div class="micropadding"></div>
       <pre><code class="html">translations:
         thisIsAtest:             //  key
           en: This is a test     //  English Translation
           de: Das ist ein Test   //  German Translation</code></pre>
     markup: |
-          Key: thisIsAtest <br>
-          En: <?php echo __("thisIsAtest","en"); ?> <br>
-          De: <?php echo __("thisIsAtest","de"); ?> <br>
-          Fr: <?php echo __("thisIsAtest","fr"); ?> (Not available) <br>
-    effect: |
-      <div class="row">
-        <div class="col-md-12">
-          Key: thisIsAtest <br>
-          En: This is a test <br>
-          De: Das ist ein Test <br>
-          Fr: thisIsAtest (Not available) <br>
-        </div>
-      </div>
+          Active Language: <?php echo __("thisIsAtest"); ?>
+          English: <?php echo __("thisIsAtest","en"); ?>
+          German: <?php echo __("thisIsAtest","de"); ?>
+          French: <?php echo __("thisIsAtest","fr"); ?> (Not available, returns the key)
+    include: "multilinguality"
+
   fakeGoogle:
-    title: "Fake Google: Simulate Google Searches"
-    description: ""
-    markup:
-    effect:
-  footer:
-    title: "Default Footer"
-    description: "Some functions come in handy at all times."
-    markup: |
-        <div class="flexbox">
-          <div class="flex-1" >
-            ©<?php echo date("Y") ;?> - Project Brand
-            <a href="?session_renew=true"><i class="fa fa-refresh"></i></a>|
-            <a href="javascript:void(0);" data-toggle="collapse" data-target="#collapse<?php echo getUniqueId();?>">Deeplink</a>|
-            <div id="collapse<?php echo $lastUniqueId;?>" class="collapse">
-              <input type="text" class="form-control selectOnClick" name="" placeholder="" value="<?php echo getDeeplink(); ;?>">
-            </div>
-          </div>
-          <div class="flex-1 align-right" >
-            <a href="http://protostrap.ch/start.php">Protostrap Documentation</a> &nbsp;&nbsp;
-          </div>
-        </div>
-    include: "footer"
+    title: "Fake Google"
+    include: "fakeGoogle"
+  # footer:
+  #   title: "Default Footer"
+  #   description: "Some functions come in handy at all times."
+  #   markup: |
+  #       <div class="flexbox">
+  #         <div class="flex-1" >
+  #           ©<?php echo date("Y") ;?> - Project Brand
+  #           <a href="?session_renew=true"><i class="fa fa-refresh"></i></a>|
+  #           <a href="javascript:void(0);" data-toggle="collapse" data-target="#collapse<?php echo getUniqueId();?>">Deeplink</a>|
+  #           <div id="collapse<?php echo $lastUniqueId;?>" class="collapse">
+  #             <input type="text" class="form-control selectOnClick" name="" placeholder="" value="<?php echo getDeeplink(); ;?>">
+  #           </div>
+  #         </div>
+  #         <div class="flex-1 align-right" >
+  #           <a href="http://protostrap.ch/start.php">Protostrap Documentation</a> &nbsp;&nbsp;
+  #         </div>
+  #       </div>
+  #   include: "footer"
 
 css:
   helperClasses:
@@ -347,38 +365,48 @@ cssClasses:
           <div class="flex-1" >With two breaks:<br><br>Continue here</div>
       </div>
   table-plain:
-      title: "table-plain"
-      description: "make plain table"
-      markup: |
-        <table class="table table-plain">
-            <tr>
-                <th>Name</th>
-                <th>Price / Kg</th>
-            </tr>
-            <tr>
-                <td>Apples</td>
-                <td>3.10</td>
-            </tr>
-            <tr>
-                <td>Bananas</td>
-                <td>2.90</td>
-            </tr>
-        </table>
-      effect: |
-        <table class="table table-plain p50" >
-            <tr>
-                <th>Name</th>
-                <th>Price / Kg</th>
-            </tr>
-            <tr>
-                <td>Apples</td>
-                <td>3.10</td>
-            </tr>
-            <tr>
-                <td>Bananas</td>
-                <td>2.90</td>
-            </tr>
-        </table>
+    title: "table-plain"
+    description: "make plain table"
+    markup: |
+      <table class="table table-plain">
+          <tr>
+              <th>Name</th>
+              <th>Price / Kg</th>
+          </tr>
+          <tr>
+              <td>Apples</td>
+              <td>3.10</td>
+          </tr>
+          <tr>
+              <td>Bananas</td>
+              <td>2.90</td>
+          </tr>
+      </table>
+    effect: |
+      <table class="table table-plain p50" >
+          <tr>
+              <th>Name</th>
+              <th>Price / Kg</th>
+          </tr>
+          <tr>
+              <td>Apples</td>
+              <td>3.10</td>
+          </tr>
+          <tr>
+              <td>Bananas</td>
+              <td>2.90</td>
+          </tr>
+      </table>
+  table-responsive:
+    title: "Responsive Table"
+    description: "This class can be added to a container for tables that are too wide for the viewport"
+    markup: |
+      <div class="table-responsive">
+          <table>
+            ... A table with many columns
+          </table>
+      </div>
+
   nopadding:
     title: ""
     description: ""
@@ -403,7 +431,21 @@ cssClasses:
     title: ""
     description: ""
     markup: |
-      <div class="btn btn-primary btn-circle"><i class="fa fa-search"></i></div>
+      <div class="btn btn-primary btn-circle">
+          <i class="fa fa-search"></i>
+      </div>
+    effect: |
+      <div class="row">
+          <div class="col-md-2 align-center">
+              <div class="btn btn-primary btn-circle"><i class="fa fa-search"></i></div><br>
+              btn-circle
+          </div>
+          <div class="col-md-3 align-center">
+              <div class="btn btn-primary btn-circle-sm"><i class="fa fa-search"></i></div><br>
+              <div class="micropadding"></div>
+              btn-circle-sm
+          </div>
+      </div>
   btn-pile:
     title: "Button Pile "
     description: "Used to display a group of single toggle buttons as a pile instead of a row"
@@ -616,6 +658,7 @@ keyBindings:
   foreach: "ctrl+f"
   vd: "ctrl+v"
   click: "ctrl+c"
+
 
 showcases:
   1:
