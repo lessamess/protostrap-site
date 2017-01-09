@@ -671,11 +671,11 @@ showcases:
     category: "Data"
   3:
     title: "Saved Data in a session"
-    bild: "assets/img/searchhistory25.gif"
+    bild: "assets/img/searchhistory.gif"
     category: "Data"
   4:
-    title: "Mobile Navigation"
-    bild: "assets/img/pillowsandpans75.gif"
+    title: "Working with data"
+    bild: "assets/img/anzahl.gif"
     category: "Mobile"
   5:
     title: "Checkout"

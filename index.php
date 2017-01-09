@@ -147,8 +147,8 @@ $activeNavigation = "one";
                     <div class="card">
                         <img src="<?php echo $showcase['bild'] ;?>" class="card-img-top img-responsive" alt="">
                         <div class="card-block">
-                            <b class="small"><?php echo $showcase['category'] ;?></b>
-                            <h3 class="nomargin"><?php echo $showcase['title'] ;?></h3>
+<!--                             <b class="small"><?php echo $showcase['category'] ;?></b>
+ -->                            <h3 class="nomargin"><?php echo $showcase['title'] ;?></h3>
                         </div>
                     </div>
                 </div>
