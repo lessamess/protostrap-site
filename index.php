@@ -57,7 +57,7 @@ $activeNavigation = "one";
                     <p class="lead">Protostrap is an open source framework and <b>free</b>! </p>
                 </div>
                 <div class="col-md-4">
-                    <img class="img-responsive" src="assets/img/pillowsandpans.gif alt="" style="min-height:400px; border: 1px solid lightgrey;">
+                    <img class="img-responsive" src="assets/img/pillowsandpans50.gif" alt="" style="min-height:400px; border: 1px solid lightgrey;">
                 </div>
             </div>
             <div class="micropadding"></div>
