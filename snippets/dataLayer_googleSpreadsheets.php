@@ -15,8 +15,12 @@
             <li>Do not format the cells. You can if you want, but no formatting will be taken over by Protostrap</li>
          </ul>
          <img class="img-responsive img-thumbnail" src="assets/img/spreadsheet.png" alt="">
+        <a id="spreadsheetInPhp"></a>
+        <h4 class="sub">The spreadsheets' data in PHP</h4>
+        To import the data you have to tell Protostrap the url of the spreadsheet and what variable it should be assigned to.
+        <br>
+        This can be done by adding linkes to the file <b>linkedData.yml</b> in
     </div>
 </div>
-
 
 
