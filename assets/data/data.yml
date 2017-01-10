@@ -664,24 +664,21 @@ showcases:
   1:
     title: "Fake Authentication Layer"
     bild: "assets/img/ps_login.gif"
-    category: "Data"
   2:
     title: "Typeahead"
     bild: "assets/img/ps_typeahead.gif"
-    category: "Data"
   3:
     title: "Saved Data in a session"
-    bild: "assets/img/searchhistory.gif"
-    category: "Data"
+    bild: "assets/img/searchhistory50.gif"
   4:
-    title: "Working with data"
-    bild: "assets/img/anzahl.gif"
-    category: "Mobile"
+    title: "Dynamic data"
+    bild: "assets/img/dynamicdata50.gif"
   5:
     title: "Page Transitions, Mobile"
     bild: "assets/img/placeholderImage.svg"
-    category: "Mobile"
-
+  6:
+    title: "Ready-to-use extensions"
+    bild: "assets/img/placeholderImage.svg"
 
 pluginsAndLibraries:
   1:
