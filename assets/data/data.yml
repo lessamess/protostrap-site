@@ -39,6 +39,9 @@ basics:
     title: "The Admin Panel"
 
 components:
+  typeahead:
+    title: "Twitter Typeahead"
+    include: "typeahead"
   stepper:
     title: "Stepper"
     description: "Show the status of a process with a stepper."
@@ -680,14 +683,16 @@ showcases:
     title: "Ready-to-use extensions"
     bild: "assets/img/placeholderImage.svg"
 
+
+
 pluginsAndLibraries:
   1:
     title: "Twitter Bootstrap"
-    link: http://getbootstrap.com    
+    link: http://getbootstrap.com
     text: "The most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web."
   2:
     title: "Tablesorter"
-    link: http://getbootstrap.com    
+    link: http://getbootstrap.com
     text: "tablesorter is a jQuery plugin for turning a standard HTML table with THEAD and TBODY tags into a sortable table without page refreshes"
   3:
     title: "Bootstrap Select"

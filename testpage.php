@@ -49,18 +49,18 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     </span>
                     <br>
 
-
+                    <br>
                     <h4>Select</h4>
-                    <select class="selectpicker" data-live-search="true" name="select" data-width="auto">
-                        <option value="">one</option>
-                        <option value="">two</option>
-                        <option value="">three</option>
+                    <select class="selectpicker" data-live-search="true" name="select" data-count-selected-text="{0} selected" data-icon-base="fa" data-tick-icon ="fa fa-check" data-width="auto" multiple data-selected-text-format="count > 2" title="- Select user -">
+                        <?php foreach ($names['data'] as $key => $name): ?>
+                            <option value=""><?php echo $name['first_name'] ." " . $name['family_name'] ;?></option>
+                        <?php endforeach ?>
                     </select>
                     <br>
 
-
+                    <br>
                     <h4>Datepicker</h4>
-                    <div class="input-group date" id="" data-date="">
+                    <div class="input-group date" id="datepicker" data-date="">
                         <input class="form-control" type="text" value="">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     </div>
