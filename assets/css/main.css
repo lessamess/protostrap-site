@@ -384,3 +384,18 @@ pre code pre {
     margin: 0;
     padding: 0
 }
+
+.overlayicon{
+    color:#fff;
+    padding:18px 16px 16px 24px;
+    position: absolute;
+    top: 83px;
+    left: 140px;
+    width: 68px;
+    height: 68px;
+    z-index: 10;
+    background-color: rgba(0,150,136,0.8);
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+}

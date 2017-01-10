@@ -665,23 +665,30 @@ keyBindings:
 
 showcases:
   1:
-    title: "Fake Authentication Layer"
-    bild: "assets/img/ps_login.gif"
+    title: "Ready-to-use extensions"
+    gif: "assets/img/extensions.gif"
+    bild: "assets/img/extensions.jpg"
+
   2:
     title: "Typeahead"
-    bild: "assets/img/ps_typeahead.gif"
+    gif: "assets/img/ps_typeahead.gif"
+    bild: "assets/img/ps_typeahead.jpg"
   3:
-    title: "Saved Data in a session"
-    bild: "assets/img/searchhistory50.gif"
+    title: "Fake Authentication Layer"
+    gif: "assets/img/ps_login.gif"
+    bild: "assets/img/ps_login.jpg"
   4:
     title: "Dynamic data"
-    bild: "assets/img/dynamicdata50.gif"
+    gif: "assets/img/dynamicdata.gif"
+    bild: "assets/img/dynamicdata.jpg"
   5:
     title: "Page Transitions, Mobile"
-    bild: "assets/img/pagetransitions.gif"
+    gif: "assets/img/pagetransitions.gif"
+    bild: "assets/img/pagetransitions.jpg"
   6:
-    title: "Ready-to-use extensions"
-    bild: "assets/img/extensions.gif"
+    title: "Saved Data in a session"
+    gif: "assets/img/searchhistory.gif"
+    bild: "assets/img/searchhistory.jpg"
 
 
 

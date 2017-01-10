@@ -57,7 +57,7 @@ $activeNavigation = "one";
                     <p class="lead">Protostrap is an open source framework and <b>free</b>! </p>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-responsive" src="assets/img/pillowsandpansstart02.gif" alt="" style="border: 1px solid lightgrey;">
+                    <img class="img-responsive" src="assets/img/pillowsandpansstart.gif" alt="" style="border: 1px solid lightgrey;">
                 </div>
             </div>
             <div class="micropadding"></div>
@@ -145,10 +145,16 @@ $activeNavigation = "one";
                 <?php foreach ($showcases as $key => $showcase) { ?>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="<?php echo $showcase['bild'] ;?>" class="card-img-top img-responsive" alt="">
+<!--                         <a role="button" class="overlayicon align-center"><i class=" fa fa-play fa-2x"></i></a> -->
+                        <!-- img src="<?php echo $showcase['gif'] ;?>" class="card-img-top img-responsive" alt="" -->
+<!--                         <img src="<?php echo $showcase['bild'] ;?>" class="card-img-top img-responsive" alt="">
+ -->                        
+                        <figure>
+                          <img src="<?php echo $showcase['bild'] ;?>" class="card-img-top img-responsive" alt="Static Image" data-alt="<?php echo $showcase['gif'] ;?>">
+                        </figure>
+
                         <div class="card-block">
-<!--                             <b class="small"><?php echo $showcase['category'] ;?></b>
- -->                            <h3 class="nomargin"><?php echo $showcase['title'] ;?></h3>
+                           <h3 class="nomargin"><?php echo $showcase['title'] ;?></h3>
                         </div>
                     </div>
                 </div>
