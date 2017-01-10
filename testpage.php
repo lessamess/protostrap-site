@@ -58,9 +58,9 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     </select>
                     <br>
 
-
+                    <br><br><br>
                     <h4>Datepicker</h4>
-                    <div class="input-group date" id="" data-date="">
+                    <div class="input-group date" id="datepicker" data-date="">
                         <input class="form-control" type="text" value="">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     </div>

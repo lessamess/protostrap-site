@@ -140,7 +140,7 @@ $activeNavigation = "one";
                 </div>
             </div> -->
 
-            <h2 class="nopadding">Showcase</h2>
+            <h2 class="nopadding">Showcases</h2>
             <div class="row flex-row">
                 <?php foreach ($showcases as $key => $showcase) { ?>
                 <div class="col-md-4">

@@ -328,11 +328,6 @@ r=document.activeElement,s=i.is(r),o=i.has(r).length>0,e.isMsie()&&(s||o)&&(t.pr
                     return jQuery(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0;
                 };
             });
-            // filtertable = "#filtertable";
-            // if ($(this).attr("data-filtertable")) {
-            //     //console.log($(this).attr("data-filtertable"));
-            //     filtertable = "#"+ $(this).attr("data-filtertable");
-            // }
 
 
             filtertable = false;
