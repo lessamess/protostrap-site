@@ -309,6 +309,9 @@ components:
   fakeGoogle:
     title: "Fake Google"
     include: "fakeGoogle"
+  pageTransitions:
+    title: "Page Transitions"
+    include: "pageTransitions"
   # footer:
   #   title: "Default Footer"
   #   description: "Some functions come in handy at all times."
@@ -498,6 +501,12 @@ phpFunctions:
       1:
         name: ""
         function: ""
+  makeDateFromString:
+    description: ""
+    parameters:
+      1:
+        name: ""
+        function: ""
   navId:
     description: ""
     parameters:
@@ -555,12 +564,17 @@ dataLayer:
         title: "The Prototype Session"
       dataDirectory:
         title: "The data directory"
-  simpleDataLayer:
+  textFiles:
     title: "Simple Data-Layer in Text Files"
-  usingGoogleSpreadsheets:
+    sub:
+      dynamic:
+        title: "Dynaic values"
+      callingVariables:
+        title: "Calling the variables in PHP"
+  googleSpreadsheets:
     title: "Using Google Spreadsheets"
-  changing:
-    title: "Changing Data"
+  session:
+    title: "The Prototype Session"
 
 functionalReference:
   1:

@@ -159,7 +159,7 @@ include('core/protostrap.php');
 
         <!-- P A G E S -->
         <div id="pt-main" class="pt-perspective">
-            <div id="page-start" class="first-page pt-page page-current container">
+            <div id="page-start" class="first-page pt-page container">
                     <h1>Start</h1>
             </div>
             <div id="page-notifications" class="pt-page container ">

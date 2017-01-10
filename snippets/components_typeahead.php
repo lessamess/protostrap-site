@@ -20,10 +20,12 @@
 &lt;/span></code></pre>
     </div>
 </div>
+<br>
+<h4>Getting the data into the typeahead</h4>
 The file <b>snippets/typeahead.php</b> contains everything that Typeahead needs:
 <ul class="simpleList">
-     <li>The source data: this is the data that is searched and suggested by typahead</li>
-     <li>The display: All the templates to display the typeahead, for the suggestions, the footer and in case no entries are found.</li>
+     <li>The source data: this is the data that is searched and suggested by Typeahead</li>
+     <li>The display: All the templates that Typeahead needs, for the suggestions, the footer and in case no entries are found.</li>
      <li>The callback: defining what happens once an entry is selected.</li>
  </ul>
 <br>
@@ -36,4 +38,33 @@ The file <b>snippets/typeahead.php</b> contains everything that Typeahead needs:
     3: {name:'football', price:'26.49'}
 };</code></pre>
 
+<br> The display and callback are taken care of in this block, which is divided int the segments <b>Typeahead options</b>, <b>Typeahead source and templates</b> and <b>Typeahead callback</b>
+<div class="micropadding"></div>
+<pre><code class="javascript">// Typeahad options
+$('.typeahead').typeahead({
+  highlight: true,
+  minLength: 1
+},
 
+// Typeahead source and templates
+{
+  source: substringMatcher(sourcedata),
+  templates: {
+    notFound: '&lt;p class="tt-noentries" >&lt;strong>No entries found&lt;/strong>&lt;/p>',
+    footer: '&lt;p class="tt-footer" >
+                  &lt;button class="btn btn-default">Show all results&lt;/button>
+             &lt;/p>',
+    suggestion: function(data){
+          return '&lt;p class="topborder">
+                       &lt;strong>' + data.name + '&lt;/strong>
+                       &lt;span class="pull-right">$' + data.price  + '&lt;/span>
+                  &lt;/p>';
+        }
+    }
+})
+
+// Typeahead callback
+.on('typeahead:selected', function (event, selected) {
+    console.log(selected.name);
+    console.log(selected.price);
+});</code></pre>
