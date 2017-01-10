@@ -5,7 +5,7 @@
         Protostrap has a file google.php. When called it shows a page very similar to the Google start page. Users can perform searches and the results are real google search results.
         <br><br>
         <iframe src="google.php" style="width:100%; height:400px; border: 1 solid #ddd;"></iframe>
-        <?php box("<b>Heads up!</b><br>Since google restricts the free searches over their API to 100 searches per day this search result page displays alwas the same result page.", "info", "inherit" , "boxid" , "" ); ?>
+        <?php box("<b>Heads up!</b><br>Google restricts the free searches over their Custom Search API to 100 searches per day. Therefore the search result page above displays alwas the same static result page.", "info", "inherit" , "boxid" , "" ); ?>
         <br>
         <b>Redirecting to the Prototype</b><br>
         The Google results really come from Google. Although: they are not requested through the users broser but through Protostrap itself. So the results pass though Protostrap before being shown to the user. <br><br>
