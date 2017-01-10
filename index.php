@@ -32,7 +32,7 @@ $activeNavigation = "one";
                 <div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 align-center">
                     <h1 class="superlarge">Protostrap</h1>
                     <br>
-                    <p class="sub">Build clickable prototypes faster than ever <br class="visible-md"> with the most advanced, free prototyping tool.</p>
+                    <p class="sub">Build clickable prototypes faster than ever <br class="visible-lg"> with the most advanced, free prototyping tool.</p>
                         <span class="hidden-xs"><br>
                             <a class=" btn btn-success btn-lg" href="https://github.com/lessamess/Protostrap/archive/master.zip">
                                 <i class="fa fa-download"></i> Download Protostrap
@@ -51,13 +51,13 @@ $activeNavigation = "one";
             <div class="micropadding"></div>
             <br>
             <div class="row background-green">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <h2 class="nopadding">Protostrap in a nutshell</h2>
                     <p class="lead">Protostrap is an easy to learn, simple yet effective prototyping tool. It let's you build highly interactive prototypes for desktop or mobile in no time. With Protostrap you can show entire processes with real data and microinteractions. Your prototype will be like the real deal - before the real deal.</p>
                     <p class="lead">Protostrap is an open source framework and <b>free</b>! </p>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-responsive" src="assets/img/pillowsandpans50.gif" alt="" style="min-height:336px; border: 1px solid lightgrey;">
+                <div class="col-md-6">
+                    <img class="img-responsive" src="assets/img/pillowsandpansstart02.gif" alt="" style="border: 1px solid lightgrey;">
                 </div>
             </div>
             <div class="micropadding"></div>

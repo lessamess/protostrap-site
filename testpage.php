@@ -49,14 +49,14 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     </span>
                     <br>
 
-                    <br>
+                    <br><br><br><br><br><br><br>
                     <h4>Select</h4>
                     <select class="selectpicker" data-live-search="true" name="select" data-count-selected-text="{0} selected" data-icon-base="fa" data-tick-icon ="fa fa-check" data-width="auto" multiple data-selected-text-format="count > 2" title="- Select user -">
                         <?php foreach ($names['data'] as $key => $name): ?>
                             <option value=""><?php echo $name['first_name'] ." " . $name['family_name'] ;?></option>
                         <?php endforeach ?>
                     </select>
-                    <br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
                     <br>
                     <h4>Datepicker</h4>
@@ -64,20 +64,20 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                         <input class="form-control" type="text" value="">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     </div>
-                    <br>
+                    <br><br><br><br><br><br><br>
 
 
                     <h4>Fileupload</h4>
                     <form name="fileupload" action="profil.php" method="POST"  enctype="multipart/form-data">
                         <input name="image" type="file" capture="camera" accept="image/*" title="Select Image" data-filename-placement="inside">
                     </form>
-                    <br>
+                    <br><br><br><br><br><br><br><br>
 
                     <h4>Masked Input</h4>
                         Social Security Number <br>
                         <input id="socialsecurity" name="social" type="text" placeholder="00-00-0000">
                     <br>
-                    <br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
                     <h4>Switch</h4>
                     <!-- http://www.bootstrap-switch.org -->
@@ -94,7 +94,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                 </div>
 
             </div>
-            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="row">
                 <div class="col-md-6">
                     <h4>Sortable List</h4>
@@ -117,7 +117,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     </ul>
                 </div>
             </div>
-            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="row">
                 <div class="col-md-12">
                     <h4>Translations</h4>
@@ -147,7 +147,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     </div>
                 </div>
             </div>
-            <br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
             <div class="row">
                 <div class="col-md-12">
                     <h4>Filtertable</h4>
@@ -158,7 +158,8 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     </div>
                 </div>
             </div>
-
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
