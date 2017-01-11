@@ -342,20 +342,10 @@ components:
   #       </div>
   #   include: "footer"
 
+
 css:
   helperClasses:
     title: "Helper Classes"
-
-javascript:
-  helperClasses:
-    title: "Helper Classes"
-  functions:
-    title: "Function Reference"
-
-php:
-  functions:
-    title: "Function Reference"
-
 
 cssClasses:
   simpleList:
@@ -492,7 +482,11 @@ cssClasses:
     markup: |
       <div class="nomargin"></div>
 
-
+javascript:
+  helperClasses:
+    title: "Helper Classes"
+  functions:
+    title: "Function Reference"
 
 jsHelperClasses:
   selectOnFocus:
@@ -505,64 +499,110 @@ jsHelperClasses:
     title: "Toggle Multi Primary"
 
 
+
+php:
+  functions:
+    title: "Function Reference"
+  variables:
+    title: "Variables"
+
 phpFunctions:
   getUniqueId:
-    description: ""
+    description: "Returns a number as a unique identifier. The id is incremented on each call. "
     parameters:
-      1:
-        name: ""
-        function: ""
+      variableName:
+        description: "Variable name, when added the function will use the variable with the paramater's name as unique id variable. If the variable does not exist it will create one."
+        type: "optional"
+
+  yesterday:
+    description: "Returns yesterday's date in the format specified in the config.yml file in the variable defaultPHPdateFormat (default d.m.Y)"
+    parameters:
+      format:
+        description: |
+          The formatting pattern for the date, corresponding to the <a href="http://php.net/manual/en/function.date.php">PHP format parameter strings</a>
+        type: "optional"
+
+  today:
+    description: "Returns today's date in the format specified in the config.yml file in the variable defaultPHPdateFormat (default d.m.Y)"
+    parameters:
+      format:
+        description: |
+          The formatting pattern for the date, corresponding to the <a href="http://php.net/manual/en/function.date.php">PHP format parameter strings</a>
+        type: "optional"
+
+  tomorrow:
+    description: "Returns tomorrow's date in the format specified in the config.yml file in the variable defaultPHPdateFormat (default d.m.Y)"
+    parameters:
+      format:
+        description: |
+          The formatting pattern for the date, corresponding to the <a href="http://php.net/manual/en/function.date.php">PHP format parameter strings</a>
+        type: "optional"
+
+
   makeDateFromString:
+    description: |
+      Returns a date from almost any English textual datetime description. <br />
+      Examples:
+         <ul class="simpleList">
+              <li>last Thursday</li>
+              <li>first Monday of next Month</li>
+              <li>-1 Week</li>
+          </ul>
+      The returned value is in the format specified in the config.yml file in the variable defaultPHPdateFormat (default d.m.Y) "
+    parameters:
+      string:
+        description: "The textual daytime description"
+        type: "mandatory"
+      format:
+        description: |
+          The formatting pattern for the date, corresponding to the <a href="http://php.net/manual/en/function.date.php">PHP format parameter strings</a>
+        type: "optional"
+
+  getUniqueId2:
     description: ""
     parameters:
-      1:
-        name: ""
-        function: ""
-  navId:
+      variableName:
+        description: ""
+        type: "optional"
+
+  alert:
     description: ""
     parameters:
-      1:
-        name: ""
-        function: ""
-  box:
-    description: ""
-    parameters:
-      1:
-        name: ""
-        function: ""
-  label:
-    description: ""
-    parameters:
-      1:
-        name: ""
-        function: ""
-  snippet:
-    description: ""
-    parameters:
-      1:
-        name: ""
-        function: ""
+      variableName:
+        description: ""
+        type: "optional"
+
   showIf:
     description: ""
     parameters:
-      1:
-        name: ""
-        function: ""
+      variableName:
+        description: ""
+        type: "optional"
+
   hideIf:
     description: ""
     parameters:
-      1:
-        name: ""
-        function: ""
+      variableName:
+        description: ""
+        type: "optional"
+
   includeIf:
     description: ""
     parameters:
-      1:
-        name: ""
-        function: ""
+      variableName:
+        description: ""
+        type: "optional"
+
   getDeeplink:
     description: ""
 
+phpVariables:
+  lastUniqueId:
+    description: ""
+  loggedIn:
+    description: ""
+  currentYear:
+    description: "Returns the current year as a four digit number"
 
 
 dataLayer:
@@ -592,28 +632,6 @@ dataLayer:
   session:
     title: "The Prototype Session"
 
-functionalReference:
-  1:
-    id: "uniqueIds"
-    title: "Dynamic Unique IDs"
-  2:
-    id: "snippet"
-    title: "Including Snippets"
-  3:
-    id: "components"
-    title: "Components"
-
-
-cssReference:
-  1:
-    id: "components"
-    title: "Components"
-  2:
-    id: "components"
-    title: "Components"
-  3:
-    id: "components"
-    title: "Components"
 
 features:
   1:

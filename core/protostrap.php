@@ -132,20 +132,35 @@ if ((!empty($_POST['logout']) || !empty($_GET['logout'])) AND empty($_POST['logi
 
 /** DATA HANDLING FUNCTIONS **/
 
-function yesterday(){
-    return date("d.m.Y", time() - 60 * 60 * 24);
+function today($format = false){
+    if($format == false){
+        $format = $GLOBALS['config']['defaultPHPdateFormat'];
+    }
+    return date($format, time() );
+}
+function yesterday($format = false){
+    if($format == false){
+        $format = $GLOBALS['config']['defaultPHPdateFormat'];
+    }
+    return date($format, time() - 60 * 60 * 24);
 }
 
-function tomorrow(){
-    return date("d.m.Y", time() + 60 * 60 * 24);
+function tomorrow($format = false){
+    if($format == false){
+        $format = $GLOBALS['config']['defaultPHPdateFormat'];
+    }
+    return date($format, time() + 60 * 60 * 24);
 }
 
 function makePeriod(){
     return date("M d.", time() - 60 * 60 * 24). date("-d Y", time() + 60 * 60 * 24);
 }
 
-function makeDateFromString($str){
-    return date("d.m.Y", strtotime($str));
+function makeDateFromString($str, $format = false){
+    if($format == false){
+        $format = $GLOBALS['config']['defaultPHPdateFormat'];
+    }
+    return date($format, strtotime($str));
 }
 
 $currentYear = date("Y");
@@ -334,12 +349,7 @@ function getUniqueId($param = "lastUniqueId"){
     return $GLOBALS[$param] = $GLOBALS[$param] + 1;
 }
 
-
-function label($text, $class){
-    echo "<span class=\"label label-{$class}\">{$text}</span>";
-}
-
-function box($text, $class="info",$icon="inherit", $id="", $dismiss = true ){
+function alert($text, $class="info",$icon="inherit", $id="", $dismiss = true ){
     if ($icon == "inherit") {
         switch ($class) {
             case 'success':
@@ -366,7 +376,6 @@ function box($text, $class="info",$icon="inherit", $id="", $dismiss = true ){
         </ul>
       </div>";
 }
-
 
 function navId(){
     if(empty($GLOBALS["navId"])){
