@@ -144,11 +144,7 @@ $activeNavigation = "one";
             <div class="row flex-row">
                 <?php foreach ($showcases as $key => $showcase) { ?>
                 <div class="col-md-4">
-                    <div class="card">
-<!--                         <a role="button" class="overlayicon align-center"><i class=" fa fa-play fa-2x"></i></a> -->
-                        <!-- img src="<?php echo $showcase['gif'] ;?>" class="card-img-top img-responsive" alt="" -->
-<!--                         <img src="<?php echo $showcase['bild'] ;?>" class="card-img-top img-responsive" alt="">
- -->                        
+                    <div class="card">                        
                         <figure>
                           <img src="<?php echo $showcase['bild'] ;?>" class="card-img-top img-responsive" alt="Static Image" data-alt="<?php echo $showcase['gif'] ;?>">
                         </figure>
@@ -164,7 +160,7 @@ $activeNavigation = "one";
             <br>
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 align-center">
-                    <a class=" btn btn-danger btn-block btn-lg" href="demo.php">Demo</a>
+                    <a class=" btn btn-danger btn-block btn-lg" href="demo.php">Demos</a>
                 </div>
             </div>
             <br>

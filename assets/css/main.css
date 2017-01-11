@@ -396,3 +396,7 @@ pre code pre {
     -moz-border-radius: 60px;
     border-radius: 60px;
 }
+
+.imgborderbottom{
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
