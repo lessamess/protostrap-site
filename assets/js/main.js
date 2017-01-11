@@ -116,25 +116,34 @@
           return gif;
         }
         var gif = getGif();
-        
+
 
 
         $('figure').on('click', function() {
-         
+
           var $this   = $(this),
                   $index  = $this.index(),
-                   
+
                   $img    = $this.children('img'),
                   $imgSrc = $img.attr('src'),
                   $imgAlt = $img.attr('data-alt'),
                   $imgExt = $imgAlt.split('.');
-                   
+
           if($imgExt[1] === 'gif') {
               $img.attr('src', $img.data('alt')).attr('data-alt', $imgSrc);
           } else {
               $img.attr('src', $imgAlt).attr('data-alt', $img.data('alt'));
           }
- 
-});
+
+        });
+
+        $("#changeVarOverAjax").blur(function() {
+            updateSessionVar("set","news.1.title",$(this).val());
+                $(this).val("");
+                $("#feedback").removeClass("hide");
+        });
+
+
+
 
     })

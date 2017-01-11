@@ -2455,7 +2455,7 @@ label.radio {
     display: block;
 }
 
-table.table.noTopBorder tr:first-Child td{
+table.table.noTopBorder tr:first-Child td, table.table.noTopBorder tr:first-Child th{
     border-top: none;
 }
 

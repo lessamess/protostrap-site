@@ -1,14 +1,31 @@
 <?php
 include('protostrap.php');
 
-if(empty($_GET['type']) OR empty($_GET['varname']) OR empty($_GET['val'])){
-    echo "Error: Missing Parameters";
+// Type
+if(empty($_GET['type']) ){
+    echo "Error: Missing Type Parameter";
+    die();
+}
+$tmpType = $_GET['type'];
+
+// Varname
+if(empty($_GET['varname']) {
+    echo "Error: Missing Variable Name Parameter";
+    die();
+}
+$tmpVarname = $_GET['varname'];
+
+
+// Value
+if( empty($_GET['val']) && ($tmpType != "remove" OR $tmpType != "null") ){
+    echo "Error: Missing Value Parameter";
     die();
 }
 
-$tmpType = $_GET['type'];
-$tmpVarname = $_GET['varname'];
-$tmpVal = $_GET['val'];
+if( !empty($_GET['val']){
+    $tmpVal = $_GET['val'];
+}
+
 
 if(strpos($tmpVarname, ".") === false && empty($_SESSION[$_GET['varname']])){
     echo "Error: Variable does not exist";
@@ -58,6 +75,42 @@ switch ($tmpType) {
         break;
     case 'remove':
         unset($_SESSION[$tmpVarname][$tmpVal]);
+        if(strpos($tmpVarname, ".") !== false){
+            $el = explode(".", $tmpVarname);
+
+            switch(count($el)){
+                case 1:
+                    unset($_SESSION[$el[0]]);
+                    break;
+                case 2:
+                    unset($_SESSION[$el[0]] [$el[1]);
+                    break;
+                case 3:
+                    unset($_SESSION[$el[0]][$el[1]][$el[2]]);
+                    break;
+                case 4:
+                    unset($_SESSION[$el[0]][$el[1]][$el[2]][$el[3]]);
+                    break;
+                case 5:
+                    unset($_SESSION[$el[0]][$el[1]][$el[2]][$el[3]][$el[4]]);
+                    break;
+                case 6:
+                    unset($_SESSION[$el[0]][$el[1]][$el[2]][$el[3]][$el[4]][$el[5]]);
+                    break;
+                case 7:
+                    unset($_SESSION[$el[0]][$el[1]][$el[2]][$el[3]][$el[4]][$el[5]][$el[6]]);
+                    break;
+                default:
+                    die("Error: " . count($el) . " are too many levels");
+                    break;
+            }
+
+        } else {
+            unset($_SESSION[$tmpVarname]);
+        }
+
+
+
         break;
     case 'null':
         if(is_array($_SESSION[$tmpVarname])){
