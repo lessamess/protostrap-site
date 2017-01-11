@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[ ${1:<?php} box("${3:Message}", "${4:info}", "${5:inherit}" , "${6:boxid}" , "${7:dismiss}" ); ${2:?>} ]]></content>
+    <content><![CDATA[ ${1:<?php} alert("${3:Message}", "${4:info}", "${5:inherit}" , "${6:boxid}" , "${7:dismiss}" ); ${2:?>} ]]></content>
     <!-- Optional: Tab trigger to activate the snippet -->
     <tabTrigger>alert</tabTrigger>
     <!-- Optional: Description to show in the menu -->

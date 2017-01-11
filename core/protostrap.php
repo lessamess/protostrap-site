@@ -356,6 +356,9 @@ function alert($text, $class="info",$icon="inherit", $id="", $dismiss = true ){
                 $icon = "check";
                 break;
             case 'danger':
+                $icon = "bolt";
+                break;
+            case 'warning':
                 $icon = "warning";
                 break;
 

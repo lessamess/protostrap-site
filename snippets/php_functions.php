@@ -1,9 +1,9 @@
-
+<br><br>
 <table class="table table-condensed">
-    <!-- <tr>
+    <tr>
         <th>Function</th>
         <th>Description and Parameters</th>
-    </tr> -->
+    </tr>
 <?php foreach ($phpFunctions as $key => $function) {
     if($function['description'] == ""){continue;}
     ?>

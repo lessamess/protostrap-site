@@ -20,6 +20,6 @@
 
         <br>
         <h3>A word of caution</h3>
-        <?php box("<b>Do NOT use Protostrap in a production environment</b><br>Protostrap is prototyping software and therefore lacks all security features needed for production. <br>Make this also clear to your customers. ", "info", "inherit" , "boxid" , "" ); ?>
+        <?php alert("<b>Do NOT use Protostrap in a production environment</b><br>Protostrap is prototyping software and therefore lacks all security features needed for production. <br>Make this also clear to your customers. ", "info", "inherit" , "boxid" , "dismiss" ); ?>
     </div>
 </div>

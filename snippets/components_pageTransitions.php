@@ -17,7 +17,7 @@
     </div>
     <div class="col-md-4">
         <div id="" class="collapse in collapse<?php echo getUniqueId();?>">
-            <img class="img-responsive" src="assets/img/page_transitions.gif" alt="">
+            <img class="img-responsive" src="assets/img/page_transitions_inline.gif" alt="">
             <a href="javascript:void(0);" class="btn" data-toggle="collapse" data-target=".collapse<?php echo $lastUniqueId;?>">Try this out yourself</a>
         </div>
         <div id="" class="collapse collapse<?php echo $lastUniqueId;?>">
