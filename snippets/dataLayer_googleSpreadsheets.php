@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-8">
-        Google spreadsheets have proven to be a very convenient way to get data into the prototypes, especially large amounts of data. Google spreadsheets are simple to use and can also be shared with customers to make them add data they would like to seee in the prototype.
+        Google spreadsheets have proven to be a very convenient way to get data into prototypes, especially large amounts of data. Google spreadsheets are simple to use and can also be shared with customers to make them add data they would like to seee in the prototype.
 
         <a id="structure"></a>
         <h4 class="sub">The structure of the spreadsheets</h4>
@@ -19,7 +19,7 @@
         <h4 class="sub">The spreadsheets' data in PHP</h4>
         To import the data you have to tell Protostrap the url of the spreadsheet and what variable it should be assigned to.
         <br>
-        This can be done by adding linkes to the file <b>linkedData.yml</b> in
+        This can be done by adding links to the file <b>linkedData.yml</b> in
     </div>
 </div>
 

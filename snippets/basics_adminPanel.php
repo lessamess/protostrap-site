@@ -1,6 +1,8 @@
 <div class="row">
     <div class="col-md-8">
         The Admin Panel is where you can enable or disable 3rd Party extentions and can import spreadsheets to have your prototype's data available locally (great if you want to work offline)
+        <br><br>
+        You can reach the Admin Panel in the browser via <br><b>yourlocalhost/nameofyourproject/core</b>
     <br>
     <br>
     A screnshot of the Admin Panel:

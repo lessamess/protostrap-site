@@ -41,7 +41,7 @@ $activeNavigation = "basics";
                     <div class="row">
                         <div class="col-md-8">
 
-                                   This is an overview of Protostrap's parts. <br>This should give you some orientation of what is where.
+                                   This is an overview of Protostrap's elements and it's strucure to give you some orientation of what is where.
 
                         </div>
                     </div>

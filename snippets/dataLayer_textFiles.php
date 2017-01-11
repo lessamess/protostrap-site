@@ -26,7 +26,7 @@
             </tr>
             <tr>
                 <td>translations.yml</td>
-                <td>The basic file structure for having multilinual support in your prototype</td>
+                <td>The basic file structure for having multilingual support in your prototype</td>
             </tr>
             <tr>
                 <td>users.yml</td>
@@ -66,7 +66,7 @@ news:
 </div>
 <div class="row">
     <div class="col-md-8">
-        All entries in a YAMl file get transformed into variables that you can use in the PHP files. <br>
+        All entries in a YAML file get transformed into variables that you can use in the PHP files. <br>
         Each key that is not indented is a variable. In the example above you would get 3 variables:
         brand, favoriteColor and news. <br><br>
         News is not only a variable, it is an array. The levels of an array are done by indenting each level by exactly 2 spaces. <br>

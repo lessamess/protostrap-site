@@ -33,7 +33,7 @@ testpage.php
      </tr>
      <tr>
          <td>data</td>
-         <td>All YAML files that contain the data of the Prototype. See the section Data Folder for a detailed documentation</td>
+         <td>All YAML files that contain the data of the Prototype. See the section <a href="data.php#textFiles">Simple Data-Layer in Text Files</a> for a detailed documentation</td>
      </tr>
      <tr>
          <td>ico</td>

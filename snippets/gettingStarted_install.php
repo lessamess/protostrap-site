@@ -11,6 +11,7 @@
                 You're done! You can access Protostrap in the browser via: <a href="http://localhost/protostrap">http://localhost/protostrap</a><br>(assuming you have named the folder protostrap.)
             </li>
         </ul>
+        <a name="installMampAndProtostrap"></a>
         <br><br>
         <b>A short tutorial on setting up MAMP and Protostrap</b><br>
         <div class="micropadding"></div>

@@ -55,8 +55,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                         <input type="text" class="form-control typeahead" placeholder="Typeahead (Try: foo)">
                     </span>
                     <br>
-
-                    <br><br><br><br><br><br><br>
+                    <br>
                     <h4>Select</h4>
                     <select class="selectpicker" data-live-search="true" name="select" data-count-selected-text="{0} selected" data-icon-base="fa" data-tick-icon ="fa fa-check" data-width="auto" multiple data-selected-text-format="count > 2" title="Select one or more">
                         <option value="">one</option>
@@ -68,31 +67,22 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                         <option value="">seven</option>
                         <option value="">eight</option>
                     </select>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-
-                    <br>
+                    <br><br>
                     <h4>Datepicker</h4>
                     <div class="input-group date" id="datepicker" data-date="">
                         <input class="form-control" type="text" value="">
                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     </div>
-                    <br><br><br><br><br><br><br>
-
-
+                    <br>
                     <h4>Fileupload</h4>
                     <form name="fileupload" action="profil.php" method="POST"  enctype="multipart/form-data">
                         <input name="image" type="file" capture="camera" accept="image/*" title="Select Image" data-filename-placement="inside">
                     </form>
-                    <br><br><br><br><br><br><br><br>
-
+                    <br>
                     <h4>Masked Input</h4>
                         Social Security Number <br>
                         <input id="socialsecurity" name="social" type="text" placeholder="00-00-0000">
                     <br>
-<<<<<<< 92d306a7c755a0acf24122f8ab0f510a29ea898e
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-=======
                     <br>
                     <h4>Toggle One Button in a group</h4>
 
@@ -101,7 +91,6 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                         <button type="button" class="btn btn-default">Middle</button>
                         <button type="button" class="btn btn-default">Right</button>
                     </div>
->>>>>>> update testpage mit mobile template
 
                     <br><br>
                     <h4>Switch</h4>
@@ -181,7 +170,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     </ul>
                 </div>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <br>
             <div class="row">
                 <div class="col-md-12">
                     <h4>Translations</h4>
@@ -211,7 +200,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     </div>
                 </div>
             </div>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <br><br>
             <div class="row">
                 <div class="col-md-3">
                     <h4>Change Data</h4>
@@ -221,7 +210,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                 </div>
             </div>
             <br>
-
+            <br>
             <div class="row">
                 <div class="col-md-12">
                     <h4>Filtertable and Table Sorter</h4>

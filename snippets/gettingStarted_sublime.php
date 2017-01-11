@@ -70,7 +70,7 @@
             </ul>
             You now have the snippets at your disposal: <br>
             Open any php file in sublime, enter <b>testsnippet</b> and hit the tab key. <br>
-            You should now see this text: <br><b>This is the test snippet. If you can see this it worked!</b>
+            You should now see this text: <br><b>«This is the test snippet. If you can see this it worked!»</b>
             <br><br>
             <?php box("<b>Heads up!</b><br>Make sure to check out or <b><a href=\"cheatsheet.php\">Cheatsheet</a></b> for an easy start with snippets.", "info", "inherit" , "boxid" , "dismiss" ); ?>
 

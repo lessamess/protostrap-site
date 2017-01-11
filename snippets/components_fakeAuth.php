@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" >
     <div class="col-md-10">
     With Protostrap you can prototype rolebased experiences without having to duplicate your prototype for the different users and roles. <br><br>
     Protostrap let's you define users and roles in the file assets/data/users.yml. <br>
@@ -43,7 +43,7 @@ The essential part of the form is the Email field. Protostrap will log the user 
                 <form action='' method='post' id="loginform">
                     <div class="form-group">
                         <label for="login">Email</label>
-                        <input id="login" name='login' class='form-control' type='text' placeholder='Email' >
+                        <input id="login" name='login' class='form-control' type='text' placeholder='Email' autofocus>
                     </div>
 
                     <div class="form-group">

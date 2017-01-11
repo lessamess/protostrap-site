@@ -4,7 +4,7 @@
         <br><br>
         This is done by saving the code of the snippet to a separate file into the directory <b>snippets</b>. <br><br>
 
-        The snippet can then be included into the page by using this function:<br><br>
+        The snippet can then be included into any page by using this function:<br><br>
         <pre><code class="php">// This includes the contents of the file
 // snippets/footer.php
 &lt;?php include("./snippets/footer.php");?></code></pre>

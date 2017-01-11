@@ -8,7 +8,7 @@
             <li>Including meta_javascripts.php loads all the javascript libraries. Without it nothing will be interactive.</li>
         </ul>
 
-        This below is the minimal filestructure that Protostrap requires.
+        Below you find the minimal filestructure that Protostrap requires.
         <div class="micropadding"></div>
     </div>
     <div class="col-md-4">

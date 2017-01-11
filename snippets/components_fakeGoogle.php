@@ -8,7 +8,7 @@
         <?php box("<b>Heads up!</b><br>Google restricts the free searches over their Custom Search API to 100 searches per day. Therefore the search result page above displays alwas the same static result page.", "info", "inherit" , "boxid" , "" ); ?>
         <br>
         <b>Redirecting to the Prototype</b><br>
-        The Google results really come from Google. Although: they are not requested through the users broser but through Protostrap itself. So the results pass though Protostrap before being shown to the user. <br><br>
+        The Google results really come from Google. Although: they are not requested through the users browser but through Protostrap itself. So the results pass though Protostrap before being shown to the user. <br><br>
         Just passing on the list to the users would not make much sense. After all you want to find out how the users react to the prototype. <br>
         Protostrap let's you define URLs that it will change to point to the prototype instead. <br><br>
         All the data needed is in the file <b>fakeGoogle.yml</b> in the folder assets/data.
