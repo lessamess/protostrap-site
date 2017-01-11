@@ -4,6 +4,17 @@ brand: Protostrap
 
 protostrapVersion: "3.1"
 
+
+news:
+  1:
+    title: "Log lady spotted without log"
+    img: "logLady.png"
+    date: ['parse','makeDateFromString', 'yesterday']
+  2:
+    title: "The owls are not what they seem"
+    img: "owls.png"
+    date: ['parse','makeDateFromString', '-5 days']
+
 gettingStarted:
   requirements:
     title: "Requirements"
@@ -573,6 +584,11 @@ dataLayer:
         title: "Calling the variables in PHP"
   googleSpreadsheets:
     title: "Using Google Spreadsheets"
+    sub:
+      dynamicSpreadsheet:
+        title: "Dynamic values in spreadsheets"
+  changingData:
+    title: "Changing Data"
   session:
     title: "The Prototype Session"
 
