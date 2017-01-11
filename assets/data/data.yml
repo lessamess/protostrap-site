@@ -599,11 +599,22 @@ phpFunctions:
 phpVariables:
   lastUniqueId:
     description: ""
-  loggedIn:
-    description: ""
+  loggedIn:  
+    description: "Tells you if a user is logged in. Returns false if not."
   currentYear:
     description: "Returns the current year as a four digit number"
-
+  justloggedIn:
+    description: "Tells you if a user just logged in. This variable returns true only on the page called by the form."
+  activeUser:
+    description: "An array of the current active user. Will show false if no user is logged in."
+  username:
+    description: "The active user's username"
+  usermail:
+    description: "The active user's email"
+  userrole:
+    description: "The active user's role"
+  userpermissions:
+    description: "An array of the permissions given to the user as defined in the users.yml file"
 
 dataLayer:
   concept:

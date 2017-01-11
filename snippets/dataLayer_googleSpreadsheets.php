@@ -54,7 +54,7 @@
 
 The point of this structure is to have a way to display all of the spreadsheet's data in a table, including the table header, while at the same time making sure that the generated keys of the field are proper PHP keys. <br>
 <br>
-Protostrap takes the column names and normalizes them: the are lowercased and all special characters including spaces are replaced by underscores.
+Protostrap takes the column names and normalizes them: they are lowercased and all special characters including spaces are replaced by underscores.
 <br><br>
 The variable generated can be used like any other variable in PHP.
 <br><div class="micropadding"></div>
@@ -73,7 +73,7 @@ endforeach</code></pre>
     <div class="col-md-8">
         <a id="dynamicSpreadsheet"></a>
         <h4 class="sub">Dynamic values in spreadsheets</h4>
-        As with textfiles you can have dynamic values in spreadsheets too. There is one differences though: Dynamic values in spreadsheets are per column and not per value
+        As with textfiles you can have dynamic values in spreadsheets too. There is one differences though: Dynamic values in spreadsheets are per column and not per value.
         To get dynamic values working the name of your column has to have a specific structure:
         <br><br>
         <img class="img-responsive img-thumbnail" src="assets/img/dynamicColumn.png" alt="">
