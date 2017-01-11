@@ -31,7 +31,7 @@ $activeNavigation = "";
         <br>
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
-                <p class="lead">Check out Protostrap's scope with these three demos.</p>
+                <p class="lead">Check out Protostrap's scope with these demos.</p>
             </div>
         </div>
         <br>
@@ -47,7 +47,7 @@ $activeNavigation = "";
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+<!--             <div class="col-md-4">
                 <div class="card">
                     <img class="card-img-top imgborderbottom" src="assets/img/pillowsandpansdesktop.jpg" alt="Pillow & Pan ">
                     <div class="card-block">
@@ -57,7 +57,7 @@ $activeNavigation = "";
                         <a href="javascript:void(0);" class="btn btn-success btn-block btn-lg">Demo</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-md-4">
                 <div class="card">
                     <img class="card-img-top imgborderbottom" src="assets/img/protostrapplain.jpg" alt="Protostrap Plain">
