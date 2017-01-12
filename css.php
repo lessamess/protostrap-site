@@ -40,7 +40,8 @@ $activeNavigation = "css";
                     <br>
                     <div class="row">
                         <div class="col-md-8">
-                            <p class="lead">This is an overview of Protostrap's parts. <br>This should give you some orientation of what is where.</p>
+                            <p class="lead">This is an overview of useful Protostrap CSS Helper Classes. <br>
+                            They help you speed up your coding to the max.</p>
                             <div class="hidden-lg hidden-md">
                                 <?php
                                 $navItems = $css;

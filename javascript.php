@@ -40,7 +40,8 @@ $activeNavigation = "javascript";
                     <br>
                     <div class="row">
                         <div class="col-md-8">
-                            <p class="lead">This is an overview of Protostrap's parts. <br>This should give you some orientation of what is where.</p>
+                            <p class="lead">This is an overview of useful Protostrap Javascript functions. <br>
+                            They help you make your prototype interactive and playful.</p>
                             <div class="hidden-lg hidden-md">
                                 <?php
                                 $navItems = $javascript;
