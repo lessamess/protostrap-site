@@ -38,12 +38,12 @@ $activeNavigation = "";
         <div class="row flex-row">
             <div class="col-md-4">
                 <div class="card">
-                    <a href="http://demo.protostrap.ch/pillowAndPan/index.php"><img class="card-img-top imgborderbottom" src="assets/img/pillowsandpansstart.jpg" alt="Pillow & Pan Demo App"></a>
+                    <a href="http://demo.protostrap.ch/pillowAndPan/iframe.php"><img class="card-img-top imgborderbottom" src="assets/img/pillowsandpansstart.jpg" alt="Pillow & Pan Demo App"></a>
                     <div class="card-block">
                         <h3 class="card-title">«Pillow & Pan» App</h3>
                         <p class="card-text">A fake shopping app with basic functions including: page transitions, search and filters, buy now option with checkout, wishlist and "save as favorite". Try the search with the following search terms: blanket, pan or apron. <br><br></p>
                         <div class="micropadding"></div>
-                        <a href="http://demo.protostrap.ch/pillowAndPan/index.php" class="btn btn-success btn-block btn-lg">Demo</a>
+                        <a href="http://demo.protostrap.ch/pillowAndPan/iframe.php" class="btn btn-success btn-block btn-lg">Demo</a>
                     </div>
                 </div>
             </div>
