@@ -144,7 +144,7 @@ $activeNavigation = "one";
             <div class="row flex-row">
                 <?php foreach ($showcases as $key => $showcase) { ?>
                 <div class="col-md-4">
-                    <div class="card">                        
+                    <div class="card">
                         <figure>
                           <img src="<?php echo $showcase['bild'] ;?>" class="card-img-top img-responsive" alt="Static Image" data-alt="<?php echo $showcase['gif'] ;?>">
                         </figure>
