@@ -274,7 +274,7 @@ function normalize ($string) {
 function get_spreadsheetData($url, $var, $sheet = false){
 
     if(empty($_GET['session_renew']) AND !empty($_SESSION[$var])){
-        // return $_SESSION[$var];
+        return $_SESSION[$var];
     }
 
     $val = Array();
@@ -313,7 +313,7 @@ function get_spreadsheetData($url, $var, $sheet = false){
                 if(strpos($itemval, "_parse_") > 0){
                     $val['fields']['keys'][$key] = $itemval;
                     $parts = explode("_", $itemval);
-                    $val['fields']['labels'][$key] = ucfirst($parts[0]);
+                    $val['fields']['labels'][$key] = $parts[0];
                 } else {
                     $val['fields']['keys'][$key] = normalize(strtolower($itemval));
                     $val['fields']['labels'][$key] = $itemval;

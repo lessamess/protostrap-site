@@ -407,4 +407,26 @@ function checkAuth($config){
 
 }
 
+// Order stuff via uasort($array, 'itemOrder');
+function itemOrder($a, $b) {
+    // Change 'name'-key to whatever Index your array should be ordered by
+    switch ($_SESSION['order_direction'] ) {
+        case 'desc':
+            return $a['age'] < $b['age'] ? 1 : -1;
+            break;
+
+        default:
+            return $a['age'] > $b['age'] ? 1 : -1;
+            break;
+    }
+
+}
+
+function reorder($array, $column, $direction = "asc"){
+
+    $_SESSION['order_column'] = $column;
+    $_SESSION['order_direction'] = $direction;
+    uasort($array, 'itemOrder');
+    return $array;
+}
 include($csd.'/../functions_controller.php');

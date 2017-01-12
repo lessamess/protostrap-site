@@ -30,10 +30,10 @@
                 $syntax .= ");";
                 echo $syntax;
              ?></code></pre>
+                <h4>Parameters</h4>
             <?php
 
                 if(isset($function['parameters'] )){
-                    Echo "<h4>Parameters</h4>";
                     foreach ($function['parameters'] as $pkey => $parameter) {?>
                         <b><?php echo $pkey ;?></b> <?php if($parameter['type'] == "optional"){ echo "&nbsp;&nbsp;(optional)";} ?><br>
                         <blockquote>
@@ -44,7 +44,9 @@
                             <?php } ?>
                         </blockquote>
                     <?php }
-            }
+                } else {
+                    echo "None. <br><br>";
+                }
 
 
 

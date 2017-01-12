@@ -29,13 +29,13 @@ $activeNavigation = "php";
 
             <div class="row">
                 <!--Nav Bar -->
-                <nav class="col-md-3 ps-docs-sidebar hidden-xs">
+                <nav class="col-md-2 ps-docs-sidebar hidden-xs">
                     <?php
                     $navItems = $php;
                     include("./snippets/navigation.php");?>
                 </nav>
                 <!--Main Content -->
-                <div class="col-md-9" id="mainContent">
+                <div class="col-md-10" id="mainContent">
                     <h1>PHP</h1>
                     <br>
                     <div class="row">

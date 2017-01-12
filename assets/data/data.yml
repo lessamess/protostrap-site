@@ -564,6 +564,40 @@ phpFunctions:
       variableName:
         description: ""
         type: "optional"
+  forceLogin:
+    description: "When called Protostrap will force the user to log into the prototype to access the page requested. Instead of the page requested Protostrap will show a login form if the user is not logged in, <br><br>The function is ideally called in the HTML before the &lt;body> tag"
+  getFirstUserLogin:
+    description: "Gets the email of the first user specified in the users array in the users.yml file. "
+  setFromGet:
+    description: ""
+    parameters:
+      variableName:
+        description: ""
+        type: "mandatory"
+      defaultValue:
+        description: ""
+        type: "optional"
+  reorder:
+    description: "Reorders an array by the values of the specified key. Think of the Array as a table and each key as a column. Returns a reordered copy of the original array. "
+    parameters:
+      array:
+        description: "The array to reorder"
+        type: "mandatory"
+      column:
+        description: "The column or key by which the array is to be reordered"
+        type: "mandatory"
+      direction:
+        description: "The direction in which the columns should be reordered. Defaults to ascending if none is provided. Possible values: <b>asc</b> and <b>desc</b>"
+        type: "optional"
+  __:
+    description: "Returns the translation for the provided key. Returns the value of the key when no translation is found."
+    parameters:
+      key:
+        description: "The key to translate"
+        type: "mandatory"
+      language:
+        description: "The language the key is to be translated to. Defaults to the current active language of the prototype"
+        type: "optional"
 
   alert:
     description: |
@@ -623,15 +657,15 @@ phpFunctions:
         type: "mandatory"
 
   getDeeplink:
-    description: ""
+    description: "Returns the link to the current page including GET Parameters and automatic user login. <br><br>This is especially useful in a rolebased prototype. Deeplinks make it possible to view a page the way it was when the Deeplink was generated. This includes anything that refers to the current role. Deeplinks are great for documentation and specification in development, not forcing developers to log in as a the user of the userstory."
 
 phpVariables:
   lastUniqueId:
-    description: ""
-  loggedIn:  
-    description: "Tells you if a user is logged in. Returns false if not."
+    description: "Retruns the value assigned to it by calling the function getUniqueId()."
   currentYear:
     description: "Returns the current year as a four digit number"
+  loggedIn:
+    description: "Tells you if a user is logged in. Returns false if not."
   justloggedIn:
     description: "Tells you if a user just logged in. This variable returns true only on the page called by the form."
   activeUser:
