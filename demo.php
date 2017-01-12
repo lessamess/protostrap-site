@@ -38,12 +38,12 @@ $activeNavigation = "";
         <div class="row flex-row">
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top imgborderbottom" src="assets/img/pillowsandpansstart.jpg" alt="Pillow & Pan Demo App">
+                    <a href="http://demo.protostrap.ch/pillowAndPan/index.php"><img class="card-img-top imgborderbottom" src="assets/img/pillowsandpansstart.jpg" alt="Pillow & Pan Demo App"></a>
                     <div class="card-block">
                         <h3 class="card-title">«Pillow & Pan» App</h3>
                         <p class="card-text">A fake shopping app with basic functions including: page transitions, search and filters, buy now option with checkout, wishlist and "save as favorite". Try the search with the following search terms: blanket, pan or apron. <br><br></p>
                         <div class="micropadding"></div>
-                        <a href="javascript:void(0);" class="btn btn-success btn-block btn-lg">Demo</a>
+                        <a href="http://demo.protostrap.ch/pillowAndPan/index.php" class="btn btn-success btn-block btn-lg">Demo</a>
                     </div>
                 </div>
             </div>
@@ -60,12 +60,12 @@ $activeNavigation = "";
             </div> -->
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top imgborderbottom" src="assets/img/protostrapplain.jpg" alt="Protostrap Plain">
+                    <a href="http://demo.protostrap.ch/protostrapPlain/index.php"><img class="card-img-top imgborderbottom" src="assets/img/protostrapplain.jpg" alt="Protostrap Plain"></a>
                     <div class="card-block">
                         <h3 class="card-title">Protostrap Plain</h3>
                         <p class="card-text">This is the default site you get, once you open up a protostrap-master site. Protostrap Plain includes a default navigation and footer as well as links to the admin panel, the test page with all plugins. On top, Protostrap Plain is responsive and ready to go. </p>
                         <div class="micropadding"></div>
-                        <a href="javascript:void(0);" class="btn btn-success btn-block btn-lg">Demo</a>
+                        <a href="http://demo.protostrap.ch/protostrapPlain/index.php" class="btn btn-success btn-block btn-lg">Demo</a>
                     </div>
                 </div>
             </div>
