@@ -224,6 +224,26 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
 
             <div class="row">
                 <div class="col-md-12">
+
+                    <h4>Tooltips</h4>
+                    <div class="row">
+                        <div class="col-md-6"><button class="btn btn-primary fakeReload" data-target="reloadContent">Label</button></div>
+                        <div class="col-md-6">
+                            <div id="reloadContent">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sunt cum nam odio ipsum autem assumenda consequuntur earum excepturi at modi amet aliquam quam, deserunt nobis vel obcaecati, numquam velit?
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <h4>Tooltips</h4>
+                    <h4>Tooltips</h4>
+
+
+                    <button type="button " class="btn btn-default mytooltip" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Default Tooltip</button>
+                    &nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-default mytooltip" data-toggle="tooltip" data-hide="1000" data-placement="top" title="Tooltip on top">Tooltip closes with 1 second delay</button>
+                    <br><br><br>
                     <h4>Stepper</h4>
                     <div class="stepper">
                         <ul class="steps">
@@ -264,6 +284,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                 </div>
             </div>
             <br>
+
             <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
               Launchmodal
             </button>

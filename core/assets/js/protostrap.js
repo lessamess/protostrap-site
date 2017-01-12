@@ -65,10 +65,13 @@
     $(function(){
 
         // Tooltip if there is any
-        $('.ps-tooltip').tooltip();
-        $(".ps-tooltip").click(function() {
-            setTimeout( function(){
-                $('.ps-tooltip').tooltip('hide')}, 2000);
+        $('.tooltip').tooltip();
+        $(".tooltip").click(function() {
+            if($(this).data("delay") != undefined){
+                var delay = $(this).data("delay");
+                setTimeout( function(){
+                    $('.tooltip').tooltip('hide')}, delay);
+            }
         });
 
         // Carousel if there is any
@@ -87,16 +90,6 @@
             myScroll.scrollToElement('li.active');
         }
 
-        $(".dynForm").click(function(el) {
-            $("." + $(this).attr("data-toggle-class")).toggle();
-        });
-
-        $("select.dynForm").change(function(el) {
-
-            $(".dynFormGroup").hide();
-            $("." + $("select option:selected").attr("data-toggle-class")).toggle();
-
-        });
 
         // Manage checkbox handling for session data
         $('.sessionCheckbox').click(function(){

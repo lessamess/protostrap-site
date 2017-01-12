@@ -40,4 +40,4 @@
 
     </script>
     <!-- ADD your other login to main.js -->
-    <!-- <script src="<?php echo $pathToAssets ;?>assets/js/main.js?time=<?php time();?>"></script> -->
+    <script src="<?php echo $pathToAssets ;?>assets/js/main.js?time=<?php time();?>"></script>

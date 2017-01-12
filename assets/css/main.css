@@ -400,3 +400,9 @@ pre code pre {
 .imgborderbottom{
     border-bottom: 1px solid rgba(0,0,0,.125);
 }
+b.code {
+    font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+    font-size: 15px;
+    font-weight: 400;
+    color: #c7254e;
+}

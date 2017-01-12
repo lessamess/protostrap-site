@@ -13,7 +13,7 @@
 <br>
 <div class="row">
     <div class="col-md-12">
-        Adding typeahead to an input field is simply done by adding the class <b>typeahead</b> to it.
+        Adding typeahead to an input field is simply done by adding the class <b class="code">typeahead</b> to it.
         <div class="micropadding"></div>
         <pre><code class="html">&lt;span class="form">
     &lt;input type="text" class="form-control typeahead" name="mytypeahead" placeholder="Typeahead (Try: foo)">
@@ -22,14 +22,14 @@
 </div>
 <br>
 <h4>Getting the data into the typeahead</h4>
-The file <b>snippets/typeahead.php</b> contains everything that Typeahead needs:
+The file <b class="code">snippets/typeahead.php</b> contains everything that Typeahead needs:
 <ul class="simpleList">
      <li>The source data: this is the data that is searched and suggested by Typeahead</li>
      <li>The display: All the templates that Typeahead needs, for the suggestions, the footer and in case no entries are found.</li>
      <li>The callback: defining what happens once an entry is selected.</li>
  </ul>
 <br>
- The source data can be any form of object. The keys (<b>name</b> and <b>price</b>) can be chosen freely. You can also have more or fewer keys, Typeahead is very flexible in this respect.
+ The source data can be any form of object. The keys (<b class="code">name</b> and <b class="code">price</b>) can be chosen freely. You can also have more or fewer keys, Typeahead is very flexible in this respect.
  <div class="micropadding"></div>
  <pre><code class="javascript">var sourcedata = {
     0: {name:'foo bar', price:'6.99'},
@@ -38,7 +38,7 @@ The file <b>snippets/typeahead.php</b> contains everything that Typeahead needs:
     3: {name:'football', price:'26.49'}
 };</code></pre>
 
-<br> The display and callback are taken care of in this block, which is divided int the segments <b>Typeahead options</b>, <b>Typeahead source and templates</b> and <b>Typeahead callback</b>
+<br> The display and callback are taken care of in this block, which is divided int the segments <b class="code">Typeahead options</b>, <b class="code">Typeahead source and templates</b> and <b class="code">Typeahead callback</b>
 <div class="micropadding"></div>
 <pre><code class="javascript">// Typeahad options
 $('.typeahead').typeahead({

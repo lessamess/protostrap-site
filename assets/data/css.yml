@@ -1,0 +1,140 @@
+
+css:
+  helperClasses:
+    title: "Helper Classes"
+
+cssClasses:
+  simpleList:
+    title: "Simple List"
+    description: "A bullet point list with some margin between the entries"
+    markup: |
+      <ul class="simpleList">
+          <li>one</li>
+          <li>
+              two with this. <br>
+              And that
+          </li>
+          <li>three</li>
+      </ul>
+  micropadding:
+    title: "Micropadding"
+    description: "Sometimes you need a little more space between things. This inserts an 8px high space"
+    markup: |
+      <div class="micropadding"></div>
+    effect: |
+      <div class="flexbox padded">
+          <div class="flex-1" >With a regular break:<br>Continue here</div>
+          <div class="flex-1" >With Micropadding <div class="micropadding"></div>Continue here</div>
+          <div class="flex-1" >With two breaks:<br><br>Continue here</div>
+      </div>
+  table-plain:
+    title: "table-plain"
+    description: "make plain table"
+    markup: |
+      <table class="table table-plain">
+          <tr>
+              <th>Name</th>
+              <th>Price / Kg</th>
+          </tr>
+          <tr>
+              <td>Apples</td>
+              <td>3.10</td>
+          </tr>
+          <tr>
+              <td>Bananas</td>
+              <td>2.90</td>
+          </tr>
+      </table>
+    effect: |
+      <table class="table table-plain p50" >
+          <tr>
+              <th>Name</th>
+              <th>Price / Kg</th>
+          </tr>
+          <tr>
+              <td>Apples</td>
+              <td>3.10</td>
+          </tr>
+          <tr>
+              <td>Bananas</td>
+              <td>2.90</td>
+          </tr>
+      </table>
+  table-responsive:
+    title: "Responsive Table"
+    description: "This class can be added to a container for tables that are too wide for the viewport"
+    markup: |
+      <div class="table-responsive">
+          <table>
+            ... A table with many columns
+          </table>
+      </div>
+
+  nopadding:
+    title: ""
+    description: ""
+    markup: |
+      <div class="nopadding"></div>
+  nomargin:
+    title: ""
+    description: ""
+    markup: |
+      <div class="nomargin"></div>
+  noborder:
+    title: ""
+    description: ""
+    markup: |
+      <div class="noborder"></div>
+  oneliner:
+    title: ""
+    description: ""
+    markup: |
+      <div class="oneliner">A line of text that will be cut off when the end of the line is reached, you will see some ellipses instead of the line breaking. This is ideal for titles in cards or on mobile views</div>
+  btn-circle:
+    title: ""
+    description: ""
+    markup: |
+      <div class="btn btn-primary btn-circle">
+          <i class="fa fa-search"></i>
+      </div>
+    effect: |
+      <div class="row">
+          <div class="col-md-2 align-center">
+              <div class="btn btn-primary btn-circle"><i class="fa fa-search"></i></div><br>
+              btn-circle
+          </div>
+          <div class="col-md-3 align-center">
+              <div class="btn btn-primary btn-circle-sm"><i class="fa fa-search"></i></div><br>
+              <div class="micropadding"></div>
+              btn-circle-sm
+          </div>
+      </div>
+  btn-pile:
+    title: "Button Pile "
+    description: "Used to display a group of single toggle buttons as a pile instead of a row"
+    markup: |
+      <div class="btn-group toggleSinglePrimary btn-pile">
+          <button class="btn btn-default">Left</button>
+          <button class="btn btn-default">Middle</button>
+          <button class="btn btn-default">Right</button>
+          <button class="btn btn-default">Above</button>
+          <button class="btn btn-default">Below</button>
+          <button class="btn btn-default">Behind</button>
+      </div>
+    effect: |
+      <div class="fix160">
+        <div class="btn-group toggleSinglePrimary btn-pile">
+            <button class="btn btn-default">Left</button>
+            <button class="btn btn-default">Middle</button>
+            <button class="btn btn-default">Right</button>
+            <button class="btn btn-default">Above</button>
+            <button class="btn btn-default">Below</button>
+            <button class="btn btn-default">Behind</button>
+        </div>
+      </div>
+  nomargin:
+    title: ""
+    description: ""
+    markup: |
+      <div class="nomargin"></div>
+

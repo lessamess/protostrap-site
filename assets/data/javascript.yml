@@ -1,0 +1,75 @@
+javascript:
+  helperClasses:
+    title: "Helper Classes"
+  functions:
+    title: "Function Reference"
+
+jsHelperClasses:
+  selectOnFocus:
+    title: "Select on Focus"
+  selectOnLoad:
+    title: "Select on Load"
+  toggleSinglePrimary:
+    title: "Toggle Single Primary"
+  toggleMultiPrimary:
+    title: "Toggle Multi Primary"
+  loginUser:
+    title: "Toggle Multi Primary"
+  loginFirstUser:
+    title: "Toggle Multi Primary"
+  passwordToggle:
+    title: ""
+  checkall:
+    title: ""
+  tooltip:
+    title: ""
+  fakeReload:
+    title: ""
+  toggleMultiPrimary:
+    title: ""
+  toggleMultiPrimary:
+    title: ""
+
+jsFunctions:
+  updateSessionVar:
+    description: ""
+    parameters:
+      variableName:
+        description: ""
+        type: "mandatory"
+
+  getUniqueId:
+    description: ""
+    parameters:
+      variableName:
+        description: ""
+        type: "mandatory"
+
+  getUniqueId:
+    description: ""
+    parameters:
+      variableName:
+        description: ""
+        type: "mandatory"
+
+  getUniqueId:
+    description: ""
+    parameters:
+      variableName:
+        description: ""
+        type: "mandatory"
+
+  getUniqueId:
+    description: ""
+    parameters:
+      variableName:
+        description: ""
+        type: "mandatory"
+
+  getUniqueId:
+    description: ""
+    parameters:
+      variableName:
+        description: ""
+        type: "mandatory"
+

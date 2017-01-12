@@ -143,7 +143,47 @@
                 $("#feedback").removeClass("hide");
         });
 
+        $(".fakeReload").click(function() {
+            console.log('pip');
+            var spinnerMarkup = "<div class=\" align-center\">";
+            spinnerMarkup += "    ";
+            spinnerMarkup += "    <i class=\"fa fa-spinner fa-spin fa-3x\"></i>";
+            spinnerMarkup += "    <br><br><br>";
+            spinnerMarkup += "</div>";
+            var target = $(this).data("target");
+            var tmpContent = $("#"+target).html();
+            $("#"+target).html(spinnerMarkup);
+            setTimeout(function(){
+                $("#"+target).html(tmpContent);
+            },1000);
+        });
 
+        $('.mytooltip').tooltip({trigger: "click"});
+        $(".mytooltip").click(function() {
+            if($(this).data("hide") != undefined){
+                var delay = $(this).data("hide");
+                var that = this;
+                setTimeout( function(){
+                    $(that).tooltip('hide')}, delay);
+            }
+        });
+
+        // Carousel if there is any
+        $('.carousel').carousel(
+            {interval: 0}
+        );
+        // Tooltip if there is any
+        // $('.ps-tooltip').tooltip();
+
+        // $('[data-toggle="tooltip"]').tooltip();
+
+        // $('[data-toggle="tooltip"]').click(function() {
+        //     if($(this).data("delay") != undefined){
+        //         var delay = $(this).data("delay");
+        //         setTimeout( function(){
+        //             $('.tooltip').tooltip('hide')}, delay);
+        //     }
+        // });
 
 
     })

@@ -12,6 +12,8 @@
             <li>Changed data is restored </li>
             <li>GET parameters that are meant to change data will be without effect</li>
         </ul>
+        <br>
+        The Session can also be renewed by pressing <b>ALT+r</b>
     </div>
 </div>
 
