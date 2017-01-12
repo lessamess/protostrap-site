@@ -35,7 +35,7 @@ $activeNavigation = "start";
                 </nav>
                 <!--Main Content -->
                 <div class="col-md-9" id="mainContent">
-                    <h1>Getting Started</h1>
+                    <h1>Setup</h1>
 
                     <div class="row">
                         <div class="col-md-8">
@@ -67,6 +67,35 @@ $activeNavigation = "start";
             include('./snippets/footer.php');?>
 
         </div> <!-- /container -->
+
+        <div class="modal fade" id="phpBasics" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">PHP Basics</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h2>10 PHP topics to get you through Protostrap</h2>
+                        This list contains all topics you need to know to be a master prototyper with Protostrap. <br>
+                        <br><br>
+                            <?php foreach ($phpBasics as $key => $item): ?>
+                                <div class="flexbox">
+                                    <div class="fix20"><?php echo $key ;?></div>
+                                    <div class="flex-1"><?php echo $item['text'] ;?></div>
+                                    <div class="fix180"><a href="<?php echo $item['link'] ;?>" class="">Documentation</a></div>
+                                </div>
+                                        <hr>
+                            <?php endforeach ?>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
 
         <?php
         // JAVASCRIPT

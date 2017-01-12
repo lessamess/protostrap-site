@@ -802,3 +802,37 @@ contributors:
     role: "Contributor"
     link: http://www.kraftheinzcompany.com
     twitter: HeinzKetchup_US
+
+
+phpBasics:
+  1:
+    text: "Basic syntax: PHP Tags and output with <b>echo</b>"
+    link: "http://php.net/manual/en/language.basic-syntax.phptags.php"
+  2:
+    text: "Variables: the most basic way to store values "
+    link: ""
+  3:
+    text: "Arrays: variables that store multiple values. "
+    link: ""
+  4:
+    text: "Conditionals: <b>if</b> and <b>else</b>"
+    link: ""
+  5:
+    text: "Going through arrays with <b>foreach</b> loops"
+    link: ""
+  6:
+    text: "How functions work"
+    link: ""
+  7:
+    text: "Variable handling Functions, especially <b>empty()</b>, <b>isset()</b> and <b>vardump()</b>"
+    link: ""
+  8:
+    text: "User-defined functions"
+    link: "http://php.net/manual/en/functions.user-defined.php"
+
+  9:
+    text: "The predefined Variables <b>$_GET</b>, <b>$_POST</b> and <b>$_SESSION</b>"
+    link: ""
+  10:
+    text: ""
+    link: ""
