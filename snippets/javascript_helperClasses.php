@@ -13,8 +13,9 @@
             <div class="block align-right">
                 <a href="javascript:void(0);" class="copyToClipboard" data-target="markup<?php echo $key ;?>">Copy Code</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
-            <pre><code class="html" id="markup<?php echo $key ;?>"><?php echo $helperClass['markup'] ;?>
+            <pre><code class="html"><?php echo $helperClass['markup'] ;?>
              </code></pre>
+             <div id="markup<?php echo $key ;?>" class="hide"><?php echo $helperClass['markup'] ;?></div>
                 <h4>Data attributes</h4>
             <?php
 
