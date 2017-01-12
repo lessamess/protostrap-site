@@ -29,7 +29,15 @@ $activeNavigation = "one";
     <body class="">
         <div class="container" id="mainContent">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1 align-center">
+                <div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+                    <br>
+<!--                     <div class="flexbox">
+                        <div class="flex-1" ></div>
+                        <div class="flex-1 align-center" >
+                            <img src="assets/img/poppy.svg" class="img-responsive" alt="">
+                        </div>
+                        <div class="flex-1" ></div>
+                    </div>
                     <h1 class="superlarge">Protostrap</h1>
                     <br>
                     <p class="sub">Build clickable prototypes faster than ever <br class="visible-lg"> with the most advanced, free prototyping tool.</p>
@@ -43,13 +51,71 @@ $activeNavigation = "one";
                             <br>
                             <div class="micropadding"></div>
                             <small>Current Version: v<?php echo $protostrapVersion ;?></small>
+                            <br>
+                            <br>
                         </span>
+                    <br> -->
+
+<!--                     <div class="flexbox">
+                        <div class="fixed-size-180">
+                            <img src="assets/img/poppy.svg" style="padding: 24px 20px 0 0;" class="img-responsive" alt="">
+                        </div>
+                        <div class="flex-1">
+                        <h1 class="superlarge">Protostrap</h1>
+                        <p class="sub" style="font-size:28px">Build clickable prototypes faster than ever <br class="visible-lg"> with the most advanced, free prototyping tool.</p>
+                        <span class="hidden-xs"><br>
+                            <a class=" btn btn-success btn-lg" href="https://github.com/lessamess/Protostrap/archive/master.zip">
+                                <i class="fa fa-download"></i> Download Protostrap
+                            </a>
+                            <a class=" btn btn-default btn-lg" href="start.php">
+                                <i class="fa fa-book"></i> Read Documentation
+                            </a>
+                            <br>
+                            <div class="micropadding"></div>
+                            <small>Current Version: v<?php echo $protostrapVersion ;?></small>
+                            <br>
+                            <br>
+                        </span>
+                        <br>
+                        </div>
+                    </div> -->
                     <br>
+                        <div class="flexbox">
+                            <div class="flex-1"></div>
+                            <div class="flex-1">
+                                <div class="flexbox">
+                                    <div class="fixed-size-120">
+                                        <img src="assets/img/poppy.svg" style="padding:  0px 12px 0 0;" class="img-responsive" alt="">
+                                    </div>
+                                    <div class="flex-1">
+                                        <h1 class="superlarge">Protostrap</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-1"></div>
+                        </div>
+                        <div class="micropadding"></div>
+                        
+        
+                    <div class="align-center">
+                        <p class="sub" style="font-size:28px">Build clickable prototypes faster than ever <br class="visible-lg"> with the most advanced, free prototyping tool.</p>
+                        <span class="hidden-xs"><br>
+                            <a class=" btn btn-success btn-lg" href="https://github.com/lessamess/Protostrap/archive/master.zip">
+                                <i class="fa fa-download"></i> Download Protostrap
+                            </a>
+                            <a class=" btn btn-default btn-lg" href="start.php">
+                                <i class="fa fa-book"></i> Read Documentation
+                            </a>
+                            <br>
+                            <div class="micropadding"></div>
+                            <small>Current Version: v<?php echo $protostrapVersion ;?></small>
+                            <br>
+                            <br>
+                        </span>
+                        <br>
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="micropadding"></div>
-            <br>
             <div class="row background-green">
                 <div class="col-md-6">
                     <h2 class="nopadding">Protostrap in a nutshell</h2>
@@ -160,7 +226,7 @@ $activeNavigation = "one";
             <br>
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 align-center">
-                    <a class=" btn btn-danger btn-block btn-lg" href="demo.php">Demos</a>
+                    <a class=" btn btn-primary btn-lg" href="demo.php">Check out our Demos</a>
                 </div>
             </div>
             <br>

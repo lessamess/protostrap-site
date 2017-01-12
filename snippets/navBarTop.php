@@ -25,7 +25,7 @@ foreach ($navKeys as $key => $item){
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php"><h3 class="brandnav"><?= $brand;?></h3></a>
+      <a class="navbar-brand" href="index.php"><h3 class="brandnav"><img src="assets/img/poppy_xs.png" alt=""><span class="hidden-sm"><?= $brand;?></span></h3></a>
     </div>
     <nav role="navigation" class="collapse navbar-collapse " id="headernav" >
       <ul class="nav navbar-nav">

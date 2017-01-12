@@ -50,6 +50,10 @@ h4.sub {
     border-color: #26A69A;
 }
 
+.btn-danger{
+    background-color: #DD232E;
+}
+
 .btn-success:hover{
     background-color: #00796B;
 }
@@ -371,11 +375,15 @@ table.table.table-plain tr td:first-child{
 }
 
 .background-green{
-    background-color: #CCEAE7;
-    padding:40px;
+    background-color: #E6DED2;
+    padding:35px 25px 20px;
     border-bottom: 1px solid #ccc;
 }
 
+.backgraund-beige{
+    background-color: #E6DED2;
+    overflow: hidden;
+}
 pre code pre {
     border: none;
     margin: 0;
@@ -426,6 +434,15 @@ b.code {
     background-color: transparent !important;
 }
 
+.poppy{
+    width:140px;
+}
+
+.brandnav>img{
+    width:50px;
+    padding-right: 10px;
+    margin-top: -5px;
+}
 @media screen and (max-width : 991px)  {
     .ps-docs-sidebar{
         display:none;
