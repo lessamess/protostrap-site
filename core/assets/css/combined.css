@@ -2888,3 +2888,6 @@ a.fl:link, a.fl:visited,.fl a, .flt, a.flt, .gl a:link, a.mblink, .mblink b {
 .tt-menu{
     min-width:400px;
 }
+.bootstrap-switch {
+    max-height: 30px;
+}

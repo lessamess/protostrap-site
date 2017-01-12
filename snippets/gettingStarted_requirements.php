@@ -16,7 +16,7 @@
                 Some basic knowledge of how websites work under the hood: <br>HTML, CSS, JavaScript
             </li>
             <li>
-            A tiny bit of PHP, <a href="https://www.codecademy.com/learn/php" target="_blank">just the basics</a> will get you far.
+            A tiny bit of PHP, <a href="javascript:void(0);" data-toggle="modal" data-target="#phpBasics">just the basics</a> will get you far. <br>There are <a href="https://www.codecademy.com/learn/php" target="_blank">great online courses</a> to <a href="https://teamtreehouse.com/join/php-free-trial">learn php in no time</a>.
             </li>
         </ul>
     </div>

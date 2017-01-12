@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col-md-8">
-    <h4>Do I have a local webserver?</h4>
+    <h4>Do you have a local webserver?</h4>
         If you are not sure, if you have a local webserver or not, do this simple test: <br><br>
         Look at the green box <span class="hidden-xs">on the right</span>:<br>
         <div class="block visible-xs"  style="background-color: #009688; color: #fff;">
