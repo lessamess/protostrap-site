@@ -400,3 +400,40 @@ pre code pre {
 .imgborderbottom{
     border-bottom: 1px solid rgba(0,0,0,.125);
 }
+
+.toc{
+    color: #999;
+    border-left: 2px solid transparent;
+    padding:0px 15px !important;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none !important;
+}
+
+.toc:hover{
+    border-left: 2px solid #009688;
+    font-size:19px
+    padding: 3px 0px;
+    text-decoration: none !important;
+    color:#009688;
+    background-color: transparent !important;
+}
+
+@media screen and (max-width : 991px)  {
+    .ps-docs-sidebar{
+        display:none;
+    }
+    .navbar-nav{
+        font-size: 15px;
+    }
+    .brandnav {
+        margin: 0 10px 0 0;
+        font-weight: 200;
+    }
+    .nav > li > a {
+        position: relative;
+        display: block;
+        padding: 10px 8px;
+        line-height: 30px;
+    }
+}
