@@ -426,6 +426,10 @@ b.code {
     background-color: transparent !important;
 }
 
+.block{
+    display: block;
+}
+
 @media screen and (max-width : 991px)  {
     .ps-docs-sidebar{
         display:none;

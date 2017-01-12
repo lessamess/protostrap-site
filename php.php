@@ -40,7 +40,7 @@ $activeNavigation = "php";
                     <br>
                     <div class="row">
                         <div class="col-md-8">
-                            <p class="lead">This is an overview of useful Protostrap PHP functions and variables. <br>
+                            <p class="lead">This is an overview of useful PHP functions and variables. <br>
                             They let you work with data easily and make your prototype feel real.</p>
                             <div class="hidden-lg hidden-md">
                                 <?php

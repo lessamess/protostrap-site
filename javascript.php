@@ -29,18 +29,18 @@ $activeNavigation = "javascript";
 
             <div class="row">
                 <!--Nav Bar -->
-                <nav class="col-md-3 ps-docs-sidebar hidden-xs">
+                <nav class="col-md-2 ps-docs-sidebar hidden-xs">
                     <?php
                     $navItems = $javascript;
                     include("./snippets/navigation.php");?>
                 </nav>
                 <!--Main Content -->
-                <div class="col-md-9" id="mainContent">
+                <div class="col-md-10" id="mainContent">
                     <h1>JavaScript</h1>
                     <br>
                     <div class="row">
                         <div class="col-md-8">
-                            <p class="lead">This is an overview of useful Protostrap Javascript functions. <br>
+                            <p class="lead">This is an overview of useful Helper Classes and Javascript functions. <br>
                             They help you make your prototype interactive and playful.</p>
                             <div class="hidden-lg hidden-md">
                                 <?php

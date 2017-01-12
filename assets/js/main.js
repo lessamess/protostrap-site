@@ -168,6 +168,76 @@
             }
         });
 
+        $('.btn-spinner').on('click', function() {
+          // keep width of button
+          var width = $(this).outerWidth();
+          $(this).css("width", width+"px");
+          // spinner markup
+          var spinner = "<i class=\"fa fa-spinner fa-spin\"></i>";
+          // original button label
+          var tmpContent = $(this).html();
+          // show spinner
+          $(this).html(spinner);
+          // make scope for timeout function
+          var that = $(this);
+            setTimeout(function() {
+               // rollback
+               $(that).html(tmpContent);
+           }, 1000);
+        });
+
+
+        $(".trigger").click(function() {
+            var group = $(this).data("group");
+            var item = $(this).data("item");
+            $("."+group).addClass("hide");
+            $("."+group+"-" + item).removeClass("hide");
+        });
+
+        function showTooltip(target, text){
+             $(target).attr('data-toggle','tooltip');
+             $(target).attr('data-placement','top');
+             $(target).attr('data-trigger','click');
+             $(target).attr('title', text);
+
+
+            //and finally show the popover
+            $(target).tooltip('show');
+            var that = target;
+            setTimeout( function(){
+                     $(that).tooltip('hide')}, 1500);
+        }
+
+        $(".copyToClipboard").click(function() {
+            var target = $(this).data("target");
+            var text = $("#"+target).html();
+            $('<div style="opacity:0"><textarea id="textarea'+target+'">'+text+'</textarea></div>').appendTo("body");
+            $("#textarea"+target).select();
+            document.execCommand('copy');
+            $("#textarea"+target).remove();
+            showTooltip(this, "Copied to Clipboard");
+        });
+
+        $(".showHide").click(function() {
+            if($("#"+$(this).data("show")).hasClass("hide")){
+                $("#"+$(this).data("show")).css("display", "none").removeClass("hide");
+            }
+            $("#"+$(this).data("show")).toggle("slow");
+            $("#"+$(this).data("hide")).toggle("slow");
+        });
+
+        function countDown(target){
+            var number = Number($("#"+target).html());
+            number = Math.ceil(number*0.89);
+            $("#"+target).html(number);
+        }
+        $(".countDown").click(function() {
+            var target = $(this).data("target");
+            countDown(target);
+        });
+
+
+
         // Carousel if there is any
         $('.carousel').carousel(
             {interval: 0}

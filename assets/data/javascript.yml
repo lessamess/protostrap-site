@@ -6,50 +6,174 @@ javascript:
 
 jsHelperClasses:
   selectOnFocus:
-    title: "Select on Focus"
-  selectOnLoad:
-    title: "Select on Load"
+    description: "When added to an input field the content gets selected on focus"
+    markup: |
+      &lt;input type="text" class="form-control selectOnFocus" name="field">
   toggleSinglePrimary:
-    title: "Toggle Single Primary"
+    description: "When added to a button group clicking its buttons get the class &lt;b class="code">.btn-primary&lt;/b> removing it from the other buttons"
+    markup: |
+      &lt;div class="btn-group toggleSinglePrimary">
+          &lt;button type="button" class="btn btn-default">Left&lt;/button>
+          &lt;button type="button" class="btn btn-default">Middle&lt;/button>
+          &lt;button type="button" class="btn btn-default">Right&lt;/button>
+      &lt;/div>
   toggleMultiPrimary:
-    title: "Toggle Multi Primary"
+    description: "When added to a button group clicking its buttons get the class &lt;b class="code">.btn-primary&lt;/b>. Multiple buttons can have the primary class. Clicking on the button a second time removes the class"
+    markup: |
+      &lt;div class="btn-group toggleMultiPrimary">
+          &lt;button type="button" class="btn btn-default">Left&lt;/button>
+          &lt;button type="button" class="btn btn-default">Middle&lt;/button>
+          &lt;button type="button" class="btn btn-default">Right&lt;/button>
+      &lt;/div>
   loginUser:
-    title: "Toggle Multi Primary"
-  loginFirstUser:
-    title: "Toggle Multi Primary"
+    description: "When an element with this class is clicked the user specified by the &lt;b class="code">data-key&lt;/b> attribute is logged in. There has to be a login form on the page for this to work."
+    markup: |
+      &lt;button class="btn btn-default loginUser" data-key="one@c...y.com">
+          Login
+      &lt;/button>
+    attributes:
+      key:
+        description: "The email address that identyfies the user you want to log in. "
+        type: "mandatory"
   passwordToggle:
-    title: ""
+    description: "Is added to an input-group-addon with a <b class="code">.fa-square</b> icon. Clicking it toggles the visibility of the password."
+    markup: |
+      &lt;div class="input-group">
+          &lt;input type="password" class="form-control" name="" placeholder="Password" >
+          &lt;span class="input-group-addon passwordToggle">&lt;i class="fa fa-square-o">&lt;/i> Show&lt;/span>
+      &lt;/div>
   checkall:
-    title: ""
-  tooltip:
-    title: ""
+    description: "Used in table headers to check all checkboxes in the column."
+    markup: |
+      &lt;table class="table ">
+          &lt;tr>
+              &lt;th>
+                  &lt;input type="checkbox" class="checkall"
+                         data-class="checkme" ... >
+              &lt;/th>
+              &lt;th>Col 2&lt;/th>
+          &lt;/tr>
+          &lt;tr>
+              &lt;td>
+                  &lt;input type="checkbox" class="checkme" ... >
+              &lt;/td>
+              &lt;td> ... &lt;/td>
+          &lt;/tr>
+          &lt;tr>
+              &lt;td>
+                  &lt;input type="checkbox" class="checkme" ... >
+              &lt;/td>
+              &lt;td>2&lt;/td>
+          &lt;/tr>
+          &lt;tr>
+              &lt;td>
+                  &lt;input type="checkbox" class="checkme" ... >
+              &lt;/td>
+              &lt;td>3&lt;/td>
+          &lt;/tr>
+      &lt;/table>
+    attributes:
+      class:
+        description: "The class the checkboxes have to have in order to be <toggled></toggled>"
+        type: "mandatory"
+  tooltiptrigger:
+    description: "Add this class to elements to get a Bootstrap tooltip. All <b class="code">data-*</b> attributes of the Bootstrap tooltip apply. Add the <b class="code">data-hide</b> attribute with the number of milliseconds after which the tooltip is hidden."
+    markup: |
+      &lt;button type="button" class="btn tooltiptrigger" data-toggle="tooltip" data-hide="1000" title="Tooltip on top">Tooltip &lt;/button>
+    attributes:
+      hide:
+        description: "Number of milliseconds after which the tooltip is closed. If not specified the tooltip will stay open."
+        type: "optional"
   fakeReload:
-    title: ""
-  toggleMultiPrimary:
-    title: ""
-  toggleMultiPrimary:
-    title: ""
+    description: "When clicked elements with this class trigger a fake reload for the element specified in the <b class="code">data-target</b> attribute. The target element is replaced with a spinner for 1 second after which the original content is shown again."
+    markup: |
+      &lt;button class="btn fakeReload" data-target="reloadTarget">Reload text&lt;/button>
+      &lt;div id="reloadTarget">
+          Lore...
+      &lt;/div>
+    attributes:
+      target:
+        description: "The element that is to be replaced by the spinner."
+        type: "mandatory"
+  btn-spinner:
+    description: "If a button with this class is clicked its label is replaced by a spinner for the duration of a second."
+    markup: |
+      &lt;button class="btn btn-default btn-spinner">Label&lt;/button>
+  trigger:
+    description: "Buttons with this class filter elements of a group. The <b class="code">data-group</b> attribute specifies the selector class for the elements. <br>The <b class="code">data-item</b> attribute specifies the selector class of the elements that are to be shown. The class of the elements follows the construct <b class="code">group-item</b> "
+    markup: |
+      &lt;div class="btn-group toggleSinglePrimary">
+          &lt;button class="btn trigger" data-group="contacts" data-item="people">
+              People
+          &lt;/button>
+          &lt;button class="btn trigger" data-group="contacts" data-item="companies">
+              Companies
+          &lt;/button>
+      &lt;/div>
+
+      &lt;ul class="list-group">
+          &lt;li class="list-group-item contacts contacts-people">
+              Berta Miller
+          &lt;/li>
+          &lt;li class="list-group-item contacts contacts-companies">
+              ACME Inc.
+          &lt;/li>
+          &lt;li class="list-group-item contacts contacts-people">
+              Giuseppe Mortacci
+          &lt;/li>
+          &lt;li class="list-group-item contacts contacts-companies">
+              Grand Total Corp
+          &lt;/li>
+          ...
+      &lt;/ul>
+    attributes:
+      group:
+        description: "The class of the elements that could be filtered"
+        type: "mandatory"
+      item:
+        description: "The class of the elements belonging to the group thatare not hidden"
+        type: "mandatory"
+  copyToClipboard:
+    description: "Copies the content of the element specified in the <b class="code">data-target</b> attribute to the clipborat"
+    markup: |
+      &lt;button class="btn copyToClipboard" data-target="copyContent">Copy that&lt;/button>
+      &lt;div id="copyContent">
+          Copy this
+      &lt;/div>
+    attributes:
+      target:
+        description: "The element of which the content is to be copied"
+        type: "mandatory"
 
 jsFunctions:
   updateSessionVar:
-    description: ""
+    description: "Sends an AJAX request to the server to update the specified session variable"
     parameters:
-      variableName:
-        description: ""
+      updateType:
+        description: "Specifies the type of update that can be performed. Admissible values: <b class="code">set</b>, <b class="code">push</b>, <b class="code">remove</b> and <b class="code">null</b>, <br>See the segment on <a href="data.php#changingData">changing data</a> for further information"
+        type: "mandatory"
+      variable:
+        description: "The name of the variable. If it is an element of an array the name can be the full path including all levels, e.g. <b class="code">news.1.title</b>"
+        type: "mandatory"
+      value:
+        description: "The new value of the variable"
         type: "mandatory"
 
-  getUniqueId:
-    description: ""
+  showTooltip:
+    description: "Triggers a tooltip programmatically from inside jQuery on the element specified by the parameter target."
     parameters:
-      variableName:
-        description: ""
+      target:
+        description: "The element over which the tooltip is to be shown."
+        type: "mandatory"
+      text:
+        description: "The text of the tooltip."
         type: "mandatory"
 
-  getUniqueId:
-    description: ""
+  countDown:
+    description: "Reads the content of the specified element, subtracts 11% and writes a rounded value back into the element. The element has to contain an number for this to work."
     parameters:
-      variableName:
-        description: ""
+      target:
+        description: "The element affected"
         type: "mandatory"
 
   getUniqueId:

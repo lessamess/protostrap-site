@@ -221,13 +221,53 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     </div>
                 </div>
             </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Checkall</h4>
+                    <table class="table table-condensed p25">
+                        <tr>
+                            <th>
+                                <input type="checkbox" class="checkall" data-class="checkme" name="chk<?php echo getUniqueId();?>" id="chk<?php echo $lastUniqueId;?>" value="chk<?php echo $lastUniqueId;?>">
+                            </th>
+                            <th>A</th>
+                            <th>AA</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkme" name="chk<?php echo getUniqueId();?>" id="chk<?php echo $lastUniqueId;?>" value="chk<?php echo $lastUniqueId;?>">
+
+                            </td>
+                            <td>1</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkme" name="chk<?php echo getUniqueId();?>" id="chk<?php echo $lastUniqueId;?>" value="chk<?php echo $lastUniqueId;?>">
+
+                            </td>
+                            <td>2</td>
+                            <td>22</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" class="checkme" name="chk<?php echo getUniqueId();?>" id="chk<?php echo $lastUniqueId;?>" value="chk<?php echo $lastUniqueId;?>">
+
+                            </td>
+                            <td>3</td>
+                            <td>33</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
 
             <div class="row">
                 <div class="col-md-12">
 
-                    <h4>Tooltips</h4>
+                    <h4>Fake reload</h4>
                     <div class="row">
-                        <div class="col-md-6"><button class="btn btn-primary fakeReload" data-target="reloadContent">Label</button></div>
+                        <div class="col-md-2"><button class="btn btn-primary btn-spinner fakeReload" data-target="reloadContent">Reload text</button></div>
                         <div class="col-md-6">
                             <div id="reloadContent">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sunt cum nam odio ipsum autem assumenda consequuntur earum excepturi at modi amet aliquam quam, deserunt nobis vel obcaecati, numquam velit?
@@ -235,9 +275,58 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                         </div>
                     </div>
 
+                    <br><br>
+                    <h4>Copy to Clipboard</h4>
+                    <div class="row">
+                        <div class="col-md-2"><button class="btn btn-primary copyToClipboard" data-target="copyContent">Copy text</button></div>
+                        <div class="col-md-6">
+                            <div id="copyContent">
+                                Copy this Lorem ipsum dolor sit amet, consectetur adipisicing elit. In sunt cum nam odio ipsum autem assumenda consequuntur earum excepturi at modi amet aliquam quam, deserunt nobis vel obcaecati, numquam velit?
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <h4>Filter with buttons</h4>
+
+                    <div class="btn-group toggleSinglePrimary">
+                        <button type="button" class="btn btn-default btn-primary trigger" data-group="contacts" data-item="all">All</button>
+                        <button type="button" class="btn btn-default trigger" data-group="contacts" data-item="people">People</button>
+                        <button type="button" class="btn btn-default trigger" data-group="contacts" data-item="companies">Companies</button>
+                    </div>
+                    <br><br>
+                    <ul class="list-group">
+                        <li class="list-group-item contacts contacts-all contacts-people">Berta Miller</li>
+                        <li class="list-group-item contacts contacts-all contacts-companies">ACME Inc.</li>
+                        <li class="list-group-item contacts contacts-all contacts-people">Giuseppe Mortacci</li>
+                        <li class="list-group-item contacts contacts-all contacts-people">Audrie Vitelle </li>
+                        <li class="list-group-item contacts contacts-all contacts-companies">Grand Total Corp</li>
+                        <li class="list-group-item contacts contacts-all contacts-companies">Good Business Associated</li>
+                    </ul>
+
+                    <br><br>
 
 
-                    <h4>Tooltips</h4>
+                    <h4>Toggle 2 elements</h4>
+
+                    <div class="row">
+                        <div class="col-md-3"><button class="btn  btn-primary showHide" data-hide="toggleOne" data-show="toggleTwo">Toggle 2 elements</button></div>
+                        <div class="col-md-3"><div id="toggleOne"><h1>1</h1></div></div>
+                        <div class="col-md-3"><div id="toggleTwo" class="hide"><h1>2</h1></div></div>
+                    </div>
+
+
+                    <br><br>
+
+                    <h4>Count Down a number</h4>
+
+                    <div class="row">
+                        <div class="col-md-3"><button class="btn  btn-primary countDown" data-target="countDown">Count down</button></div>
+                        <div class="col-md-3"><div id="countDown">576</div></div>
+                    </div>
+
+
+                    <br><br>
                     <h4>Tooltips</h4>
 
 
