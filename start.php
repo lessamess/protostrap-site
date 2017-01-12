@@ -41,11 +41,14 @@ $activeNavigation = "start";
                         <div class="col-md-8">
                             <br>
                             <p class="lead">Setting up is the hardest part of getting into Protostrap. It is not a single tool that comes in a nicely wrapped box. It is more like a DIY instrument that needs to be assembled.
-                                <br><br>Once you are up and running you will have overcome the biggest obstacles.</p>
+                            <br><br>Once you are up and running you will have overcome the biggest obstacles.</p>
+                            <div class="hidden-lg hidden-md">
+                                <?php
+                                $navItems = $gettingStarted;
+                                include("./snippets/tableofcontent.php");?>
+                            </div>
                         </div>
-                        <div class="col-md-4">
 
-                        </div>
                     </div>
 
 

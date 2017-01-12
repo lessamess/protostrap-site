@@ -42,8 +42,12 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
                     <div class="row">
                         <div class="col-md-8">
 
-                                   Protostrap makes it easy to have reusable data instead of hardcoded content inside pages. It has a robust Data Layer that can get its data from different easy to use sources.
-
+                                 <p class="lead">  Protostrap makes it easy to have reusable data instead of hardcoded content inside pages. It has a robust Data Layer that can get its data from different easy to use sources.</p>
+                            <div class="hidden-lg hidden-md">
+                                <?php
+                                $navItems = $dataLayer;
+                                include("./snippets/tableofcontent.php");?>
+                            </div>
                         </div>
                     </div>
 

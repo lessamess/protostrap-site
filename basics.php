@@ -40,18 +40,18 @@ $activeNavigation = "basics";
                     <br>
                     <div class="row">
                         <div class="col-md-8">
-
-                                   This is an overview of Protostrap's elements and it's strucure to give you some orientation of what is where.
-
+                            <p class="lead">This is an overview of Protostrap's elements and it's strucure to give you some orientation of what is where.</p>
+                            <div class="hidden-lg hidden-md">
+                                <?php
+                                $navItems = $basics;
+                                include("./snippets/tableofcontent.php");?>
+                            </div>
                         </div>
                     </div>
-
-
                     <?php
                     $sections = $basics;
                     $pageName = "basics";
                     include("./snippets/contentSections.php");?>
-
                 </div>
             </div>
 

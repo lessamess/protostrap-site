@@ -14,7 +14,7 @@ foreach ($navKeys as $key => $item){
 ?>
 
 <a href="https://github.com/lessamess/Protostrap/archive/master.zip" id="dowloadButton" class="btn btn-success btn-lg visible-lg"><i class="fa fa-download"></i> Download Protostrap</a>
-<a href="https://github.com/lessamess/Protostrap/archive/master.zip" id="dowloadButton" class="btn btn-success btn-lg hidden-lg"><i class="fa fa-download"></i></a>
+<a href="https://github.com/lessamess/Protostrap/archive/master.zip" id="dowloadButton" class="btn btn-success btn-lg visible-md"><i class="fa fa-download"></i></a>
 
 <header role="banner" class="navbar navbar-default navbar-fixed-top ">
   <div class="container">

@@ -40,8 +40,12 @@ $activeNavigation = "components";
                     <div class="row">
                         <div class="col-md-8">
 
-                            This is an overview of useful Protostrap components. <br>Components help you speed up your prototyping. Simply copy the code snippets below and paste them in your code.
-
+                            <p class="lead">This is an overview of useful Protostrap components. <br>Components help you speed up your prototyping. Simply copy the code snippets below and paste them in your code.</p>
+                            <div class="hidden-lg hidden-md">
+                                <?php
+                                $navItems = $components;
+                                include("./snippets/tableofcontent.php");?>
+                            </div>
                         </div>
                     </div>
 
