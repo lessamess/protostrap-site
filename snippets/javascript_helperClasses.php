@@ -8,7 +8,7 @@
     if($helperClass['description'] == ""){continue;}
     ?>
     <tr>
-        <td><b class="code">.<?php echo $key ;?></b></td>
+        <td><a id="<?php echo $key ;?>"></a><b  class="code">.<?php echo $key ;?></b></td>
         <td><?php echo $helperClass['description'] ;?><br><div class="micropadding"></div>
             <div class="block align-right">
                 <a href="javascript:void(0);" class="copyToClipboard" data-target="markup<?php echo $key ;?>">Copy Code</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -176,24 +176,5 @@ jsFunctions:
         description: "The element affected"
         type: "mandatory"
 
-  getUniqueId:
-    description: ""
-    parameters:
-      variableName:
-        description: ""
-        type: "mandatory"
 
-  getUniqueId:
-    description: ""
-    parameters:
-      variableName:
-        description: ""
-        type: "mandatory"
-
-  getUniqueId:
-    description: ""
-    parameters:
-      variableName:
-        description: ""
-        type: "mandatory"
 

@@ -14,7 +14,7 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?php echo $brand ;?></title>
+        <title><?php echo $brand ;?> - Using Data</title>
         <?php
         // this includes all the markup that loads css files and similar stuff,
         // if you have to add more css, that's the place to do it.

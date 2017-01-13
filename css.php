@@ -9,6 +9,11 @@ include('core/protostrap.php');
 /** Define VALUES  valid for this file **/
 $activeNavigation = "css";
 
+ksort($cssClasses);
+
+foreach ($cssClasses as $key => $class) {
+    $css['helperClasses']['sub'][$key]['title'] = $key;
+}
 
 ?><!DOCTYPE html>
 <html lang="en">

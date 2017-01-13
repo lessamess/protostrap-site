@@ -19,7 +19,32 @@ $activeNavigation = "one";
         // if you have to add more css, that's the place to do it.
         // DO NOT REMOVE
         include('./snippets/meta_headTag.php');?>
+        <style>
+            body {
+                background-image: url("assets/img/poppy_corner.svg");
+                background-position: -300px -240px ;
+                background-size: 500px;
+                background-repeat: no-repeat;
+            }
+            @media screen and (max-width : 991px)  {
+                body {
+                    background-image: url("assets/img/poppy_corner.svg");
+                    background-position: -240px -192px ;
+                    background-size: 400px;
+                    background-repeat: no-repeat;
+                }
+            }
+            @media screen and (max-width : 441px)  {
+                body {
+                    background-image: url("assets/img/poppy_corner.svg");
+                    background-position: -120px -96px ;
+                    background-size: 200px;
+                    background-repeat: no-repeat;
+                }
 
+            }
+
+        </style>
     </head>
 <?php
 
@@ -84,8 +109,8 @@ $activeNavigation = "one";
                             <div class="flex-1"></div>
                             <div class="flex-1">
                                 <div class="flexbox">
-                                    <div class="fixed-size-120">
-                                        <img src="assets/img/poppy.svg" style="padding:  0px 12px 0 0;" class="img-responsive" alt="">
+                                    <div class="fixed-size-120 hide">
+                                        <img src="assets/img/poppy.svg" style="padding:  0px 12px 0 0;" class="img-responsive " alt="">
                                     </div>
                                     <div class="flex-1">
                                         <h1 class="superlarge">Protostrap</h1>
@@ -95,8 +120,8 @@ $activeNavigation = "one";
                             <div class="flex-1"></div>
                         </div>
                         <div class="micropadding"></div>
-                        
-        
+
+
                     <div class="align-center">
                         <p class="sub" style="font-size:28px">Build clickable prototypes faster than ever <br class="visible-lg"> with the most advanced, free prototyping tool.</p>
                         <span class="hidden-xs"><br>
