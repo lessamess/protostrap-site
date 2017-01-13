@@ -83,7 +83,7 @@ phpFunctions:
         description: "The direction in which the columns should be reordered. Defaults to ascending if none is provided. Possible values: <b>asc</b> and <b>desc</b>"
         type: "optional"
   __:
-    description: "Returns the translation for the provided key. Returns the value of the key when no translation is found."
+    description: "(Two underscores) Returns the translation for the provided key. Returns the value of the key when no translation is found."
     parameters:
       key:
         description: "The key to translate"

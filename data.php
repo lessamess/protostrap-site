@@ -16,7 +16,6 @@ $names = get_spreadsheetData("https://docs.google.com/spreadsheets/d/1_WzhyY-_ZL
     <head>
         <title><?php echo $brand ;?>: Using Data</title>
         <meta name="description" content="Protostrap lets you have reusable data instead of hardcoded content inside your prototpye pages. Learn how to have a robust Data Layer with data from easy to use sources.">
-
         <?php
         // this includes all the markup that loads css files and similar stuff,
         // if you have to add more css, that's the place to do it.

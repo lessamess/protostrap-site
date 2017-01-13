@@ -8,7 +8,15 @@ include('core/protostrap.php');
 
 /** Define VALUES  valid for this file **/
 $activeNavigation = "javascript";
+ksort($jsHelperClasses);
+foreach ($jsHelperClasses as $key => $class) {
+    $javascript['helperClasses']['sub'][$key]['title'] = $key;
+}
 
+ksort($jsFunctions);
+foreach ($jsFunctions as $key => $class) {
+    $javascript['functions']['sub'][$key]['title'] = $key;
+}
 
 ?><!DOCTYPE html>
 <html lang="en">

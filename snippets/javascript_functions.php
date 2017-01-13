@@ -8,7 +8,7 @@
     if($function['description'] == ""){continue;}
     ?>
     <tr>
-        <td><b class="code"><?php echo $key ;?></b></td>
+        <td><b class="code"><?php echo $key ;?>()</b></td>
         <td><?php echo $function['description'] ;?><br><div class="micropadding"></div>
             <pre><code class="php"><?php
                 $syntax = $key."(";

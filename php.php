@@ -9,6 +9,11 @@ include('core/protostrap.php');
 /** Define VALUES  valid for this file **/
 $activeNavigation = "php";
 
+ksort($phpFunctions);
+
+foreach ($phpFunctions as $key => $class) {
+    $php['functions']['sub'][$key]['title'] = $key;
+}
 
 ?><!DOCTYPE html>
 <html lang="en">

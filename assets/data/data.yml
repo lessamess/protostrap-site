@@ -473,7 +473,7 @@ phpBasics:
     text: "Basic syntax: PHP Tags and output with <b>echo</b>"
     link: "http://php.net/manual/en/language.basic-syntax.phptags.php"
   2:
-    text: "Variables: the most basic way to store values "
+    text: "Variables: the most basic way to store values."
     link: ""
   3:
     text: "Arrays: variables that store multiple values. "
