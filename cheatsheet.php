@@ -66,7 +66,9 @@ foreach($files as $file) {
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?php echo $brand ;?></title>
+        <title><?php echo $brand ;?>: Cheat Sheet</title>
+        <meta name="description" content="The Protostrap Cheat Sheets gives you an overview which shortcut triggers which snippet.">
+
         <?php
         // this includes all the markup that loads css files and similar stuff,
         // if you have to add more css, that's the place to do it.
@@ -84,6 +86,13 @@ foreach($files as $file) {
         <div class="container">
 
             <h1>Protostrap Sublime Cheatsheet</h1>
+            <div class="row">
+                <div class="col-md-8">
+                    <br>
+                    <p class="lead">Protostrap comes with a series of precoded extras that speed up your prototyping game. The cheat sheet is a collection of snippets and key bindings that are useful in your daily word.</p>
+                </div>
+
+            </div>
             <br>
                         <div class="tabbable">
                             <ul class="nav nav-tabs">

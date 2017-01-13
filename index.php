@@ -14,6 +14,8 @@ $activeNavigation = "one";
 <html lang="en">
     <head>
         <title><?php echo $brand ;?></title>
+        <meta name="description" content="Protostrap: Build clickable prototypes faster than ever with the most advanced, free prototyping tool. ">
+
         <?php
         // this includes all the markup that loads css files and similar stuff,
         // if you have to add more css, that's the place to do it.
@@ -31,54 +33,6 @@ $activeNavigation = "one";
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
                     <br>
-<!--                     <div class="flexbox">
-                        <div class="flex-1" ></div>
-                        <div class="flex-1 align-center" >
-                            <img src="assets/img/poppy.svg" class="img-responsive" alt="">
-                        </div>
-                        <div class="flex-1" ></div>
-                    </div>
-                    <h1 class="superlarge">Protostrap</h1>
-                    <br>
-                    <p class="sub">Build clickable prototypes faster than ever <br class="visible-lg"> with the most advanced, free prototyping tool.</p>
-                        <span class="hidden-xs"><br>
-                            <a class=" btn btn-success btn-lg" href="https://github.com/lessamess/Protostrap/archive/master.zip">
-                                <i class="fa fa-download"></i> Download Protostrap
-                            </a>
-                            <a class=" btn btn-default btn-lg" href="start.php">
-                                <i class="fa fa-book"></i> Read Documentation
-                            </a>
-                            <br>
-                            <div class="micropadding"></div>
-                            <small>Current Version: v<?php echo $protostrapVersion ;?></small>
-                            <br>
-                            <br>
-                        </span>
-                    <br> -->
-
-<!--                     <div class="flexbox">
-                        <div class="fixed-size-180">
-                            <img src="assets/img/poppy.svg" style="padding: 24px 20px 0 0;" class="img-responsive" alt="">
-                        </div>
-                        <div class="flex-1">
-                        <h1 class="superlarge">Protostrap</h1>
-                        <p class="sub" style="font-size:28px">Build clickable prototypes faster than ever <br class="visible-lg"> with the most advanced, free prototyping tool.</p>
-                        <span class="hidden-xs"><br>
-                            <a class=" btn btn-success btn-lg" href="https://github.com/lessamess/Protostrap/archive/master.zip">
-                                <i class="fa fa-download"></i> Download Protostrap
-                            </a>
-                            <a class=" btn btn-default btn-lg" href="start.php">
-                                <i class="fa fa-book"></i> Read Documentation
-                            </a>
-                            <br>
-                            <div class="micropadding"></div>
-                            <small>Current Version: v<?php echo $protostrapVersion ;?></small>
-                            <br>
-                            <br>
-                        </span>
-                        <br>
-                        </div>
-                    </div> -->
                     <br>
                         <div class="flexbox">
                             <div class="flex-1"></div>
@@ -172,40 +126,7 @@ $activeNavigation = "one";
                     </div>
                 </div>
             </div>
-
             <hr>
-<!--             <div class="micropadding"></div>
-            <h2 class="nopadding">Use Cases</h2>
-            <div class="row">
-                <div class="col-md-8">
-                <h4>Mobile and responsive sites</h4>
-                    <p>Protostrap enables you to easily build prototypes for apps. It offers several components and touch-optimized elements that help you build your app prototype in a breeze. Since Protostrap is based on Twitter Bootstrap you can easily make your prototype responsive by using Twitter Bootstrap's grid structure. This means, you never have to build several prototypes for different viewports agian, with Protostrap you have all in one.</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/img/platzhalterbild.jpg" class="img-responsive" alt="">
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-8">
-                <h4>Prototypes for Shops and Plattforms</h4>
-                    <p>Say goodbye to <i>Lorem ipsum</i>: With Protostrap you can build plattforms and shops with actual data. This helps you get the most out of your design before your project gets fueled by your client's database. <br>Snippets and components help you design even a complex process from A to Z. No more states or feedback loops go missing. You don't need to design every state yourself, dynamic data is your new best friend! With protostrap you can even modify your prototype for different user roles. For instance if your users can either be merchants or private sellers in a shop, you can easily add or remove content for the according role.</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/img/platzhalterbild.jpg" class="img-responsive" alt="">
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-8">
-                <h4>Protoypes, perfect for Usability Testing</h4>
-                    <p>Protostrap is flexible and easily adjustable. These are the best conditions for usability testing! The usage of real data and protostrap's ability to save sessions make tyour prorotype feel reel for participants. You will get more precise feedback out of your tests and you can easily adapt your prototype for the next participant. Protostrap even comes with a script for usability tests!</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/img/usabilitytesting.jpg" class="img-responsive" alt="">
-                </div>
-            </div> -->
-
             <h2 class="nopadding">Showcases</h2>
             <div class="row flex-row">
                 <?php foreach ($showcases as $key => $showcase) { ?>
@@ -226,7 +147,7 @@ $activeNavigation = "one";
             <br>
             <div class="row">
                 <div class="col-md-4 col-md-offset-4 align-center">
-                    <a class=" btn btn-primary btn-lg" href="demo.php">Check out our Demos</a>
+                    <a class=" btn btn-default btn-lg" href="demo.php">Check out our Demos</a>
                 </div>
             </div>
             <br>

@@ -13,7 +13,8 @@ $activeNavigation = "basics";
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?php echo $brand ;?></title>
+        <title><?php echo $brand ;?>: Basics</title>
+        <meta name="description" content="Overview of Protostrap's elements and it's structure.">
         <?php
         // this includes all the markup that loads css files and similar stuff,
         // if you have to add more css, that's the place to do it.
@@ -40,7 +41,7 @@ $activeNavigation = "basics";
                     <br>
                     <div class="row">
                         <div class="col-md-8">
-                            <p class="lead">This is an overview of Protostrap's elements and it's strucure to give you some orientation of what is where.</p>
+                            <p class="lead">This is an overview of Protostrap's elements and it's structure to give you some orientation of what is where.</p>
                             <div class="hidden-lg hidden-md">
                                 <?php
                                 $navItems = $basics;

@@ -13,7 +13,8 @@ $activeNavigation = "start";
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?php echo $brand ;?></title>
+        <title><?php echo $brand ;?>: Setup</title>
+        <meta name="description" content="Learn how to setup Protostrap and optimize all tools needed to get the most out of it.">
         <?php
         // this includes all the markup that loads css files and similar stuff,
         // if you have to add more css, that's the place to do it.

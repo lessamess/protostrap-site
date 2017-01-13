@@ -71,28 +71,28 @@ cssClasses:
       </div>
 
   nopadding:
-    title: ""
-    description: ""
+    title: "nopadding"
+    description: "Removes padding from an element."
     markup: |
       <div class="nopadding"></div>
   nomargin:
-    title: ""
-    description: ""
+    title: "nomargin"
+    description: "Removes margin from an element."
     markup: |
       <div class="nomargin"></div>
   noborder:
-    title: ""
-    description: ""
+    title: "noborder"
+    description: "Removes all borders from an element."
     markup: |
       <div class="noborder"></div>
   oneliner:
-    title: ""
-    description: ""
+    title: "oneliner"
+    description: "A line of text that will be cut off when the end of the line is reached, you will see some ellipses instead of the line breaking. This is ideal for titles in cards or on mobile views."
     markup: |
       <div class="oneliner">A line of text that will be cut off when the end of the line is reached, you will see some ellipses instead of the line breaking. This is ideal for titles in cards or on mobile views</div>
   btn-circle:
-    title: ""
-    description: ""
+    title: "btn-circle"
+    description: "Round buttons."
     markup: |
       <div class="btn btn-primary btn-circle">
           <i class="fa fa-search"></i>

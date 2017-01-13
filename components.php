@@ -13,7 +13,8 @@ $activeNavigation = "components";
 ?><!DOCTYPE html>
 <html lang="en">
     <head>
-        <title><?php echo $brand ;?></title>
+        <title><?php echo $brand ;?>: Components</title>
+        <meta name="description" content="Protostrap components help you speed up your prototyping. Simply copy the code snippets below and paste them in your code.">
         <?php
         // this includes all the markup that loads css files and similar stuff,
         // if you have to add more css, that's the place to do it.
