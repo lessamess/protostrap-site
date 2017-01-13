@@ -13,12 +13,20 @@
                 <a href="http://fontawesome.io/">Font Awesome</a> is the go-to icon font and it comes with Protostrap by default. <br>
                 All Font Awesome icons can be called with the default Font Awesome tag:
                 <div class="micropadding"></div>
+                <div class="block align-right">
+                    <a href="javascript:void(0);" class="copyToClipboard" data-target="markup<?php echo $key ;?>">Copy Code</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
                 <pre><code class="html">&lt;i class="fa fa-search">&lt;/i> <br><div class="micropadding"></div>This shows: <i class="fa fa-search"></i></code></pre>
+                <div id="markup<?php echo $key ;?>" class="hide"><i class="fa fa-search"></i></div>
                 <br>
                 For more mobile-focused Prototypes we also added the <a href="http://ionicons.com/">Ionicons</a> icon font.
                 The syntax is slightly different and the icons are larger by default.
                 <div class="micropadding"></div>
+                <div class="block align-right">
+                    <a href="javascript:void(0);" class="copyToClipboard" data-target="star">Copy Code</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
                 <pre><code class="html">&lt;i class="icon ion-ios-star-outline">&lt;/i> <br><div class="micropadding"></div>This shows: <i class="icon ion-ios-star-outline"></i></code></pre>
+                <div id="star" class="hide"><i class="icon ion-ios-star-outline"></i></div>
                 <br>
             </li>
             <li>

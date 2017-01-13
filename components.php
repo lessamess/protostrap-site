@@ -83,15 +83,17 @@ $activeNavigation = "components";
                                 }
                                 if(isset($component['markup'])){ ?>
                             <br>
+                            <div class="block align-right">
+                                <a href="javascript:void(0);" class="copyToClipboard" data-target="markup<?php echo $key ;?>">Copy Code</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
                             <pre class="pre-scrollable"><code class="html"><?php echo htmlentities($component['markup']) ;?></code></pre>
+                            <div id="markup<?php echo $key ;?>" class="hide"><?php echo htmlentities($component['markup']) ;?></div>
                             <?php } ?>
                         </td>
                     </tr>
                     <?php } ?>
-
                 </div>
             </div>
-
 
 
 

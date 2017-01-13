@@ -12,9 +12,11 @@
         <div class="micropadding"></div>
     </div>
     <div class="col-md-4">
-
-
     </div>
 </div>
-<pre><code class="html"><?php echo htmlentities($blank) ;?></code>
+    <div class="block align-right">
+        <a href="javascript:void(0);" class="copyToClipboard" data-target="filestructure">Copy Code</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    <pre><code class="html"><?php echo htmlentities($blank) ;?></code>
+    <div id="filestructure" class="hide"><?php echo htmlentities($blank) ;?></div>
 </pre>

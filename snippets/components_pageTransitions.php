@@ -26,6 +26,11 @@
 
     </div>
 </div>
+
+<div class="block align-right">
+    <a href="javascript:void(0);" class="copyToClipboard" data-target="pagetransitions">Copy Code</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</div>
+
 <pre><code>&lt;!-- T O P B A R S -->
 &lt;div class="topbarContainer ">
     &lt;div id="topbar-start" class="flexbox topbar topbar-current">
@@ -104,3 +109,85 @@
     &lt;/div>
 &lt;/div>
 </code></pre>
+<div id="pagetransitions" class="hide">&lt;!-- T O P B A R S -->
+&lt;div class="topbarContainer ">
+    &lt;div id="topbar-start" class="flexbox topbar topbar-current">
+        &lt;div class="fix80" >
+            &lt;a href="javascript:void(0);" class="goto btn"
+                data-goto="camera" data-animation="moveInFromBottom">
+                &lt;i class="icon ion-ios-camera-outline topbar-icon">&lt;/i>
+            &lt;/a>
+        &lt;/div>
+        &lt;div class="flex-1 align-center">
+                &lt;span class="topbar-title">mobile template&lt;/span>
+        &lt;/div>
+
+        &lt;div class="fix80 align-right" >
+            &lt;a href="javascript:void(0);" class="goto btn"
+                data-goto="notifications" data-animation="moveInFromRight">
+                &lt;i class="icon ion-ios-bell-outline topbar-icon">&lt;/i>
+                &lt;!-- You can add badges to topbar elements -->
+                &lt;span class="topbar-badge">1&lt;/span>
+            &lt;/a>
+        &lt;/div>
+    &lt;/div>
+
+    &lt;div id="topbar-notifications" class="flexbox topbar">
+        &lt;div class="fixed-size-120" >
+            &lt;a href="javascript:void(0);" class="btn goto"
+                data-animation="moveOutFromRight" data-goto="start">
+                &lt;i class="icon ion-ios-arrow-back topbar-icon">&lt;/i>
+            &lt;/a>
+        &lt;/div>
+        &lt;div class="flex-1 align-center">
+            &lt;span class="topbar-title">Notifictions&lt;/span>
+        &lt;/div>
+        &lt;div class="fixed-size-120 align-right" >
+
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+
+
+&lt;!-- T A B B A R S -->
+&lt;div id="tabbarContainer" class="tabnavbar navbar-default navbar-fixed-bottom transparent ">
+
+    &lt;div id="tabbar-start" class="flexbox tabbar tabbar-current">
+        &lt;div class="flex-1">
+            &lt;button class="btn btn-primary btn-block goto "
+                data-animation="moveInFromLeft" data-goto="page2">Register&lt;/button>
+        &lt;/div>
+        &lt;div class="flex-1">
+            &lt;button class="goto btn-block  btn btn-default"
+                data-animation="moveInFromTop" data-goto="page3">Sign in&lt;/button>
+        &lt;/div>
+    &lt;/div>
+
+
+    &lt;div id="tabbar-notifications" class="flexbox tabbar ">
+        &lt;div class="flex-1">
+            &lt;button class="goto btn-block  btn btn-primary"
+                data-animation="moveInFromleft" data-goto="start">Go back&lt;/button>
+        &lt;/div>
+    &lt;/div>
+
+
+    &lt;!-- Pages with no tabbar habe a hidden tabbar -->
+    &lt;div id="tabbar-camera" class="flexbox tabbar hide">&lt;/div>
+
+&lt;/div>
+
+&lt;!-- P A G E S -->
+&lt;div id="pt-main" class="pt-perspective">
+    &lt;div id="page-start" class="first-page pt-page container">
+            &lt;!-- Page Content -->
+    &lt;/div>
+    &lt;div id="page-notifications" class="pt-page container ">
+            &lt;!-- Page Content -->
+    &lt;/div>
+&lt;/div></div>
+
+
+
+
+

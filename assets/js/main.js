@@ -254,6 +254,4 @@
         //             $('.tooltip').tooltip('hide')}, delay);
         //     }
         // });
-
-
     })
