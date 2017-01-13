@@ -132,9 +132,4 @@ cssClasses:
             <button class="btn btn-default">Behind</button>
         </div>
       </div>
-  nomargin:
-    title: ""
-    description: ""
-    markup: |
-      <div class="nomargin"></div>
 
