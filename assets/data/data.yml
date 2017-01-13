@@ -428,12 +428,12 @@ pluginsAndLibraries:
     text: "Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring additional functionality to standard select elements."
   4:
     title: "Bootstrap Switch"
-    link: http://getbootstrap.com
-    text: "Mobile"
+    link: https://github.com/nostalgiaz/bootstrap-switch
+    text: "Turn checkboxes and radio buttons in toggle switches."
   5:
     title: "Boostrap Datepicker"
-    link: http://getbootstrap.com
-    text: "Mobile"
+    link: Bootstrap-datepicker provides a flexible datepicker widget in the Bootstrap style.
+    text: "https://bootstrap-datepicker.readthedocs.io/en/latest/#"
   6:
     title: "Twitter Typeahead Plugin"
     link: http://getbootstrap.com
