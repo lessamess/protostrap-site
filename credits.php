@@ -24,7 +24,7 @@ $activeNavigation = "";
         <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body class="header-fixed">
-    
+
     <?php include("snippets/navBarTop.php");?>
     <div class="container">
         <h1>Credits</h1>
@@ -45,7 +45,7 @@ $activeNavigation = "";
                 <div class="micropadding"></div>
                 <?php } ?>
 <!--             </div>
-  
+
 
 
             <div class="col-md-6"> -->
@@ -56,7 +56,7 @@ $activeNavigation = "";
                 <p><?php echo $iconfont['text'] ;?></p>
                 <div class="micropadding"></div>
                 <?php } ?>
-                <h3>Contributors</h3>
+                <!-- <h3>Contributors</h3>
                 <div class="micropadding"></div>
                 <?php foreach ($contributors as $key => $contributor) { ?>
                 <b><?php echo $contributor['name'] ;?></b><br>
@@ -64,7 +64,7 @@ $activeNavigation = "";
                 <i class="fa fa-link"></i>:&nbsp;<a href="<?php echo $contributor['link'] ;?>"><?php echo $contributor['link'] ;?></a><br>
                 <i class="fa fa-twitter"></i>:<a href="https://twitter.com/<?php echo $contributor['twitter'] ;?>">&nbsp;@<?php echo $contributor['twitter'] ;?></a>
                 <div class="micropadding"></div>
-                <?php } ?>
+                <?php } ?> -->
             </div>
         </div>
         <br>
