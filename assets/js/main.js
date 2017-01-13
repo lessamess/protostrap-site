@@ -237,6 +237,14 @@
         });
 
 
+          $(".scrollTo").click(function() {
+                var scrollId = $(this).data("id");
+                console.log(scrollId);
+                $('html, body').animate({
+                    scrollTop: $("#"+scrollId).offset().top-80
+                }, 400);
+          });
+
 
         // Carousel if there is any
         $('.carousel').carousel(

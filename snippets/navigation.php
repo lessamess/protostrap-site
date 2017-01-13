@@ -5,7 +5,7 @@
             <?php if(isset($navItem['sub'])){?>
             <ul class="nav nav-stacked">
                 <?php foreach ($navItem['sub'] as $keysub => $sub) { ?>
-                    <li><a href="#<?php echo $keysub ;?>"><?php echo $sub['title'] ;?></a></li>
+                    <li><a href="javascript:void(0);" class="scrollTo" data-id="<?php echo $keysub ;?>"><?php echo $sub['title'] ;?></a></li>
                 <?php } ?>
             </ul>
             <?php } ?>
