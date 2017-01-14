@@ -77,7 +77,7 @@ $activeNavigation = "start";
                         <h4 class="modal-title" id="myModalLabel">PHP Basics</h4>
                     </div>
                     <div class="modal-body">
-                        <h2>10 PHP topics to get you through Protostrap</h2>
+                        <h2>Top 10 PHP topics</h2>
                         This list contains all topics you need to know to be a master prototyper with Protostrap. <br>
                         <br><br>
                             <?php foreach ($phpBasics as $key => $item): ?>

@@ -246,12 +246,12 @@ components:
       Place a button on your card image. addingButtons can contain any Font Awesome icons.
       <ul class="simpleList">
           <li>
-              Adding the class <b>btn-togglePrimary</b> will toggle the button between Primary and Default style <br>
+              Adding the class <b class="code">btn-togglePrimary</b> will toggle the button between Primary and Default style <br>
               The heart, star and user icons will also toggle between
               <i class="fa fa-heart-o"></i> outline and <i class="fa fa-heart"></i> filled versions. Other icons will stay the same.
           </li>
-          <li>Adding the class <b>btn-circle-sm</b> will add a round button in a touchfriendly size</li>
-          <li>Adding the class <b>btn-circle</b> will add a fairly big round button</li>
+          <li>Adding the class <b class="code">btn-circle-sm</b> will add a round button in a touchfriendly size</li>
+          <li>Adding the class <b class="code">btn-circle</b> will add a fairly big round button</li>
           <li>The buttons default position is in the top right corner. Adding one of the classes <b>topLeft</b>, <b>bottomLeft</b> or <b>bottomRight</b>, will move it to the respective corner</li>
       </ul>
     markup: |
@@ -470,7 +470,7 @@ contributors:
 
 phpBasics:
   1:
-    text: "Basic syntax: PHP Tags and output with <b>echo</b>"
+    text: "Basic syntax: PHP Tags and output with <b class="code">echo</b>"
     link: "http://php.net/manual/en/language.basic-syntax.phptags.php"
   2:
     text: "Variables: the most basic way to store values."
@@ -479,21 +479,24 @@ phpBasics:
     text: "Arrays: variables that store multiple values. "
     link: "http://php.net/manual/en/function.array.php"
   4:
-    text: "Conditionals: <b>if</b> and <b>else</b>"
-    link: "http://php.net/manual/en/control-structures.if.php"
+    text: "Operators: how to compare variables"
+    link: "http://php.net/manual/en/language.operators.comparison.php"
   5:
-    text: "Going through arrays with <b>foreach</b> loops"
-    link: "http://php.net/manual/en/control-structures.foreach.php"
+    text: "Conditionals: <b class="code">if</b> and <b class="code">else</b>"
+    link: "http://php.net/manual/en/control-structures.if.php"
   6:
+    text: "Going through arrays with <b class="code">foreach</b> loops"
+    link: "http://php.net/manual/en/control-structures.foreach.php"
+  7:
     text: "How functions work"
     link: "http://php.net/manual/en/language.functions.php"
-  7:
-    text: "Variable handling Functions, especially <b>empty()</b>, <b>isset()</b> and <b>vardump()</b>"
-    link: "http://php.net/manual/en/ref.var.php"
   8:
+    text: "Variable handling Functions, especially <b class="code">empty()</b>, <b class="code">isset()</b> and <b class="code">vardump()</b>"
+    link: "http://php.net/manual/en/ref.var.php"
+  9:
     text: "User-defined functions"
     link: "http://php.net/manual/en/functions.user-defined.php"
-  9:
-    text: "The predefined Variables <b>$_GET</b>, <b>$_POST</b> and <b>$_SESSION</b>"
-    link: ""
+  10
+    text: "Predefined variables, especially <b class="code">$_GET</b>, <b class="code">$_POST</b> and <b class="code">$_SESSION</b>"
+    link: "http://php.net/manual/en/reserved.variables.php"
 
