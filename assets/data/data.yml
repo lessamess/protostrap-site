@@ -414,43 +414,63 @@ showcases:
 
 
 pluginsAndLibraries:
-  1:
-    title: "Twitter Bootstrap"
+  bootstrap:
+    title: "Bootstrap"
     link: http://getbootstrap.com
     text: "The most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web."
-  2:
-    title: "Tablesorter"
-    link: http://getbootstrap.com
-    text: "tablesorter is a jQuery plugin for turning a standard HTML table with THEAD and TBODY tags into a sortable table without page refreshes"
-  3:
+  bootstrapSelect:
     title: "Bootstrap Select"
-    link: http://getbootstrap.com
-    text: "Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring additional functionality to standard select elements."
-  4:
+    link: https://silviomoreto.github.io/bootstrap-select/
+    text: "A jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring additional functionality to standard select elements."
+  bootstrapSwitch:
     title: "Bootstrap Switch"
     link: https://github.com/nostalgiaz/bootstrap-switch
     text: "Turn checkboxes and radio buttons in toggle switches."
-  5:
+  bootstrapDatepicker:
     title: "Boostrap Datepicker"
-    link: Bootstrap-datepicker provides a flexible datepicker widget in the Bootstrap style.
+    link: A flexible datepicker widget in the Bootstrap style.
     text: "https://bootstrap-datepicker.readthedocs.io/en/latest/#"
-  6:
+  bootstrapFileInput:
+    title: "Bootstrap File Input"
+    text: "Converts all file input tags into a set of elements that displays consistently in all browsers."
+    link: "http://gregpike.net/demos/bootstrap-file-input/demo.html#"
+  jQuerySortable:
+    title: "HTML5 Sortable Library"
+    link: https://github.com/voidberg/html5sortable
+    text: "A library for creating sortable lists and grids using native HTML5 drag and drop API."
+  jQueryHotkeys:
+    title: "jQuery Hotkeys Plugin"
+    link: https://github.com/jeresig/jquery.hotkeys
+    text: "A plug-in that lets you easily add and remove handlers for keyboard events anywhere in your code supporting almost any key combination."
+  jQueryMaskedInput:
+    title: "jQuery Masked Input"
+    text: "A plugin that allows users to easily enter fixed width input in a predefined format like social security numbers or IBANs"
+    link: "http://digitalbush.com/projects/masked-input-plugin"
+  tablesorter:
+    title: "Tablesorter"
+    link: http://getbootstrap.com
+    text: "A jQuery plugin for turning a standard HTML table with THEAD and TBODY tags into a sortable table without page refreshes"
+  twitterTypeahead:
     title: "Twitter Typeahead Plugin"
     link: http://getbootstrap.com
-    text: "typeahead.js is a fast and fully-featured autocomplete library."
-  7:
-    title: "jQuery Sortable Plugin"
-    link: http://getbootstrap.com
-    text: "Bootstrap-select is a jQuery plugin that utilizes Bootstrap's dropdown.js to style and bring additional functionality to standard select elements."
-  8:
-    title: "jQuery Hotkeys Plugin"
-    link: http://getbootstrap.com
-    text: "Mobile"
-  9:
+    text: "A fast and fully-featured autocomplete library."
+  noUiSlider:
     title: "noUiSlider – A mobile friendly slider "
     link: https://refreshless.com/nouislider
-    text: "noUiSlider is a free and lightweight JavaScript range slider with full touch support (iOS, Android, Windows 8)."
-
+    text: "A free and lightweight JavaScript range slider with full touch support (iOS, Android, Windows 8)."
+  addToHomescreen:
+    title: "Add to home screen"
+    text: "A javascript widget that opens an overlaying message inviting the user to add the web site/application to the home screen."
+    link: http://cubiq.org/add-to-home-screen
+    license: "MIT License"
+  FastClick:
+    title: "FastClick"
+    text: "A simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers."
+    link: https://github.com/ftlabs/fastclick
+  pageTransitions:
+    title: "Page Transitions"
+    text: "A linrary to create page transitions to get a more app like feel to your project."
+    link: "https://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/"
 iconfonts:
   1:
     title: "Font Awesome"
