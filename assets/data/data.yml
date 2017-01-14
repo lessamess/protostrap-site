@@ -469,7 +469,7 @@ pluginsAndLibraries:
     link: https://github.com/ftlabs/fastclick
   pageTransitions:
     title: "Page Transitions"
-    text: "A linrary to create page transitions to get a more app like feel to your project."
+    text: "A library to create page transitions to get a more app like feel to your project."
     link: "https://tympanus.net/codrops/2013/05/07/a-collection-of-page-transitions/"
 iconfonts:
   1:
