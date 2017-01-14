@@ -458,11 +458,16 @@ b.code {
     background-color: #f5f5f5;
     border-color: #9c9c9c;
 }
-.btn.focus, .btn:focus, .btn:hover {
-    color: #333;
-    text-decoration: none;
-}
 
+.btn.btn-primary,.btn.btn-default.btn-primary{
+    color:#ffffff;
+    border-color:#00796B;
+}
+.btn-primary:hover {
+    color: #ffffff;
+    background-color: #286090;
+    border-color: #204d74;
+}
 @media screen and (max-width : 991px)  {
     .ps-docs-sidebar{
         display:none;
